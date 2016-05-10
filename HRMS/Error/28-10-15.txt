@@ -1,0 +1,60 @@
+
+Log Entry : 
+10/28/2015 15:19:15
+Error in: http://localhost:1942/favicon.ico. Error Message:Error in: http://localhost:1942/favicon.ico. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+10/28/2015 15:20:45
+Error in: http://localhost:1942/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:1942/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+10/28/2015 15:20:47
+Error in: http://localhost:1942/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:1942/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+10/28/2015 15:20:49
+Error in: http://localhost:1942/Images/GressenHover.png. Error Message:Error in: http://localhost:1942/Images/GressenHover.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+10/28/2015 15:20:52
+Error in: http://localhost:1942/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:1942/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+10/28/2015 15:20:55
+Error in: http://localhost:1942/images/h_bg.png. Error Message:Error in: http://localhost:1942/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+10/28/2015 15:20:55
+Error in: http://localhost:1942/Styles/grd_alt.png. Error Message:Error in: http://localhost:1942/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+10/28/2015 15:22:05
+Error in: http://localhost:1942/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:1942/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+10/28/2015 15:22:55
+Error in: http://localhost:1942/images/h_bg.png. Error Message:Error in: http://localhost:1942/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+10/28/2015 16:30:40
+Error in: http://localhost:1942/images/h_bg.png. Error Message:Error in: http://localhost:1942/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+10/28/2015 18:01:48
+Error in: http://localhost:1942/images/h_bg.png. Error Message:Error in: http://localhost:1942/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+10/28/2015 18:14:39
+Error in: http://localhost:1942/images/h_bg.png. Error Message:Error in: http://localhost:1942/images/h_bg.png. Error Message:File does not exist.
+__________________________

@@ -1,0 +1,2746 @@
+
+Log Entry : 
+01/28/2016 10:21:25
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:21:29
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:23:23
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:23:25
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:25:52
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:25:53
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:26:00
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:26:03
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:26:25
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:26:32
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:26:35
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:26:38
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:26:43
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:26:46
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:26:49
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:26:54
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:26:57
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:27:03
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:27:09
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:27:12
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:28:05
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:28:06
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:28:06
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:30:08
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:32:49
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:35:42
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:35:43
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:35:48
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:35:51
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:36:21
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:36:25
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:36:28
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:36:28
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:37:19
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:49:05
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:49:07
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:49:12
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:49:12
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:49:12
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:49:46
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:49:51
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:49:51
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:49:52
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:50:39
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:50:40
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:51:23
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Lines transaction started...
+__________________________
+
+Log Entry : 
+01/28/2016 10:51:24
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 10:51:24
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 10:51:24
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date End...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 10:51:24
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 10:51:24
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 10:51:24
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 10:51:24
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Query Ececution started...Insert INTO [@Z_HR_EXPCL] (Code,Name,U_Z_EmpID,U_Z_EmpName,U_Z_TraCode,U_Z_TraDesc,U_Z_TripType,U_Z_Subdt,U_Z_Claimdt,U_Z_Reimburse,U_Z_PayMethod, U_Z_ExpType, U_Z_ExpCode, U_Z_Currency, U_Z_Client, U_Z_AlloCode,U_Z_Project,U_Z_City,U_Z_CurAmt,U_Z_ExcRate,U_Z_UsdAmt, U_Z_ReimAmt,U_Z_Notes,U_Z_Attachment,U_Z_Year,U_Z_Month,U_Z_AppStatus,U_Z_DocRefNo,U_Z_CardCode,U_Z_DebitCode,U_Z_CreditCode,U_Z_Posting,U_Z_Dimension) Values ( '00000028','00000028','1','Mohamad  Anbar','','', 'N','2016-01-28','2016-01-28','Y',  '','Business Calls','00000002','USD',  'sgdg','','dfdgd','sg', 12,1,'USD12','USD12', '','','2016','1', 'A','00000010','','812020100', '712010300','G','ACC&FIN;ACC-D;;mb01;')
+__________________________
+
+Log Entry : 
+01/28/2016 10:51:24
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:query excecution ended...
+__________________________
+
+Log Entry : 
+01/28/2016 10:51:44
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Initial message started...
+__________________________
+
+Log Entry : 
+01/28/2016 10:52:00
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:52:00
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:52:00
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:56:41
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:56:57
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:57:02
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:57:02
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:57:02
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:57:34
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:57:34
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:57:55
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Lines transaction started...
+__________________________
+
+Log Entry : 
+01/28/2016 10:57:55
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 10:57:55
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 10:57:55
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date End...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 10:57:55
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 10:57:55
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 10:57:55
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 10:57:56
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Query Ececution started...Insert INTO [@Z_HR_EXPCL] (Code,Name,U_Z_EmpID,U_Z_EmpName,U_Z_TraCode,U_Z_TraDesc,U_Z_TripType,U_Z_Subdt,U_Z_Claimdt,U_Z_Reimburse,U_Z_PayMethod, U_Z_ExpType, U_Z_ExpCode, U_Z_Currency, U_Z_Client, U_Z_AlloCode,U_Z_Project,U_Z_City,U_Z_CurAmt,U_Z_ExcRate,U_Z_UsdAmt, U_Z_ReimAmt,U_Z_Notes,U_Z_Attachment,U_Z_Year,U_Z_Month,U_Z_AppStatus,U_Z_DocRefNo,U_Z_CardCode,U_Z_DebitCode,U_Z_CreditCode,U_Z_Posting,U_Z_Dimension) Values ( '00000029','00000029','1','Mohamad  Anbar','','', 'N','2016-01-28','2016-01-28','Y',  '','Internet fees','00000003','USD',  '','','','', 21,1,'USD21','USD21', '','','2016','1', 'A','00000010','','812020100', '712010300','G','ACC&FIN;ACC-D;;mb01;')
+__________________________
+
+Log Entry : 
+01/28/2016 10:57:58
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:query excecution ended...
+__________________________
+
+Log Entry : 
+01/28/2016 10:58:13
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:58:13
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 10:58:13
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:03:22
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:03:27
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:03:34
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:03:35
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:03:35
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:04:00
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:04:00
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:04:06
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Lines transaction started...
+__________________________
+
+Log Entry : 
+01/28/2016 11:04:06
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:04:06
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:04:06
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date End...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:04:06
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:04:06
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:04:06
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:04:06
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Query Ececution started...Insert INTO [@Z_HR_EXPCL] (Code,Name,U_Z_EmpID,U_Z_EmpName,U_Z_TraCode,U_Z_TraDesc,U_Z_TripType,U_Z_Subdt,U_Z_Claimdt,U_Z_Reimburse,U_Z_PayMethod, U_Z_ExpType, U_Z_ExpCode, U_Z_Currency, U_Z_Client, U_Z_AlloCode,U_Z_Project,U_Z_City,U_Z_CurAmt,U_Z_ExcRate,U_Z_UsdAmt, U_Z_ReimAmt,U_Z_Notes,U_Z_Attachment,U_Z_Year,U_Z_Month,U_Z_AppStatus,U_Z_DocRefNo,U_Z_CardCode,U_Z_DebitCode,U_Z_CreditCode,U_Z_Posting,U_Z_Dimension) Values ( '00000030','00000030','1','Mohamad  Anbar','','', 'N','2016-01-28','2016-01-28','Y',  '','Internet fees','00000003','USD',  '','','','', 11,1,'USD11','USD11', '','','2016','1', 'A','00000010','','812020100', '712010300','G','ACC&FIN;ACC-D;;mb01;')
+__________________________
+
+Log Entry : 
+01/28/2016 11:04:08
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:query excecution ended...
+__________________________
+
+Log Entry : 
+01/28/2016 11:04:08
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:04:09
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:04:09
+Error in: http://localhost:48860/images/h_bg.png. Error Message:The process cannot access the file 'E:\Projects\Web Developments\HRMS\SourceCode\20160122_HRMS Web _Navlink\HRMS\Error\28-01-16.txt' because it is being used by another process.
+__________________________
+
+Log Entry : 
+01/28/2016 11:05:15
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:05:50
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:05:50
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:05:50
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:06:56
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:06:56
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:07:32
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Lines transaction started...
+__________________________
+
+Log Entry : 
+01/28/2016 11:07:32
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:07:32
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:07:32
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date End...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:07:32
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:07:32
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:07:32
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:07:32
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Query Ececution started...Insert INTO [@Z_HR_EXPCL] (Code,Name,U_Z_EmpID,U_Z_EmpName,U_Z_TraCode,U_Z_TraDesc,U_Z_TripType,U_Z_Subdt,U_Z_Claimdt,U_Z_Reimburse,U_Z_PayMethod, U_Z_ExpType, U_Z_ExpCode, U_Z_Currency, U_Z_Client, U_Z_AlloCode,U_Z_Project,U_Z_City,U_Z_CurAmt,U_Z_ExcRate,U_Z_UsdAmt, U_Z_ReimAmt,U_Z_Notes,U_Z_Attachment,U_Z_Year,U_Z_Month,U_Z_AppStatus,U_Z_DocRefNo,U_Z_CardCode,U_Z_DebitCode,U_Z_CreditCode,U_Z_Posting,U_Z_Dimension) Values ( '00000031','00000031','1','Mohamad  Anbar','','', 'N','2016-01-28','2016-01-28','Y',  '','Other addition UT','00000001','USD',  '','','','', 21,1,'USD21','USD21', '','','2016','1', 'A','00000010','','812020100', '712010300','G','ACC&FIN;ACC-D;;mb01;')
+__________________________
+
+Log Entry : 
+01/28/2016 11:07:34
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:query excecution ended...
+__________________________
+
+Log Entry : 
+01/28/2016 11:07:34
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:07:36
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:07:36
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:14:10
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:14:17
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:14:21
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:14:21
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:14:21
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:14:41
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:14:41
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:14:59
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Lines transaction started...
+__________________________
+
+Log Entry : 
+01/28/2016 11:14:59
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:14:59
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:14:59
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date End...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:14:59
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/29/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:14:59
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/29/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:14:59
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/29/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:14:59
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Query Ececution started...Insert INTO [@Z_HR_EXPCL] (Code,Name,U_Z_EmpID,U_Z_EmpName,U_Z_TraCode,U_Z_TraDesc,U_Z_TripType,U_Z_Subdt,U_Z_Claimdt,U_Z_Reimburse,U_Z_PayMethod, U_Z_ExpType, U_Z_ExpCode, U_Z_Currency, U_Z_Client, U_Z_AlloCode,U_Z_Project,U_Z_City,U_Z_CurAmt,U_Z_ExcRate,U_Z_UsdAmt, U_Z_ReimAmt,U_Z_Notes,U_Z_Attachment,U_Z_Year,U_Z_Month,U_Z_AppStatus,U_Z_DocRefNo,U_Z_CardCode,U_Z_DebitCode,U_Z_CreditCode,U_Z_Posting,U_Z_Dimension) Values ( '00000032','00000032','1','Mohamad  Anbar','','', 'N','2016-01-28','2016-01-29','Y',  '','Business Calls','00000002','USD',  '','','','', 34,1,'USD34','USD34', '','','2016','1', 'A','00000010','','812020100', '712010300','G','ACC&FIN;ACC-D;;mb01;')
+__________________________
+
+Log Entry : 
+01/28/2016 11:15:01
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:query excecution ended...
+__________________________
+
+Log Entry : 
+01/28/2016 11:15:02
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:15:02
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:15:02
+Error in: http://localhost:48860/images/h_bg.png. Error Message:The process cannot access the file 'E:\Projects\Web Developments\HRMS\SourceCode\20160122_HRMS Web _Navlink\HRMS\Error\28-01-16.txt' because it is being used by another process.
+__________________________
+
+Log Entry : 
+01/28/2016 11:16:23
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:16:59
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:17:04
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:17:04
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:17:04
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:17:25
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:17:25
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:17:41
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Lines transaction started...
+__________________________
+
+Log Entry : 
+01/28/2016 11:17:42
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:17:42
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:17:42
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date End...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:17:42
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/29/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:17:42
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/29/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:17:42
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/29/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:17:42
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Query Ececution started...Insert INTO [@Z_HR_EXPCL] (Code,Name,U_Z_EmpID,U_Z_EmpName,U_Z_TraCode,U_Z_TraDesc,U_Z_TripType,U_Z_Subdt,U_Z_Claimdt,U_Z_Reimburse,U_Z_PayMethod, U_Z_ExpType, U_Z_ExpCode, U_Z_Currency, U_Z_Client, U_Z_AlloCode,U_Z_Project,U_Z_City,U_Z_CurAmt,U_Z_ExcRate,U_Z_UsdAmt, U_Z_ReimAmt,U_Z_Notes,U_Z_Attachment,U_Z_Year,U_Z_Month,U_Z_AppStatus,U_Z_DocRefNo,U_Z_CardCode,U_Z_DebitCode,U_Z_CreditCode,U_Z_Posting,U_Z_Dimension) Values ( '00000033','00000033','1','Mohamad  Anbar','','', 'N','2016-01-28','2016-01-29','Y',  '','Travel Expenses','00000004','USD',  '','','','', 11,1,'USD11','USD11', '','','2016','1', 'A','00000010','','812020100', '712010300','G','ACC&FIN;ACC-D;;mb01;')
+__________________________
+
+Log Entry : 
+01/28/2016 11:17:44
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:query excecution ended...
+__________________________
+
+Log Entry : 
+01/28/2016 11:17:44
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:17:44
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:17:44
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:23:44
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:23:54
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:23:59
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:23:59
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:23:59
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:24:34
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:24:34
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:24:46
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Lines transaction started...
+__________________________
+
+Log Entry : 
+01/28/2016 11:24:52
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:24:52
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:24:52
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date End...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:24:52
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/29/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:24:52
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/29/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:24:52
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/29/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:24:52
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Query Ececution started...Insert INTO [@Z_HR_EXPCL] (Code,Name,U_Z_EmpID,U_Z_EmpName,U_Z_TraCode,U_Z_TraDesc,U_Z_TripType,U_Z_Subdt,U_Z_Claimdt,U_Z_Reimburse,U_Z_PayMethod, U_Z_ExpType, U_Z_ExpCode, U_Z_Currency, U_Z_Client, U_Z_AlloCode,U_Z_Project,U_Z_City,U_Z_CurAmt,U_Z_ExcRate,U_Z_UsdAmt, U_Z_ReimAmt,U_Z_Notes,U_Z_Attachment,U_Z_Year,U_Z_Month,U_Z_AppStatus,U_Z_DocRefNo,U_Z_CardCode,U_Z_DebitCode,U_Z_CreditCode,U_Z_Posting,U_Z_Dimension) Values ( '00000034','00000034','1','Mohamad  Anbar','','', 'N','2016-01-28','2016-01-29','Y',  '','Business Calls','00000002','USD',  '','','','', 22,1,'USD22','USD22', '','','2016','1', 'P','00000011','','812020100', '712010300','G','ACC&FIN;ACC-D;;mb01;')
+__________________________
+
+Log Entry : 
+01/28/2016 11:24:52
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:query excecution ended...
+__________________________
+
+Log Entry : 
+01/28/2016 11:24:52
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:24:52
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:24:52
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:26:15
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:27:19
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:27:28
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:27:33
+Error in: http://localhost:48860/ExpensesClaimApproval.aspx. Error Message:Incorrect syntax near the keyword 'and'.
+__________________________
+
+Log Entry : 
+01/28/2016 11:27:36
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:27:39
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:28:08
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:28:19
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:28:22
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:28:28
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:28:33
+Error in: http://localhost:48860/ExpensesClaimApproval.aspx. Error Message:Incorrect syntax near the keyword 'and'.
+__________________________
+
+Log Entry : 
+01/28/2016 11:28:36
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:28:36
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:28:55
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:28:58
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:28:59
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:28:59
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:29:03
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:34:08
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:34:10
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:34:14
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:34:15
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:34:15
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:34:19
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:34:23
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:34:23
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:34:23
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:34:59
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:34:59
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:35:12
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Lines transaction started...
+__________________________
+
+Log Entry : 
+01/28/2016 11:35:14
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:35:14
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:35:15
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date End...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:35:15
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:35:16
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:35:16
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:35:20
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Query Ececution started...Insert INTO [@Z_HR_EXPCL] (Code,Name,U_Z_EmpID,U_Z_EmpName,U_Z_TraCode,U_Z_TraDesc,U_Z_TripType,U_Z_Subdt,U_Z_Claimdt,U_Z_Reimburse,U_Z_PayMethod, U_Z_ExpType, U_Z_ExpCode, U_Z_Currency, U_Z_Client, U_Z_AlloCode,U_Z_Project,U_Z_City,U_Z_CurAmt,U_Z_ExcRate,U_Z_UsdAmt, U_Z_ReimAmt,U_Z_Notes,U_Z_Attachment,U_Z_Year,U_Z_Month,U_Z_AppStatus,U_Z_DocRefNo,U_Z_CardCode,U_Z_DebitCode,U_Z_CreditCode,U_Z_Posting,U_Z_Dimension) Values ( '00000035','00000035','21','Jammal  Metn','','', 'N','2016-01-28','2016-01-28','Y',  '','Other addition UT','00000001','USD',  '','','','', 11,1,'USD11','USD11', '','','2016','1', 'P','00000012','','812020100', '712010300','G','ENS;ITCS-D;;sh01;')
+__________________________
+
+Log Entry : 
+01/28/2016 11:35:21
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:query excecution ended...
+__________________________
+
+Log Entry : 
+01/28/2016 11:35:29
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:35:29
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:35:29
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:35:53
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:35:53
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:36:07
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Lines transaction started...
+__________________________
+
+Log Entry : 
+01/28/2016 11:36:09
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:36:10
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:36:12
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date End...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:36:13
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:36:14
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:36:14
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:36:27
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/29/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:36:28
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/29/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:36:28
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/29/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:36:33
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Query Ececution started...Insert INTO [@Z_HR_EXPCL] (Code,Name,U_Z_EmpID,U_Z_EmpName,U_Z_TraCode,U_Z_TraDesc,U_Z_TripType,U_Z_Subdt,U_Z_Claimdt,U_Z_Reimburse,U_Z_PayMethod, U_Z_ExpType, U_Z_ExpCode, U_Z_Currency, U_Z_Client, U_Z_AlloCode,U_Z_Project,U_Z_City,U_Z_CurAmt,U_Z_ExcRate,U_Z_UsdAmt, U_Z_ReimAmt,U_Z_Notes,U_Z_Attachment,U_Z_Year,U_Z_Month,U_Z_AppStatus,U_Z_DocRefNo,U_Z_CardCode,U_Z_DebitCode,U_Z_CreditCode,U_Z_Posting,U_Z_Dimension) Values ( '00000036','00000036','21','Jammal  Metn','','', 'N','2016-01-28','2016-01-29','Y',  '','Internet fees','00000003','QAR',  '','','','', 21,1,'USD21','USD21', '','','2016','1', 'P','00000012','','812020100', '712010300','G','ENS;ITCS-D;;sh01;')
+__________________________
+
+Log Entry : 
+01/28/2016 11:36:33
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:query excecution ended...
+__________________________
+
+Log Entry : 
+01/28/2016 11:36:40
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:36:40
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:36:40
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:37:01
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:37:15
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:37:18
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:37:21
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:37:22
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:37:22
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:37:44
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:37:44
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:38:55
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Lines transaction started...
+__________________________
+
+Log Entry : 
+01/28/2016 11:38:55
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:38:55
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:38:55
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date End...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:38:55
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/29/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:38:55
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/29/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:38:55
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/29/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:38:56
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/22/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:38:56
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/22/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:38:56
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/22/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:38:57
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Query Ececution started...Insert INTO [@Z_HR_EXPCL] (Code,Name,U_Z_EmpID,U_Z_EmpName,U_Z_TraCode,U_Z_TraDesc,U_Z_TripType,U_Z_Subdt,U_Z_Claimdt,U_Z_Reimburse,U_Z_PayMethod, U_Z_ExpType, U_Z_ExpCode, U_Z_Currency, U_Z_Client, U_Z_AlloCode,U_Z_Project,U_Z_City,U_Z_CurAmt,U_Z_ExcRate,U_Z_UsdAmt, U_Z_ReimAmt,U_Z_Notes,U_Z_Attachment,U_Z_Year,U_Z_Month,U_Z_AppStatus,U_Z_DocRefNo,U_Z_CardCode,U_Z_DebitCode,U_Z_CreditCode,U_Z_Posting,U_Z_Dimension) Values ( '00000037','00000037','1','Mohamad  Anbar','','', 'N','2016-01-28','2016-01-22','Y',  '','Internet fees','00000003','USD',  '','','','', 23,1,'USD23','USD23', '','','2016','1', 'P','00000011','','812020100', '712010300','G','ACC&FIN;ACC-D;;mb01;')
+__________________________
+
+Log Entry : 
+01/28/2016 11:38:57
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:query excecution ended...
+__________________________
+
+Log Entry : 
+01/28/2016 11:38:57
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:38:58
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:38:58
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:39:09
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:39:10
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:39:10
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:40:38
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:40:39
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:40:43
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:40:44
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:40:44
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:41:09
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Lines transaction started...
+__________________________
+
+Log Entry : 
+01/28/2016 11:41:12
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:41:12
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:41:13
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date End...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:41:13
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/29/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:41:14
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/29/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:41:14
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/29/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:41:21
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Update the exchange rate 
+__________________________
+
+Log Entry : 
+01/28/2016 11:41:22
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Payroll transaction ended...
+__________________________
+
+Log Entry : 
+01/28/2016 11:41:27
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/22/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:41:28
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/22/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:41:28
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/22/2016
+__________________________
+
+Log Entry : 
+01/28/2016 11:41:31
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Update the exchange rate 
+__________________________
+
+Log Entry : 
+01/28/2016 11:41:31
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Payroll transaction ended...
+__________________________
+
+Log Entry : 
+01/28/2016 11:41:36
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Initial message started...
+__________________________
+
+Log Entry : 
+01/28/2016 11:41:37
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Initial message ended...
+__________________________
+
+Log Entry : 
+01/28/2016 11:41:39
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:41:41
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:41:41
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:41:58
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:42:53
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:42:54
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:42:57
+Error in: http://localhost:48860/ExpensesClaimApproval.aspx. Error Message:Incorrect syntax near the keyword 'and'.
+__________________________
+
+Log Entry : 
+01/28/2016 11:42:59
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:43:00
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:43:58
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:43:59
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:43:59
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:56:21
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:56:22
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:57:38
+Error in: http://localhost:48860/ExpensesClaimApproval.aspx. Error Message:Incorrect syntax near the keyword 'and'.
+__________________________
+
+Log Entry : 
+01/28/2016 11:57:41
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:57:41
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:58:00
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:58:12
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 11:58:19
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:03:00
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:03:01
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:03:58
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:06:34
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:06:42
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:06:43
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:06:43
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:07:01
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:07:02
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:07:06
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:07:06
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:07:06
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:07:10
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:07:28
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:07:28
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:07:41
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:07:41
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:07:48
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Lines transaction started...
+__________________________
+
+Log Entry : 
+01/28/2016 12:07:48
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:07:48
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:07:48
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date End...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:07:48
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:07:49
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:07:49
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:07:49
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Query Ececution started...Insert INTO [@Z_HR_EXPCL] (Code,Name,U_Z_EmpID,U_Z_EmpName,U_Z_TraCode,U_Z_TraDesc,U_Z_TripType,U_Z_Subdt,U_Z_Claimdt,U_Z_Reimburse,U_Z_PayMethod, U_Z_ExpType, U_Z_ExpCode, U_Z_Currency, U_Z_Client, U_Z_AlloCode,U_Z_Project,U_Z_City,U_Z_CurAmt,U_Z_ExcRate,U_Z_UsdAmt, U_Z_ReimAmt,U_Z_Notes,U_Z_Attachment,U_Z_Year,U_Z_Month,U_Z_AppStatus,U_Z_DocRefNo,U_Z_CardCode,U_Z_DebitCode,U_Z_CreditCode,U_Z_Posting,U_Z_Dimension) Values ( '00000038','00000038','1','Mohamad  Anbar','','', 'N','2016-01-28','2016-01-28','Y',  '','Business Calls','00000002','USD',  '','','','', 12,1,'USD12','USD12', '','','2016','1', 'P','00000010','','812020100', '712010300','G','ACC&FIN;ACC-D;;mb01;')
+__________________________
+
+Log Entry : 
+01/28/2016 12:07:49
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:query excecution ended...
+__________________________
+
+Log Entry : 
+01/28/2016 12:07:49
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/29/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:07:49
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/29/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:07:49
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/29/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:07:49
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Query Ececution started...Insert INTO [@Z_HR_EXPCL] (Code,Name,U_Z_EmpID,U_Z_EmpName,U_Z_TraCode,U_Z_TraDesc,U_Z_TripType,U_Z_Subdt,U_Z_Claimdt,U_Z_Reimburse,U_Z_PayMethod, U_Z_ExpType, U_Z_ExpCode, U_Z_Currency, U_Z_Client, U_Z_AlloCode,U_Z_Project,U_Z_City,U_Z_CurAmt,U_Z_ExcRate,U_Z_UsdAmt, U_Z_ReimAmt,U_Z_Notes,U_Z_Attachment,U_Z_Year,U_Z_Month,U_Z_AppStatus,U_Z_DocRefNo,U_Z_CardCode,U_Z_DebitCode,U_Z_CreditCode,U_Z_Posting,U_Z_Dimension) Values ( '00000039','00000039','1','Mohamad  Anbar','','', 'N','2016-01-28','2016-01-29','Y',  '','Travel Expenses','00000004','USD',  '','','','', 11,1,'USD11','USD11', '','','2016','1', 'P','00000010','','812020100', '712010300','G','')
+__________________________
+
+Log Entry : 
+01/28/2016 12:07:49
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:query excecution ended...
+__________________________
+
+Log Entry : 
+01/28/2016 12:07:49
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:07:49
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:07:49
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:08:01
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:08:14
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:08:15
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:08:20
+Error in: http://localhost:48860/ExpensesClaimApproval.aspx. Error Message:Incorrect syntax near the keyword 'and'.
+__________________________
+
+Log Entry : 
+01/28/2016 12:08:22
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:08:22
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:08:45
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:09:02
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:09:05
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:09:08
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:09:09
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:09:09
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:09:29
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Lines transaction started...
+__________________________
+
+Log Entry : 
+01/28/2016 12:09:29
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:09:29
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:09:29
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date End...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:09:29
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:09:29
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:09:29
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:09:29
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Update the exchange rate 
+__________________________
+
+Log Entry : 
+01/28/2016 12:09:29
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Payroll transaction ended...
+__________________________
+
+Log Entry : 
+01/28/2016 12:09:29
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/29/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:09:29
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/29/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:09:29
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/29/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:09:29
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index was outside the bounds of the array.
+__________________________
+
+Log Entry : 
+01/28/2016 12:09:29
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Update the exchange rate 
+__________________________
+
+Log Entry : 
+01/28/2016 12:09:29
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Payroll transaction ended...
+__________________________
+
+Log Entry : 
+01/28/2016 12:09:29
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Initial message started...
+__________________________
+
+Log Entry : 
+01/28/2016 12:09:29
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Initial message ended...
+__________________________
+
+Log Entry : 
+01/28/2016 12:09:30
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:09:30
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:09:30
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:09:51
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:10:10
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:10:11
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:10:21
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Lines transaction started...
+__________________________
+
+Log Entry : 
+01/28/2016 12:10:22
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:10:22
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:10:22
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date End...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:10:22
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/29/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:10:22
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/29/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:10:22
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/29/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:10:22
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Query Ececution started...Insert INTO [@Z_HR_EXPCL] (Code,Name,U_Z_EmpID,U_Z_EmpName,U_Z_TraCode,U_Z_TraDesc,U_Z_TripType,U_Z_Subdt,U_Z_Claimdt,U_Z_Reimburse,U_Z_PayMethod, U_Z_ExpType, U_Z_ExpCode, U_Z_Currency, U_Z_Client, U_Z_AlloCode,U_Z_Project,U_Z_City,U_Z_CurAmt,U_Z_ExcRate,U_Z_UsdAmt, U_Z_ReimAmt,U_Z_Notes,U_Z_Attachment,U_Z_Year,U_Z_Month,U_Z_AppStatus,U_Z_DocRefNo,U_Z_CardCode,U_Z_DebitCode,U_Z_CreditCode,U_Z_Posting,U_Z_Dimension) Values ( '00000040','00000040','1','Mohamad  Anbar','','', 'N','2016-01-28','2016-01-29','Y',  '','Other addition UT','00000001','USD',  '','','','', 11,1,'USD11','USD11', '','','2016','1', 'A','00000010','','812020100', '712010300','G','ACC&FIN;ACC-D;;mb01;')
+__________________________
+
+Log Entry : 
+01/28/2016 12:10:22
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:query excecution ended...
+__________________________
+
+Log Entry : 
+01/28/2016 12:10:22
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Payroll transaction started...
+__________________________
+
+Log Entry : 
+01/28/2016 12:10:22
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Update the exchange rate 
+__________________________
+
+Log Entry : 
+01/28/2016 12:10:22
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Payroll transaction ended...
+__________________________
+
+Log Entry : 
+01/28/2016 12:10:22
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Initial message started...
+__________________________
+
+Log Entry : 
+01/28/2016 12:10:22
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Initial message ended...
+__________________________
+
+Log Entry : 
+01/28/2016 12:10:23
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:10:28
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:10:28
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:10:42
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:10:43
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:10:48
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Lines transaction started...
+__________________________
+
+Log Entry : 
+01/28/2016 12:10:48
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:10:48
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:10:48
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date End...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:10:48
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/29/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:10:48
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/29/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:10:48
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/29/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:11:03
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Query Ececution started...Insert INTO [@Z_HR_EXPCL] (Code,Name,U_Z_EmpID,U_Z_EmpName,U_Z_TraCode,U_Z_TraDesc,U_Z_TripType,U_Z_Subdt,U_Z_Claimdt,U_Z_Reimburse,U_Z_PayMethod, U_Z_ExpType, U_Z_ExpCode, U_Z_Currency, U_Z_Client, U_Z_AlloCode,U_Z_Project,U_Z_City,U_Z_CurAmt,U_Z_ExcRate,U_Z_UsdAmt, U_Z_ReimAmt,U_Z_Notes,U_Z_Attachment,U_Z_Year,U_Z_Month,U_Z_AppStatus,U_Z_DocRefNo,U_Z_CardCode,U_Z_DebitCode,U_Z_CreditCode,U_Z_Posting,U_Z_Dimension) Values ( '00000041','00000041','1','Mohamad  Anbar','','', 'N','2016-01-28','2016-01-29','Y',  '','Travel Expenses','00000004','USD',  '','','','', 23,1,'USD23','USD23', '','','2016','1', 'A','00000010','','812020100', '712010300','G','ACC&FIN;ACC-D;;mb01;')
+__________________________
+
+Log Entry : 
+01/28/2016 12:11:03
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:query excecution ended...
+__________________________
+
+Log Entry : 
+01/28/2016 12:11:07
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Payroll transaction started...
+__________________________
+
+Log Entry : 
+01/28/2016 12:11:36
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Update the exchange rate 
+__________________________
+
+Log Entry : 
+01/28/2016 12:11:37
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Payroll transaction ended...
+__________________________
+
+Log Entry : 
+01/28/2016 12:11:52
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Initial message started...
+__________________________
+
+Log Entry : 
+01/28/2016 12:11:52
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Initial message ended...
+__________________________
+
+Log Entry : 
+01/28/2016 12:11:52
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:11:53
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:11:53
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:20:41
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:20:43
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:20:47
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:20:47
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:20:47
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:22:32
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:22:50
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:22:50
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:22:55
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Lines transaction started...
+__________________________
+
+Log Entry : 
+01/28/2016 12:22:55
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:22:56
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:22:56
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date End...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:22:56
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:22:56
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:22:56
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:23:01
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Query Ececution started...Insert INTO [@Z_HR_EXPCL] (Code,Name,U_Z_EmpID,U_Z_EmpName,U_Z_TraCode,U_Z_TraDesc,U_Z_TripType,U_Z_Subdt,U_Z_Claimdt,U_Z_Reimburse,U_Z_PayMethod, U_Z_ExpType, U_Z_ExpCode, U_Z_Currency, U_Z_Client, U_Z_AlloCode,U_Z_Project,U_Z_City,U_Z_CurAmt,U_Z_ExcRate,U_Z_UsdAmt, U_Z_ReimAmt,U_Z_Notes,U_Z_Attachment,U_Z_Year,U_Z_Month,U_Z_AppStatus,U_Z_DocRefNo,U_Z_CardCode,U_Z_DebitCode,U_Z_CreditCode,U_Z_Posting,U_Z_Dimension) Values ( '00000042','00000042','1','Mohamad  Anbar','','', 'N','2016-01-28','2016-01-28','Y',  '','Business Calls','00000002','USD',  '','','','', 11,1,'USD11','USD11', '','','2016','1', 'P','00000013','','812020100', '712010300','G','ACC&FIN;ACC-D;;mb01;')
+__________________________
+
+Log Entry : 
+01/28/2016 12:23:02
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:query excecution ended...
+__________________________
+
+Log Entry : 
+01/28/2016 12:23:08
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:23:10
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:23:10
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:23:20
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:23:21
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:23:21
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:23:27
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:23:45
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:23:46
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:23:51
+Error in: http://localhost:48860/ExpensesClaimApproval.aspx. Error Message:Incorrect syntax near the keyword 'and'.
+__________________________
+
+Log Entry : 
+01/28/2016 12:23:53
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:23:54
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:23:55
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:24:20
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:24:23
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:24:26
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:24:27
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:24:27
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:24:36
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Lines transaction started...
+__________________________
+
+Log Entry : 
+01/28/2016 12:24:36
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:24:36
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:24:36
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date End...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:24:36
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:24:36
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:24:36
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:24:44
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Payroll transaction ended...
+__________________________
+
+Log Entry : 
+01/28/2016 12:24:52
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Initial message started...
+__________________________
+
+Log Entry : 
+01/28/2016 12:24:53
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Initial message ended...
+__________________________
+
+Log Entry : 
+01/28/2016 12:24:53
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:24:54
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:24:54
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:The process cannot access the file 'E:\Projects\Web Developments\HRMS\SourceCode\20160122_HRMS Web _Navlink\HRMS\Error\28-01-16.txt' because it is being used by another process.
+__________________________
+
+Log Entry : 
+01/28/2016 12:25:34
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:25:34
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:25:40
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Lines transaction started...
+__________________________
+
+Log Entry : 
+01/28/2016 12:25:40
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:25:40
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:25:40
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date End...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:25:40
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:25:40
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Index and length must refer to a location within the string.
+Parameter name: length1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:25:40
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...1/28/2016
+__________________________
+
+Log Entry : 
+01/28/2016 12:25:45
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Query Ececution started...Insert INTO [@Z_HR_EXPCL] (Code,Name,U_Z_EmpID,U_Z_EmpName,U_Z_TraCode,U_Z_TraDesc,U_Z_TripType,U_Z_Subdt,U_Z_Claimdt,U_Z_Reimburse,U_Z_PayMethod, U_Z_ExpType, U_Z_ExpCode, U_Z_Currency, U_Z_Client, U_Z_AlloCode,U_Z_Project,U_Z_City,U_Z_CurAmt,U_Z_ExcRate,U_Z_UsdAmt, U_Z_ReimAmt,U_Z_Notes,U_Z_Attachment,U_Z_Year,U_Z_Month,U_Z_AppStatus,U_Z_DocRefNo,U_Z_CardCode,U_Z_DebitCode,U_Z_CreditCode,U_Z_Posting,U_Z_Dimension) Values ( '00000043','00000043','1','Mohamad  Anbar','','', 'N','2016-01-28','2016-01-28','Y',  '','Business Calls','00000002','USD',  '','','','', 11,1,'USD11','USD11', '','','2016','1', 'P','00000013','','812020100', '712010300','G','ACC&FIN;ACC-D;;mb01;')
+__________________________
+
+Log Entry : 
+01/28/2016 12:25:46
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:query excecution ended...
+__________________________
+
+Log Entry : 
+01/28/2016 12:25:47
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Payroll transaction started...
+__________________________
+
+Log Entry : 
+01/28/2016 12:25:49
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Payroll transaction ended...
+__________________________
+
+Log Entry : 
+01/28/2016 12:25:49
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Initial message started...
+__________________________
+
+Log Entry : 
+01/28/2016 12:25:49
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Initial message ended...
+__________________________
+
+Log Entry : 
+01/28/2016 12:25:49
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:25:50
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:25:50
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:26:29
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:26:45
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:26:47
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:26:55
+Error in: http://localhost:48860/ExpensesClaimApproval.aspx. Error Message:Incorrect syntax near the keyword 'and'.
+__________________________
+
+Log Entry : 
+01/28/2016 12:26:58
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:26:58
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:26:59
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:27:44
+Error in: http://localhost:48860/ExpensesClaimApproval.aspx. Error Message:Incorrect syntax near the keyword 'and'.
+__________________________
+
+Log Entry : 
+01/28/2016 12:27:47
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:27:47
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:28:54
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:29:16
+Error in: http://localhost:48860/ExpensesClaimApproval.aspx. Error Message:Incorrect syntax near the keyword 'and'.
+__________________________
+
+Log Entry : 
+01/28/2016 12:29:18
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:29:19
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:31:43
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:31:44
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:31:50
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:31:51
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:31:54
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:32:20
+Error in: http://localhost:48860/ExpensesClaimApproval.aspx. Error Message:Start addUpdateDocument Function
+__________________________
+
+Log Entry : 
+01/28/2016 12:32:20
+Error in: http://localhost:48860/ExpensesClaimApproval.aspx. Error Message:End addUpdateDocument Function
+__________________________
+
+Log Entry : 
+01/28/2016 12:32:20
+Error in: http://localhost:48860/ExpensesClaimApproval.aspx. Error Message:Start DocStatusUpdate Function
+__________________________
+
+Log Entry : 
+01/28/2016 12:32:20
+Error in: http://localhost:48860/ExpensesClaimApproval.aspx. Error Message:End DocStatusUpdate Function
+__________________________
+
+Log Entry : 
+01/28/2016 12:32:20
+Error in: http://localhost:48860/ExpensesClaimApproval.aspx. Error Message:Start Sendmessage Function
+__________________________
+
+Log Entry : 
+01/28/2016 12:32:20
+Error in: http://localhost:48860/ExpensesClaimApproval.aspx. Error Message:End Sendmessage Function
+__________________________
+
+Log Entry : 
+01/28/2016 12:32:20
+Error in: http://localhost:48860/ExpensesClaimApproval.aspx. Error Message:Start GetFinalStatus Function
+__________________________
+
+Log Entry : 
+01/28/2016 12:32:20
+Error in: http://localhost:48860/ExpensesClaimApproval.aspx. Error Message:End GetFinalStatus FunctionTrue and 43
+__________________________
+
+Log Entry : 
+01/28/2016 12:32:20
+Error in: http://localhost:48860/ExpensesClaimApproval.aspx. Error Message:Start JournelVouchers Function
+__________________________
+
+Log Entry : 
+01/28/2016 12:32:20
+Error in: http://localhost:48860/ExpensesClaimApproval.aspx. Error Message:Update the exchange rate 
+__________________________
+
+Log Entry : 
+01/28/2016 12:32:20
+Error in: http://localhost:48860/ExpensesClaimApproval.aspx. Error Message:End JournelVouchers Function
+__________________________
+
+Log Entry : 
+01/28/2016 12:32:21
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:32:21
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:32:26
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:32:45
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:32:52
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:32:56
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:32:56
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:32:56
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:34:44
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:34:50
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 12:34:53
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 13:32:00
+Error in: http://localhost:48860/Login.aspx. Error Message:Unable to access SBO-Common database
+__________________________
+
+Log Entry : 
+01/28/2016 13:32:00
+Error in: http://localhost:48860/Login.aspx. Error Message:Unable to access SBO-Common database
+__________________________
+
+Log Entry : 
+01/28/2016 13:32:27
+Error in: http://localhost:48860/favicon.ico. Error Message:Error in: http://localhost:48860/favicon.ico. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 13:32:52
+Error in: http://localhost:48860/Login.aspx. Error Message:A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+__________________________
+
+Log Entry : 
+01/28/2016 13:32:52
+Error in: http://localhost:48860/Login.aspx. Error Message:A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+__________________________
+
+Log Entry : 
+01/28/2016 13:32:52
+Error in: http://localhost:48860/Login.aspx. Error Message:A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+__________________________
+
+Log Entry : 
+01/28/2016 13:33:00
+Error in: http://localhost:48860/Login.aspx. Error Message:Error in: http://localhost:48860/Login.aspx. Error Message:The system cannot find the file specified
+__________________________
+
+Log Entry : 
+01/28/2016 13:44:43
+Error in: http://localhost:48860/Login.aspx. Error Message:Failed to connect or logon to SLD, please check connection parameters and configure file
+__________________________
+
+Log Entry : 
+01/28/2016 13:44:43
+Error in: http://localhost:48860/Login.aspx. Error Message:Failed to connect or logon to SLD, please check connection parameters and configure file
+__________________________
+
+Log Entry : 
+01/28/2016 13:45:08
+Error in: http://localhost:48860/favicon.ico. Error Message:Error in: http://localhost:48860/favicon.ico. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 13:45:41
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 13:45:52
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 13:45:54
+Error in: http://localhost:48860/LeaveRequest.aspx. Error Message:Length of the data to decrypt is invalid.
+__________________________
+
+Log Entry : 
+01/28/2016 13:46:00
+Error in: http://localhost:48860/LeaveRequest.aspx. Error Message:Unable to connect with the specified username and or password
+__________________________
+
+Log Entry : 
+01/28/2016 13:46:04
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 13:46:04
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 13:50:55
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 13:50:56
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 13:51:01
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 13:51:01
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 13:51:27
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 13:51:48
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 13:51:53
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 13:51:57
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 13:53:31
+Error in: http://localhost:48860/MNewTrainingReq.aspx. Error Message:Failure sending mail.
+__________________________
+
+Log Entry : 
+01/28/2016 13:53:31
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 13:56:09
+Error in: http://localhost:48860/MNewTrainingReq.aspx. Error Message:The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.5.1 Authentication Required. Learn more at
+__________________________
+
+Log Entry : 
+01/28/2016 13:56:14
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 13:56:30
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 13:56:31
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 13:56:37
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 13:56:38
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+01/28/2016 13:57:05
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
