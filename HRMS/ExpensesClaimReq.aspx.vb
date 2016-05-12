@@ -581,6 +581,7 @@ Public Class ExpensesClaimReq
         End Try
     End Sub
     Private Function SaveTempTable() As String
+        Dim fileName1 As String
         Try
             ViewState("TraCode") = txttravelCode.Text.Trim()
             ViewState("TraDesc") = txttraveldesc.Text.Trim()
@@ -608,13 +609,17 @@ Public Class ExpensesClaimReq
                 ' fileName = lblempNo.Text.Trim() & "_EC" & "_" & lbldocmsg.Text.Trim() & "_" & LineDocEntry.Trim() & "_" & fileName
                 Targetpath = objBL.TargetPath()
                 fileattach.SaveAs(strpath + fileattach.FileName)
+                fileName1 = DateTime.Now.ToString("yyyyMMddHH:mm:ss").Replace(":", "") & "_" & fileName
+                File.Copy(strpath + fileName, strpath + fileName1)
+                File.Delete(strpath + fileName)
                 If Targetpath <> "" Then
                     Try
-                        fileattach.SaveAs(Targetpath + fileattach.FileName)
+                        'fileattach.SaveAs(Targetpath + fileattach.FileName )
+                        File.Copy(strpath + fileName1, Targetpath + fileName1)
                     Catch ex As Exception
                     End Try
                 End If
-                strAttachment = strpath + fileattach.FileName
+                strAttachment = strpath + fileName1
             Else
                 strAttachment = ""
             End If
@@ -871,6 +876,7 @@ Public Class ExpensesClaimReq
                             Targetpath = objBL.TargetPath()
                             ' fileattach.SaveAs(strpath + fileName)
                             File.Copy(strpath1, strpath + fileName)
+                            File.Delete(strpath1)
                             If Targetpath <> "" Then
                                 Try
                                     fileattach.SaveAs(Targetpath + fileName)

@@ -530,12 +530,7 @@ Public Class ExpensesClaimApproval
 
                         PanelMain.Visible = True
                         panelview.Visible = False
-                        If dbCon.strmsg = "Success" Or dbCon.strmsg = "Successfully approved document..." Then
-                            dbCon.strmsg = "Expense Claim number " & lbldocno.Text.Trim() & " has been submitted successfully."
-                            ClientScript.RegisterStartupScript(Me.GetType(), "msg", "<script>alert('" & dbCon.strmsg & "')</script>")
-                        Else
-                            ClientScript.RegisterStartupScript(Me.GetType(), "msg", "<script>alert('" & dbCon.strmsg & "')</script>")
-                        End If
+                       
                         'objEN.EmpId = Session("UserCode").ToString()
                         'objEN.UserCode = objBL.GetUserCode(objEN)
 
@@ -569,8 +564,12 @@ Public Class ExpensesClaimApproval
                 objEN.EmpId = Session("UserCode").ToString()
                 objEN.UserCode = objBL.GetUserCode(objEN)
                 ReqApproval(objEN)
-                dbCon.strmsg = "Expense Claim number " & lbldocno.Text.Trim() & " has been submitted successfully."
-                ClientScript.RegisterStartupScript(Me.GetType(), "msg", "<script>alert('" & dbCon.strmsg & "')</script>")
+                If dbCon.strmsg = "Success" Or dbCon.strmsg = "Successfully approved document..." Then
+                    dbCon.strmsg = "Expense Claim number " & lbldocno.Text.Trim() & " has been submitted successfully."
+                    ClientScript.RegisterStartupScript(Me.GetType(), "msg", "<script>alert('" & dbCon.strmsg & "')</script>")
+                Else
+                    ClientScript.RegisterStartupScript(Me.GetType(), "msg", "<script>alert('" & dbCon.strmsg & "')</script>")
+                End If
             End If
         Catch ex As Exception
             dbCon.strmsg = "" & ex.Message & ""

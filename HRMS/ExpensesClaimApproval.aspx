@@ -54,7 +54,7 @@
                                         <table width="99%" border="0" cellspacing="0" cellpadding="4" class="main_content">
                                             <tr>
                                                 <td valign="top">
-                                                    <ajx:TabContainer ID="TabContainer1" runat="server" ActiveTabIndex="1" CssClass="ajax__tab_yuitabview-theme"
+                                                    <ajx:TabContainer ID="TabContainer1" runat="server" ActiveTabIndex="0" CssClass="ajax__tab_yuitabview-theme"
                                                         Width="100%">
                                                         <ajx:TabPanel ID="TabPanel2" runat="server" HeaderText="Expenses Claim Approval">
                                                             <ContentTemplate>

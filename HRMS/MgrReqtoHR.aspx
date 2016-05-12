@@ -186,7 +186,7 @@
                                                                                                 &nbsp;<asp:Label ID="lblstdate" runat="server" Text='<%#Bind("Recontact") %>'></asp:Label></div>
                                                                                         </ItemTemplate>
                                                                                     </asp:TemplateField>
-                                                                                    <asp:TemplateField HeaderText="End Date">
+                                                                                    <asp:TemplateField HeaderText="End Date" Visible="false">
                                                                                         <ItemTemplate>
                                                                                             <div align="left">
                                                                                                 &nbsp;<asp:Label ID="lbledDate" runat="server" Text='<%#Bind("endDate") %>'></asp:Label></div>

@@ -284,6 +284,15 @@ Partial Public Class MgrReqtoHR
     Protected WithEvents TabPanel1 As Global.AjaxControlToolkit.TabPanel
 
     '''<summary>
+    '''txtContent control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtContent As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
     '''txtRemarks control.
     '''</summary>
     '''<remarks>
@@ -336,24 +345,6 @@ Partial Public Class MgrReqtoHR
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlStatus As Global.System.Web.UI.WebControls.DropDownList
-
-    '''<summary>
-    '''TabPanel2 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents TabPanel2 As Global.AjaxControlToolkit.TabPanel
-
-    '''<summary>
-    '''txtContent control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents txtContent As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''btnAdd control.
