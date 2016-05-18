@@ -442,8 +442,12 @@ Public Class ExpClaimApprovalDA
             If Not oRecordSet.EoF Then
                 objDA.strQuery = "Update [@Z_HR_OEXPCL] set U_Z_DocStatus='" & objEN.AppStatus & "' where Code='" & objEN.HeadDocEntry & "'"
                 oRecordSet.DoQuery(objDA.strQuery)
-                objDA.strmsg = "Success"
+                If objEN.AppStatus = "C" Then
+                    objDA.strmsg = "Closed"
+                    Return objDA.strmsg
+                End If
             End If
+            objDA.strmsg = "Success"
             Return objDA.strmsg
         Catch ex As Exception
             DBConnectionDA.WriteError(ex.Message)

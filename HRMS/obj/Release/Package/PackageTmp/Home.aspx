@@ -45,42 +45,7 @@
       }
    </script>
    
-    <script type="text/javascript">
-        //
-        var prm = Sys.WebForms.PageRequestManager.getInstance();
-        //Raised before processing of an asynchronous postback starts and the postback request is sent to the server.
-        prm.add_beginRequest(BeginRequestHandler);
-        // Raised after an asynchronous postback is finished and control has been returned to the browser.
-        prm.add_endRequest(EndRequestHandler);
-        function BeginRequestHandler(sender, args) {
-            //Shows the modal popup - the update progress
-            var popup = $find('<%= modalPopup.ClientID %>');
-            if (popup != null) {
-                popup.show();
-            }
-        }
-
-        function EndRequestHandler(sender, args) {
-            //Hide the modal popup - the update progress
-            var popup = $find('<%= modalPopup.ClientID %>');
-            if (popup != null) {
-                popup.hide();
-            }
-        }
-</script>
-
-   
- <style type="text/css" >
-.modalPopup
-{
-background-color: #696969;
-filter: alpha(opacity=40);
-opacity: 0.7;
-xindex:-1;
-}
-</style>
-
-</asp:Content>
+   </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
    
@@ -753,7 +718,93 @@ xindex:-1;
                    </ContentTemplate> 
                   </ajx:TabPanel>    
 
-                    
+                     <ajx:TabPanel  ID="TabPanel7" runat="server" HeaderText="Employee Leave Balance" >
+                   <ContentTemplate>
+                      <table width="100%" border="0" cellspacing="0" cellpadding="3" class="main_content">                                   
+                                   <tr>
+                                     <td style="padding-top:10px;">
+                               <asp:GridView ID="grdLeaveBal" runat="server" CellPadding="4" ShowHeaderWhenEmpty="true" EmptyDataText="No records Found"  CssClass="mGrid" HeaderStyle-Cssclass="GridBG" AllowPaging="True"  AutoGenerateColumns="False" Width="100%" PageSize="10">
+                            <Columns>
+                             <asp:TemplateField HeaderText="Year">
+                                    <ItemTemplate>
+                                        <div align="center"><asp:label ID="lblyear" runat="server" Text='<%#Bind("U_Z_Year") %>' ></asp:label></div>
+                                    </ItemTemplate>                                    
+                                </asp:TemplateField>
+                                <asp:TemplateField HeaderText="Leave Code">
+                                    <ItemTemplate>
+                                        <div align="center"><asp:label ID="lbllvecode" runat="server" Text='<%#Bind("U_Z_LeaveCode") %>' ></asp:label></div>
+                                    </ItemTemplate>                                    
+                                </asp:TemplateField>
+                                <asp:TemplateField HeaderText="Leave Name">
+                                    <ItemTemplate>
+                                        <div align="left">&nbsp;<asp:Label ID="lbllvename" runat="server" Text='<%#Bind("U_Z_LeaveName") %>' ></asp:Label></div>
+                                    </ItemTemplate>                                    
+                                </asp:TemplateField>                                
+                                 <asp:TemplateField HeaderText="Yearly Entitlement">
+                                    <ItemTemplate>
+                                        <div align="left">&nbsp;<asp:Label ID="lblEntitle" runat="server" Text='<%#Bind("U_Z_Entile") %>' ></asp:Label></div>
+                                    </ItemTemplate>                                    
+                                </asp:TemplateField>                                
+                                 <asp:TemplateField HeaderText="Carried Over Balance">
+                                    <ItemTemplate>
+                                        <div align="left">&nbsp;<asp:Label ID="lblcob" runat="server" Text='<%#Bind("U_Z_CAFWD") %>' ></asp:Label></div>
+                                    </ItemTemplate>                                    
+                                </asp:TemplateField>
+                                <asp:TemplateField HeaderText="Carried Over Balance Amount" >
+                                    <ItemTemplate>
+                                       <div align="left">&nbsp;<asp:Label ID="lblcarried" runat="server" Text='<%#Bind("U_Z_CAFWDAMT") %>' ></asp:Label></div>
+                                    </ItemTemplate>                                    
+                                </asp:TemplateField>
+                                <asp:TemplateField HeaderText="Accured Balance">
+                                    <ItemTemplate>
+                                        <div align="center">&nbsp;<asp:Label ID="lblAccbal" runat="server" Text='<%#Bind("U_Z_ACCR") %>' ></asp:Label></div>
+                                    </ItemTemplate>                                    
+                                </asp:TemplateField>      
+                                   <asp:TemplateField HeaderText="Availed Days">
+                                    <ItemTemplate>
+                                        <div align="center">&nbsp;<asp:Label ID="lblAvaildays" runat="server" Text='<%#Bind("U_Z_Trans") %>' ></asp:Label></div>
+                                    </ItemTemplate>                                    
+                                </asp:TemplateField> 
+                                 <asp:TemplateField HeaderText="Adjustment Days">
+                                    <ItemTemplate>
+                                        <div align="left">&nbsp;<asp:Label ID="lblAdjuDays" runat="server" Text='<%#Bind("U_Z_Adjustment") %>' ></asp:Label></div>
+                                    </ItemTemplate>                                    
+                                </asp:TemplateField>
+                                <asp:TemplateField HeaderText="Current Balance">
+                                    <ItemTemplate>
+                                       <div align="left">&nbsp;<asp:Label ID="lblbalance" runat="server" Text='<%#Bind("U_Z_Balance") %>' ></asp:Label></div>
+                                    </ItemTemplate>                                    
+                                </asp:TemplateField>
+                                <asp:TemplateField HeaderText="Closing Balance Amount">
+                                    <ItemTemplate>
+                                        <div align="center">&nbsp;<asp:Label ID="lblclosing" runat="server" Text='<%#Bind("U_Z_BalanceAmt") %>' ></asp:Label></div>
+                                    </ItemTemplate>                                    
+                                </asp:TemplateField>      
+                                   <asp:TemplateField HeaderText="OB">
+                                    <ItemTemplate>
+                                        <div align="center">&nbsp;<asp:Label ID="lblOB" runat="server" Text='<%#Bind("U_Z_OB") %>' ></asp:Label></div>
+                                    </ItemTemplate>                                    
+                                </asp:TemplateField> 
+                                 <asp:TemplateField HeaderText="EnCashment Days">
+                                    <ItemTemplate>
+                                        <div align="center">&nbsp;<asp:Label ID="lblEncash" runat="server" Text='<%#Bind("U_Z_EnCash") %>' ></asp:Label></div>
+                                    </ItemTemplate>                                    
+                                </asp:TemplateField> 
+                                 <asp:TemplateField HeaderText="Cashout EnCashment Days">
+                                    <ItemTemplate>
+                                        <div align="center">&nbsp;<asp:Label ID="lblCashout" runat="server" Text='<%#Bind("U_Z_CashOut") %>' ></asp:Label></div>
+                                    </ItemTemplate>                                    
+                                </asp:TemplateField>                                             
+                                           
+                            </Columns>
+                            <HeaderStyle HorizontalAlign="Center" height="25px" BackColor="#CCCCCC"/>
+                           </asp:GridView>
+                                     </td>
+                                     </tr>                             
+                                  </table>
+                   
+                   </ContentTemplate> 
+                  </ajx:TabPanel>  
                  </ajx:TabContainer>   
               
               </td> 

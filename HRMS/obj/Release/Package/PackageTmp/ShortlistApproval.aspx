@@ -228,14 +228,14 @@
                                                       </div>
                                                   </ItemTemplate>
                                               </asp:TemplateField>
-                                               <asp:TemplateField HeaderText="Create Date">
+                                               <asp:TemplateField HeaderText="Approved Date">
                                                   <ItemTemplate>
                                                       <div align="left">
                                                           &nbsp;<asp:Label ID="lblhcrdate" runat="server" Text='<%#Bind("CreateDate") %>' ></asp:Label>
                                                       </div>
                                                   </ItemTemplate>
                                               </asp:TemplateField>
-                                               <asp:TemplateField HeaderText="Create Time">
+                                               <asp:TemplateField HeaderText="Approved Time">
                                                   <ItemTemplate>
                                                       <div align="left">
                                                           &nbsp;<asp:Label ID="lblhcrtime" runat="server" Text='<%#Bind("CreateTime") %>' ></asp:Label>
@@ -501,14 +501,14 @@
                                                       </div>
                                                   </ItemTemplate>
                                               </asp:TemplateField>
-                                               <asp:TemplateField HeaderText="Create Date">
+                                               <asp:TemplateField HeaderText="Approved Date">
                                                   <ItemTemplate>
                                                       <div align="left">
                                                           &nbsp;<asp:Label ID="lblcrdate" runat="server" Text='<%#Bind("CreateDate") %>' ></asp:Label>
                                                       </div>
                                                   </ItemTemplate>
                                               </asp:TemplateField>
-                                               <asp:TemplateField HeaderText="Create Time">
+                                               <asp:TemplateField HeaderText="Approved Time">
                                                   <ItemTemplate>
                                                       <div align="left">
                                                           &nbsp;<asp:Label ID="lblcrtime" runat="server" Text='<%#Bind("CreateTime") %>' ></asp:Label>

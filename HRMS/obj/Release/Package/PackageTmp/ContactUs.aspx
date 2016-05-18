@@ -5,16 +5,16 @@
  <table width="100%" border="0" cellspacing="0" cellpadding="4" class="main_content">
 <tr>
 
-    <td height="30" align="left" colspan="2" valign="bottom" background="images/h_bg.png"; style="border-bottom:1px dotted; border-color: #f45501; background-repeat:repeat-x">     
+    <td height="30" align="left" colspan="2" valign="bottom" background="images/h_bg.png" style="border-bottom:1px dotted; border-color: #f45501; background-repeat:repeat-x">     
       <div >&nbsp; <asp:Label ID="Label3" runat="server" Text="ContactUs"  CssClass="subheader" style="float:left;" ></asp:Label>  <span ><asp:Label ID="lblNewTrip" runat="server" Text="" Visible="false"></asp:Label></span> </div>
       </td>    
  </tr>
  <tr>
  <td>
- <p style="color:Black; font:normal 11pt Calibri, Helvetica, sans-serif ; font-weight:bold; line-height:20pt; margin-left:20px;">
+<%-- <p style="color:Black; font:normal 11pt Calibri, Helvetica, sans-serif ; font-weight:bold; line-height:20pt; margin-left:20px;">
  You can contact the HR department either via LYNC or through telephone extensions for any queries <br /> related to this.<br /><br />
  Find below contact addresses :
- </p>
+ </p>--%>
  </td>
  </tr>
  <tr>

@@ -280,10 +280,10 @@ color: #bbbbbb;
                                                   <asp:label ID="lbltype" runat="server" Text='<%#Bind("U_Z_ApproveBy") %>'  ></asp:label></div>
                                                   </ItemTemplate>
                                             </asp:TemplateField>
-                                             <asp:TemplateField HeaderText="CreateDate">
+                                             <asp:TemplateField HeaderText="Approved Date">
                                               <ItemTemplate><div align="center">
                                                   <asp:label ID="lblcrDate" runat="server" Text='<%#Bind("CreateDate") %>'  ></asp:label></div></ItemTemplate></asp:TemplateField>
-                                          <asp:TemplateField HeaderText="Create Time">
+                                          <asp:TemplateField HeaderText="Approved Time">
                                               <ItemTemplate><div align="center">
                                                   <asp:label ID="lblcrtime" runat="server" Text='<%#Bind("CreateTime") %>'  ></asp:label></div></ItemTemplate></asp:TemplateField>
                                                    <asp:TemplateField HeaderText="Update Date">

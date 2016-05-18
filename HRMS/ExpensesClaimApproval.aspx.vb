@@ -539,6 +539,8 @@ Public Class ExpensesClaimApproval
                         'objBL.UpdateDocStatus(objEN)
 
                         'ReqApproval(objEN)
+                    ElseIf dbCon.strmsg Is Nothing Then
+
                     Else
                         ClientScript.RegisterStartupScript(Me.GetType(), "msg", "<script>alert('" & dbCon.strmsg & "')</script>")
                     End If
@@ -559,17 +561,37 @@ Public Class ExpensesClaimApproval
                 objEN.SapCompany = Session("SAPCompany")
                 objEN.HeadDocEntry = lbldocno.Text.Trim()
                 objEN.AppStatus = ddlfinaldoc.SelectedValue
-                objBL.UpdateDocStatus(objEN)
+                Dim blnApprove As Boolean = False
+                If dbCon.strmsg = "Success" Or dbCon.strmsg = "Successfully approved document..." Then
+                    blnApprove = True
+                Else
+                    blnApprove = False
+                End If
+                dbCon.strmsg = objBL.UpdateDocStatus(objEN)
 
                 objEN.EmpId = Session("UserCode").ToString()
                 objEN.UserCode = objBL.GetUserCode(objEN)
                 ReqApproval(objEN)
-                If dbCon.strmsg = "Success" Or dbCon.strmsg = "Successfully approved document..." Then
-                    dbCon.strmsg = "Expense Claim number " & lbldocno.Text.Trim() & " has been submitted successfully."
+                If dbCon.strmsg = "Closed" And blnApprove = False Then
+                    dbCon.strmsg = "Expense Claim number " & lbldocno.Text.Trim() & " has been Closed successfully."
                     ClientScript.RegisterStartupScript(Me.GetType(), "msg", "<script>alert('" & dbCon.strmsg & "')</script>")
                 Else
-                    ClientScript.RegisterStartupScript(Me.GetType(), "msg", "<script>alert('" & dbCon.strmsg & "')</script>")
+                    If dbCon.strmsg = "Closed" And blnApprove = True Then
+                        dbCon.strmsg = "Expense Claim number " & lbldocno.Text.Trim() & " has been submitted and Closed successfully."
+                        ClientScript.RegisterStartupScript(Me.GetType(), "msg", "<script>alert('" & dbCon.strmsg & "')</script>")
+                        'ElseIf dbCon.strmsg = "Closed" And blnApprove = False Then
+                        '    Dim s As String = ""
+                        '    dbCon.strmsg = "Expense Claim number " & lbldocno.Text.Trim() & " has been Closed successfully."
+                        '    s = "Expense Claim number " & lbldocno.Text.Trim() & " has been Closed successfully."
+                        '    ClientScript.RegisterStartupScript(Me.GetType(), "msg", "<script>alert('" & dbCon.strmsg & "')</script>")
+                    ElseIf dbCon.strmsg = "Success" Or dbCon.strmsg = "Successfully approved document..." Then
+                        dbCon.strmsg = "Expense Claim number " & lbldocno.Text.Trim() & " has been submitted successfully."
+                        ClientScript.RegisterStartupScript(Me.GetType(), "msg", "<script>alert('" & dbCon.strmsg & "')</script>")
+                    Else
+                        ClientScript.RegisterStartupScript(Me.GetType(), "msg", "<script>alert('" & dbCon.strmsg & "')</script>")
+                    End If
                 End If
+                
             End If
         Catch ex As Exception
             dbCon.strmsg = "" & ex.Message & ""

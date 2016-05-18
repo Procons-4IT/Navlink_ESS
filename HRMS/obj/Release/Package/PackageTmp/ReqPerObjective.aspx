@@ -285,9 +285,9 @@ xindex:-1;
                                             </ItemTemplate>
                                         </asp:TemplateField>                                      
                                     </Columns>
-                                    <HeaderStyle BackColor="Gray" HorizontalAlign="Center" ForeColor="White" Height="25px" />
-                                     <RowStyle  HorizontalAlign="Left" />
-                                     <AlternatingRowStyle HorizontalAlign="Left" />
+                                   <HeaderStyle BackColor="Gray" HorizontalAlign="Center" ForeColor="White" Height="25px" />
+                            <RowStyle HorizontalAlign="Center" />
+                            <AlternatingRowStyle HorizontalAlign="Center" />
                                      
                                   </asp:GridView>
                   </td> 
@@ -349,9 +349,9 @@ xindex:-1;
                                             </ItemTemplate>
                                         </asp:TemplateField>                                      
                                     </Columns>
-                                    <HeaderStyle BackColor="Gray" HorizontalAlign="Center" ForeColor="White" Height="25px" />
-                                     <RowStyle HorizontalAlign="Left" />
-                                     <AlternatingRowStyle HorizontalAlign="Left" />
+                                     <HeaderStyle BackColor="Gray" HorizontalAlign="Center" ForeColor="White" Height="25px" />
+                            <RowStyle HorizontalAlign="Center" />
+                            <AlternatingRowStyle HorizontalAlign="Center" />
                                      
                                   </asp:GridView>
                   </td> 
@@ -397,9 +397,9 @@ xindex:-1;
                                         </asp:TemplateField>                                           
                                     </Columns>
                                     
-                                    <HeaderStyle BackColor="Gray"  HorizontalAlign="Center" ForeColor="White" Height="25px" />
-                                     <RowStyle HorizontalAlign="Left" />
-                                     <AlternatingRowStyle HorizontalAlign="Left" />
+                                     <HeaderStyle BackColor="Gray" HorizontalAlign="Center" ForeColor="White" Height="25px" />
+                            <RowStyle HorizontalAlign="Center" />
+                            <AlternatingRowStyle HorizontalAlign="Center" />
                                   </asp:GridView></asp:Panel>
                             </asp:Panel>
                             

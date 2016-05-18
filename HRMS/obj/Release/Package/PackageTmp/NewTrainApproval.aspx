@@ -129,6 +129,20 @@
                                                       </div>
                                                   </ItemTemplate>
                                               </asp:TemplateField>
+                                               <asp:TemplateField HeaderText="Training Location">
+                                                  <ItemTemplate>
+                                                      <div align="left">
+                                                          &nbsp;<asp:Label ID="lbllocation" runat="server" Text='<%#Bind("U_Z_TrainLoc") %>' ></asp:Label>
+                                                      </div>
+                                                  </ItemTemplate>
+                                              </asp:TemplateField>
+                                              <asp:TemplateField HeaderText="Est.Travel and Living Expenses">
+                                                  <ItemTemplate>
+                                                      <div align="left">
+                                                          &nbsp;<asp:Label ID="lblEstExp" runat="server" Text='<%#Bind("U_Z_EstExpe") %>' ></asp:Label>
+                                                      </div>
+                                                  </ItemTemplate>
+                                              </asp:TemplateField>
                                               <asp:TemplateField HeaderText="Comments">
                                                   <ItemTemplate>
                                                       <div align="left">
@@ -136,6 +150,7 @@
                                                       </div>
                                                   </ItemTemplate>
                                               </asp:TemplateField>
+                                              
                                                <asp:TemplateField HeaderText="Approval Status">
                                                   <ItemTemplate>
                                                       <div align="left">
@@ -235,14 +250,14 @@
                                                       </div>
                                                   </ItemTemplate>
                                               </asp:TemplateField>
-                                               <asp:TemplateField HeaderText="Create Date">
+                                               <asp:TemplateField HeaderText="Approved Date">
                                                   <ItemTemplate>
                                                       <div align="left">
                                                           &nbsp;<asp:Label ID="lblhcrdate" runat="server" Text='<%#Bind("CreateDate") %>' ></asp:Label>
                                                       </div>
                                                   </ItemTemplate>
                                               </asp:TemplateField>
-                                               <asp:TemplateField HeaderText="Create Time">
+                                               <asp:TemplateField HeaderText="Approved Time">
                                                   <ItemTemplate>
                                                       <div align="left">
                                                           &nbsp;<asp:Label ID="lblhcrtime" runat="server" Text='<%#Bind("CreateTime") %>' ></asp:Label>
@@ -410,6 +425,20 @@
                                                       </div>
                                                   </ItemTemplate>
                                               </asp:TemplateField>
+                                               <asp:TemplateField HeaderText="Training Location">
+                                                  <ItemTemplate>
+                                                      <div align="left">
+                                                          &nbsp;<asp:Label ID="lblSlocation" runat="server" Text='<%#Bind("U_Z_TrainLoc") %>' ></asp:Label>
+                                                      </div>
+                                                  </ItemTemplate>
+                                              </asp:TemplateField>
+                                              <asp:TemplateField HeaderText="Est.Travel and Living Expenses">
+                                                  <ItemTemplate>
+                                                      <div align="left">
+                                                          &nbsp;<asp:Label ID="lblSEstExp" runat="server" Text='<%#Bind("U_Z_EstExpe") %>' ></asp:Label>
+                                                      </div>
+                                                  </ItemTemplate>
+                                              </asp:TemplateField>
                                               <asp:TemplateField HeaderText="Comments">
                                                   <ItemTemplate>
                                                       <div align="left">
@@ -417,6 +446,7 @@
                                                       </div>
                                                   </ItemTemplate>
                                               </asp:TemplateField>
+                                               
                                                <asp:TemplateField HeaderText="Approval Required">
                                                   <ItemTemplate>
                                                       <div align="left">
@@ -516,14 +546,14 @@
                                                       </div>
                                                   </ItemTemplate>
                                               </asp:TemplateField>
-                                               <asp:TemplateField HeaderText="Create Date">
+                                               <asp:TemplateField HeaderText="Approved Date">
                                                   <ItemTemplate>
                                                       <div align="left">
                                                           &nbsp;<asp:Label ID="lblcrdate" runat="server" Text='<%#Bind("CreateDate") %>' ></asp:Label>
                                                       </div>
                                                   </ItemTemplate>
                                               </asp:TemplateField>
-                                               <asp:TemplateField HeaderText="Create Time">
+                                               <asp:TemplateField HeaderText="Approved Time">
                                                   <ItemTemplate>
                                                       <div align="left">
                                                           &nbsp;<asp:Label ID="lblcrtime" runat="server" Text='<%#Bind("CreateTime") %>' ></asp:Label>
