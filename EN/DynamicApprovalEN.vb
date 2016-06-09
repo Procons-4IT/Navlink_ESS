@@ -17,6 +17,15 @@
     Private _IntReqNo As String
     Private _LeaveCode As String
     Private _PostingType As String
+    Private _ReqEmpId As String
+    Public Property ReqEmpId() As String
+        Get
+            Return _ReqEmpId
+        End Get
+        Set(ByVal value As String)
+            _ReqEmpId = value
+        End Set
+    End Property
     Public Property PostingType() As String
         Get
             Return _PostingType

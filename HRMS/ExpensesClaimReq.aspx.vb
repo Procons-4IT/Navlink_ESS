@@ -2,6 +2,8 @@
 Imports System.Data
 Imports System.Configuration
 Imports System.Globalization
+Imports CrystalDecisions.CrystalReports.Engine
+Imports CrystalDecisions.Shared
 Imports System.Xml
 Imports System.IO
 Imports System.Net
@@ -66,7 +68,14 @@ Public Class ExpensesClaimReq
             DropDownBind()
             BindDistriRule()
             BindDistriRule(objEN.EmpId)
+            Me.RegisterPostBackControl()
         End If
+    End Sub
+    Private Sub RegisterPostBackControl()
+        For Each row As GridViewRow In grdExpClaimRequest.Rows
+            Dim lnkFull As ImageButton = TryCast(row.FindControl("imgSPrint"), ImageButton)
+            ScriptManager.GetCurrent(Me).RegisterPostBackControl(lnkFull)
+        Next
     End Sub
     Private Sub BindDistriRule(ByVal EmpId As String)
         Dim StrDimCode As String
@@ -282,7 +291,7 @@ Public Class ExpensesClaimReq
         txtcity.Text = ""
         ddltranscur.SelectedIndex = 0
         txttrasamt.Text = "0.0"
-        txtexrate.Text = "1.00"
+        txtexrate.Text = "1"
         txtlocamt.Text = ""
         ddlreimbused.SelectedIndex = 0
         txtreimbuse.Text = ""
@@ -300,6 +309,7 @@ Public Class ExpensesClaimReq
 
     Private Sub btnnew_Click(ByVal sender As Object, ByVal e As System.Web.UI.ImageClickEventArgs) Handles btnnew.Click
         Try
+            btnSubmit.Text = "Save"
             Clear()
             ddlDocStatusTemp.SelectedValue = "D"
             ddlDocStatusTemp.Visible = True
@@ -706,12 +716,14 @@ Public Class ExpensesClaimReq
                     ddlDocStatusTemp.Visible = True
                     ddlDocStatusTemp.Enabled = True
                     ddlDocStatus.Visible = False
+                    btnSubmit.Text = "Save"
                 Else
                     NewExpense.Visible = True
                     btnSubmit.Visible = True
                     ddlDocStatusTemp.Visible = True
                     ddlDocStatusTemp.Enabled = False
                     ddlDocStatus.Visible = False
+                    btnSubmit.Text = "Submit"
                 End If
               
                 If ddltriptype.SelectedValue = "N" Then
@@ -872,7 +884,7 @@ Public Class ExpensesClaimReq
                         strpath1 = oRecSet.Fields.Item("U_Attachment").Value
                         fileName = Path.GetFileName(strpath1)
                         If fileName <> "" Then
-                            fileName = lblempNo.Text.Trim() & "_EC" & "_" & lbldocmsg.Text.Trim() & "_" & LineDocEntry.Trim() & "_" & fileName
+                            fileName = Session("UserName").ToString() & "_EC" & "_" & CInt(lbldocmsg.Text.Trim()) & "_" & CInt(LineDocEntry.Trim()) & "_" & fileName
                             Targetpath = objBL.TargetPath()
                             ' fileattach.SaveAs(strpath + fileName)
                             File.Copy(strpath1, strpath + fileName)
@@ -952,7 +964,7 @@ Public Class ExpensesClaimReq
             If ddlDocStatusTemp.SelectedValue = "O" Then
                 If strMailCode <> "" Then
                     DBConnectionDA.WriteError("Initial message started...")
-                    dbcon.InitialMessage("Expenses Claim", objEN.DocEntry, dbcon.DocApproval("ExpCli", lblempNo.Text.Trim()), intTempID, lblempname.Text.Trim(), "ExpCli", dbcon.objMainCompany, strMailCode, ESSWebLink)
+                    dbcon.InitialMessage("Expenses Claim", objEN.DocEntry, dbcon.DocApproval("ExpCli", lblempNo.Text.Trim()), intTempID, lblempname.Text.Trim(), "ExpCli", dbcon.objMainCompany, strMailCode, ESSWebLink, UserID)
                     DBConnectionDA.WriteError("Initial message ended...")
                 End If
             End If
@@ -1355,4 +1367,69 @@ Public Class ExpensesClaimReq
     End Sub
 
   
+    Private Sub ddlDocStatusTemp_SelectedIndexChanged(sender As Object, e As System.EventArgs) Handles ddlDocStatusTemp.SelectedIndexChanged
+        If ddlDocStatusTemp.SelectedValue = "O" Then
+            btnSubmit.Text = "Submit"
+        Else
+            btnSubmit.Text = "Save"
+        End If
+    End Sub
+    Protected Sub imgSPrint_Click(ByVal sender As Object, ByVal e As EventArgs)
+        Dim Dir As String
+        Dim Crpt As New ReportDocument()
+        Dim DocNum As String
+        Try
+            Dir = Server.MapPath("Reports\ExpenseClaim.rpt")
+            If System.IO.File.Exists(Dir) Then
+                Dim strServer As String = ConfigurationManager.AppSettings("SAPServer")
+                Dim strDB As String = ConfigurationManager.AppSettings("CompanyDB")
+                Dim strUser As String = ConfigurationManager.AppSettings("DbUserName")
+                Dim strPwd As String = ConfigurationManager.AppSettings("DbPassword")
+
+                Dim crtableLogoninfos As New TableLogOnInfos
+                Dim crtableLogoninfo As New TableLogOnInfo
+                Dim crConnectionInfo As New ConnectionInfo
+                Dim CrTables As Tables
+                Dim CrTable As Table
+
+                Crpt.Load(Dir)
+
+                With crConnectionInfo
+                    .ServerName = strServer
+                    .DatabaseName = strDB
+                    .UserID = strUser
+                    .Password = strPwd
+                End With
+                CrTables = Crpt.Database.Tables
+                For Each CrTable In CrTables
+                    crtableLogoninfo = CrTable.LogOnInfo
+                    crtableLogoninfo.ConnectionInfo = crConnectionInfo
+                    CrTable.ApplyLogOnInfo(crtableLogoninfo)
+                Next
+                Dim btndetails As ImageButton = TryCast(sender, ImageButton)
+                Dim gvrow As GridViewRow = DirectCast(btndetails.NamingContainer, GridViewRow)
+                Dim lbldocno As LinkButton = CType(gvrow.FindControl("lbtndocnum"), LinkButton)
+                DocNum = lbldocno.Text.Trim()
+                If DocNum <> 0 Then
+                    Crpt.SetParameterValue("DocEntry", DocNum)
+                End If
+                Dim fname As String = Session("UserCode").ToString() + "_" + DocNum ' DateTime.Now.ToString("yyyyMMddHHmmss").ToString()
+                Response.Buffer = False
+                Response.ClearContent()
+                Response.ClearHeaders()
+                Crpt.SetDatabaseLogon(strUser, strPwd, strServer, strDB)
+                Crpt.ExportToHttpResponse(ExportFormatType.PortableDocFormat, Response, False, fname)
+                Response.Flush()
+                Response.End()
+            Else
+                DBConnectionDA.WriteError("Report file does not exists")
+                mess("Report file does not exists")
+            End If
+        Catch ex As Exception
+            Response.Flush()
+            Response.Close()
+            DBConnectionDA.WriteError(ex.Message)
+            mess(ex.Message)
+        End Try
+    End Sub
 End Class

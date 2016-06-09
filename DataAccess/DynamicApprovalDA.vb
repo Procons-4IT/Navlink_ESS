@@ -108,9 +108,9 @@ Public Class DynamicApprovalDA
                             objDA.strQuery += " And (T0.U_Z_CurApprover = '" + objEN.UserCode + "' OR T0.U_Z_NxtApprover = '" + objEN.UserCode + "')"
                             objDA.strQuery += " And isnull(T2.U_Z_AMan,'N')='Y' AND isnull(T3.U_Z_Active,'N')='Y' and  isnull(T0.U_Z_AppRequired,'N')='Y' and  T2.U_Z_AUser = '" + objEN.UserCode + "' And T3.U_Z_DocType = '" + objEN.HeaderType + "' Order by Convert(Numeric,T0.Code) desc "
                         Case "NewTra"
-                            objDA.strQuery = "select T0.DocEntry,T4.U_Z_EmpID as 'TAEmpID',Convert(Varchar(10),U_Z_ReqDate,103) AS U_Z_ReqDate,T0.U_Z_HREmpID,U_Z_HREmpName,U_Z_CourseName,U_Z_CourseDetails,convert(varchar(10),U_Z_TrainFrdt,103) as U_Z_TrainFrdt,convert(varchar(10),U_Z_TrainTodt,103) as U_Z_TrainTodt,cast(U_Z_TrainCost as decimal(10,2)) AS U_Z_TrainCost,U_Z_Notes,"
-                            objDA.strQuery += "  Case U_Z_AppRequired when 'Y' then 'Yes' else 'No' End as  'U_Z_AppRequired',Convert(Varchar(10),U_Z_AppReqDate,103) AS 'U_Z_AppReqDate',CONVERT(VARCHAR(8),U_Z_ReqTime,108) AS 'U_Z_ReqTime',cast(U_Z_EstExpe as decimal(10,2)) AS U_Z_EstExpe,U_Z_TrainLoc,"
-                            objDA.strQuery += " Case U_Z_AppStatus when 'P' then 'Pending' when 'A' then 'Approved' when 'R' then 'Rejected' end AS U_Z_AppStatus, U_Z_CurApprover AS 'U_Z_CurApprover',U_Z_NxtApprover AS 'U_Z_NxtApprover'  from [@Z_HR_ONTREQ] T0 JOIN OHEM T4 ON T0.U_Z_HREmpID = T4.empID and (T0.""U_Z_AppStatus""='P' or T0.""U_Z_AppStatus""='-') "
+                            objDA.strQuery = "select T0.DocEntry,T4.U_Z_EmpID as 'TAEmpID',Convert(Varchar(10),U_Z_ReqDate,103) AS U_Z_ReqDate,T0.U_Z_HREmpID,U_Z_HREmpName,U_Z_CourseName,U_Z_CourseDetails,convert(varchar(10),U_Z_TrainFrdt,103) as U_Z_TrainFrdt,convert(varchar(10),U_Z_TrainTodt,103) as U_Z_TrainTodt,cast(U_Z_TrainCost as decimal(25,2)) AS U_Z_TrainCost,U_Z_Notes,"
+                            objDA.strQuery += "  Case U_Z_AppRequired when 'Y' then 'Yes' else 'No' End as  'U_Z_AppRequired',Convert(Varchar(10),U_Z_AppReqDate,103) AS 'U_Z_AppReqDate',CONVERT(VARCHAR(8),U_Z_ReqTime,108) AS 'U_Z_ReqTime',cast(U_Z_EstExpe as decimal(25,2)) AS U_Z_EstExpe,U_Z_TrainLoc,"
+                            objDA.strQuery += " Case U_Z_AppStatus when 'P' then 'Pending' when 'A' then 'Approved' when 'R' then 'Rejected' when 'C' then 'Canceled' end AS U_Z_AppStatus, U_Z_CurApprover AS 'U_Z_CurApprover',U_Z_NxtApprover AS 'U_Z_NxtApprover',ISNULL(U_Z_Attachment,'') AS U_Z_Attachment  from [@Z_HR_ONTREQ] T0 JOIN OHEM T4 ON T0.U_Z_HREmpID = T4.empID and (T0.""U_Z_AppStatus""='P' or T0.""U_Z_AppStatus""='-') "
                             objDA.strQuery += " JOIN [@Z_HR_APPT1] T1 ON T4.empID = T1.U_Z_OUser "
                             objDA.strQuery += " JOIN [@Z_HR_APPT2] T2 ON T1.DocEntry = T2.DocEntry "
                             objDA.strQuery += " JOIN [@Z_HR_OAPPT] T3 ON T2.DocEntry = T3.DocEntry  "
@@ -278,14 +278,16 @@ Public Class DynamicApprovalDA
                             objDA.strQuery += " JOIN [@Z_HR_APPT1] T1 ON T4.empID = T1.U_Z_OUser "
                             objDA.strQuery += " JOIN [@Z_HR_APPT2] T2 ON T1.DocEntry = T2.DocEntry "
                             objDA.strQuery += " JOIN [@Z_HR_OAPPT] T3 ON T2.DocEntry = T3.DocEntry  "
+                            objDA.strQuery += " And (T0.U_Z_CurApprover = '" + objEN.UserCode + "' OR T0.U_Z_NxtApprover = '" + objEN.UserCode + "')"
                             objDA.strQuery += " And isnull(T2.U_Z_AMan,'N')='Y' AND isnull(T3.U_Z_Active,'N')='Y' and  T2.U_Z_AUser = '" + objEN.UserCode + "' And T3.U_Z_DocType = '" + objEN.HeaderType + "' Order by Convert(Numeric,T0.Code) desc "
                         Case "NewTra"
-                            objDA.strQuery = "select T0.DocEntry,Convert(Varchar(10),U_Z_ReqDate,103) AS U_Z_ReqDate,T4.U_Z_EmpID as 'TAEmpID',T0.U_Z_HREmpID,U_Z_HREmpName,U_Z_CourseName,U_Z_CourseDetails,convert(varchar(10),U_Z_TrainFrdt,103) as U_Z_TrainFrdt,convert(varchar(10),U_Z_TrainTodt,103) as U_Z_TrainTodt,cast(U_Z_TrainCost as decimal(10,2)) AS U_Z_TrainCost,U_Z_Notes,"
-                            objDA.strQuery += " Case U_Z_AppRequired when 'Y' then 'Yes' else 'No' End as  'U_Z_AppRequired',Convert(Varchar(10),U_Z_AppReqDate,103) AS 'U_Z_AppReqDate',CONVERT(VARCHAR(8),U_Z_ReqTime,108) AS 'U_Z_ReqTime',cast(U_Z_EstExpe as decimal(10,2)) AS U_Z_EstExpe,U_Z_TrainLoc,"
-                            objDA.strQuery += " Case U_Z_AppStatus when 'P' then 'Pending' when 'A' then 'Approved' when 'R' then 'Rejected' end AS U_Z_AppStatus, U_Z_CurApprover AS 'U_Z_CurApprover',U_Z_NxtApprover AS 'U_Z_NxtApprover' from [@Z_HR_ONTREQ] T0 JOIN OHEM T4 ON T0.U_Z_HREmpID = T4.empID "
+                            objDA.strQuery = "select T0.DocEntry,Convert(Varchar(10),U_Z_ReqDate,103) AS U_Z_ReqDate,T4.U_Z_EmpID as 'TAEmpID',T0.U_Z_HREmpID,U_Z_HREmpName,U_Z_CourseName,U_Z_CourseDetails,convert(varchar(10),U_Z_TrainFrdt,103) as U_Z_TrainFrdt,convert(varchar(10),U_Z_TrainTodt,103) as U_Z_TrainTodt,cast(U_Z_TrainCost as decimal(25,2)) AS U_Z_TrainCost,U_Z_Notes,"
+                            objDA.strQuery += " Case U_Z_AppRequired when 'Y' then 'Yes' else 'No' End as  'U_Z_AppRequired',Convert(Varchar(10),U_Z_AppReqDate,103) AS 'U_Z_AppReqDate',CONVERT(VARCHAR(8),U_Z_ReqTime,108) AS 'U_Z_ReqTime',cast(U_Z_EstExpe as decimal(25,2)) AS U_Z_EstExpe,U_Z_TrainLoc,"
+                            objDA.strQuery += " Case U_Z_AppStatus when 'P' then 'Pending' when 'A' then 'Approved' when 'R' then 'Rejected' when 'C' then 'Canceled' end AS U_Z_AppStatus, U_Z_CurApprover AS 'U_Z_CurApprover',U_Z_NxtApprover AS 'U_Z_NxtApprover',ISNULL(U_Z_Attachment,'') AS U_Z_Attachment from [@Z_HR_ONTREQ] T0 JOIN OHEM T4 ON T0.U_Z_HREmpID = T4.empID "
                             objDA.strQuery += " JOIN [@Z_HR_APPT1] T1 ON T4.empID = T1.U_Z_OUser "
                             objDA.strQuery += " JOIN [@Z_HR_APPT2] T2 ON T1.DocEntry = T2.DocEntry "
                             objDA.strQuery += " JOIN [@Z_HR_OAPPT] T3 ON T2.DocEntry = T3.DocEntry  "
+                            objDA.strQuery += " And (T0.U_Z_CurApprover = '" + objEN.UserCode + "' OR T0.U_Z_NxtApprover = '" + objEN.UserCode + "')"
                             objDA.strQuery += " And isnull(T2.U_Z_AMan,'N')='Y' AND isnull(T3.U_Z_Active,'N')='Y' and  T2.U_Z_AUser = '" + objEN.UserCode + "' And T3.U_Z_DocType = '" + objEN.HeaderType + "' Order by T0.DocEntry desc "
                     End Select
                 Case "EmpLife"
@@ -296,6 +298,7 @@ Public Class DynamicApprovalDA
                             objDA.strQuery += " Case U_Z_AppStatus when 'P' then 'Pending' when 'A' then 'Approved' when 'R' then 'Rejected' end AS U_Z_AppStatus, U_Z_CurApprover AS 'U_Z_CurApprover',U_Z_NxtApprover AS 'U_Z_NxtApprover' From ""@Z_HR_HEM2"" T0 Join OHEM R3 on R3.""empID""=T0.""U_Z_EmpId"" JOIN [@Z_HR_APPT3] T1 ON R3.""dept"" = T1.U_Z_DeptCode "
                             objDA.strQuery += " JOIN [@Z_HR_APPT2] T2 ON T1.DocEntry = T2.DocEntry "
                             objDA.strQuery += " JOIN [@Z_HR_OAPPT] T3 ON T2.DocEntry = T3.DocEntry AND T0.""U_Z_Posting""='N'"
+                            objDA.strQuery += " And (T0.U_Z_CurApprover = '" + objEN.UserCode + "' OR T0.U_Z_NxtApprover = '" + objEN.UserCode + "')"
                             objDA.strQuery += " And isnull(T2.U_Z_AMan,'N')='Y' AND isnull(T3.U_Z_Active,'N')='Y' and  T2.U_Z_AUser = '" + objEN.UserCode + "' And T3.U_Z_DocType = '" + objEN.HeaderType + "' Order by Convert(Numeric,T0.Code) Desc"
                         Case "EmpPos"
                             objDA.strQuery = " select ""Code"",R3.U_Z_EmpID as 'TAEmpID',T0.""U_Z_EmpId"",T0.""U_Z_FirstName"",T0.U_Z_Dept,T1.""U_Z_DeptName"",""U_Z_PosCode"",""U_Z_PosName"",""U_Z_JobName"",""U_Z_OrgCode"",""U_Z_OrgName"","
@@ -304,6 +307,7 @@ Public Class DynamicApprovalDA
                             objDA.strQuery += " Case U_Z_AppStatus when 'P' then 'Pending' when 'A' then 'Approved' when 'R' then 'Rejected' end AS U_Z_AppStatus, U_Z_CurApprover AS 'U_Z_CurApprover',U_Z_NxtApprover AS 'U_Z_NxtApprover' from ""@Z_HR_HEM4"" T0 Join OHEM R3 on R3.""empID""=T0.""U_Z_EmpId"" JOIN [@Z_HR_APPT3] T1 ON R3.""dept"" = T1.U_Z_DeptCode "
                             objDA.strQuery += " JOIN [@Z_HR_APPT2] T2 ON T1.DocEntry = T2.DocEntry "
                             objDA.strQuery += " JOIN [@Z_HR_OAPPT] T3 ON T2.DocEntry = T3.DocEntry AND T0.""U_Z_Posting""='N'"
+                            objDA.strQuery += " And (T0.U_Z_CurApprover = '" + objEN.UserCode + "' OR T0.U_Z_NxtApprover = '" + objEN.UserCode + "')"
                             objDA.strQuery += " And isnull(T2.U_Z_AMan,'N')='Y' AND isnull(T3.U_Z_Active,'N')='Y' and  T2.U_Z_AUser = '" + objEN.UserCode + "' And T3.U_Z_DocType = '" + objEN.HeaderType + "' Order by Convert(Numeric,Code) Desc"
                         Case "PerObj"
                             objDA.strQuery = " select ""U_DocEntry"",R3.U_Z_EmpID as 'TAEmpID',T0.""U_Empid"",T0.""U_Empname"",U_DeptCode,U_PeoobjCode,U_PeoobjName,U_PeoCatDesc,U_PeoCategory,U_Weight,U_Remarks,"
@@ -311,6 +315,7 @@ Public Class DynamicApprovalDA
                             objDA.strQuery += " Case U_Z_AppStatus when 'P' then 'Pending' when 'A' then 'Approved' when 'R' then 'Rejected' end AS U_Z_AppStatus, U_CurApprover AS 'U_CurApprover',U_NxtApprover AS 'U_NxtApprover' from ""U_PEOPLEOBJ"" T0 JOIN OHEM R3 on R3.""empID""=T0.""U_Empid"" Join  [@Z_HR_APPT3] T1 ON R3.""dept"" = T1.U_Z_DeptCode "
                             objDA.strQuery += " JOIN [@Z_HR_APPT2] T2 ON T1.DocEntry = T2.DocEntry "
                             objDA.strQuery += " JOIN [@Z_HR_OAPPT] T3 ON T2.DocEntry = T3.DocEntry "
+                            objDA.strQuery += " And (T0.U_CurApprover = '" + objEN.UserCode + "' OR T0.U_NxtApprover = '" + objEN.UserCode + "')"
                             objDA.strQuery += " And isnull(T2.U_Z_AMan,'N')='Y' AND isnull(T3.U_Z_Active,'N')='Y'  and  T2.U_Z_AUser = '" + objEN.UserCode + "' And T3.U_Z_DocType = '" + objEN.HeaderType + "' Order by U_DocEntry Desc"
 
                         Case "PerHour"
@@ -325,6 +330,7 @@ Public Class DynamicApprovalDA
                             objDA.strQuery += " JOIN [@Z_HR_APPT2] T2 ON T1.DocEntry = T2.DocEntry "
                             objDA.strQuery += " JOIN [@Z_HR_OAPPT] T3 ON T2.DocEntry = T3.DocEntry  "
                             objDA.strQuery += " And isnull(T2.U_Z_AMan,'N')='Y' AND isnull(T3.U_Z_Active,'N')='Y'  and  T2.U_Z_AUser = '" + objEN.UserCode + "'"
+                            objDA.strQuery += " And (T0.U_Z_CurApprover = '" + objEN.UserCode + "' OR T0.U_Z_NxtApprover = '" + objEN.UserCode + "')"
                             objDA.strQuery += " And T3.U_Z_DocType = '" + objEN.HeaderType + "' ) T20 Order by Convert(Numeric,T20.Code) Desc"
                     End Select
                 Case "ExpCli"
@@ -335,6 +341,7 @@ Public Class DynamicApprovalDA
                     objDA.strQuery += " JOIN [@Z_HR_APPT1] T1 ON T4.empID = T1.U_Z_OUser "
                     objDA.strQuery += " JOIN [@Z_HR_APPT2] T2 ON T1.DocEntry = T2.DocEntry "
                     objDA.strQuery += " JOIN [@Z_HR_OAPPT] T3 ON T2.DocEntry = T3.DocEntry  "
+                    objDA.strQuery += " And (T0.U_Z_CurApprover = '" + objEN.UserCode + "' OR T0.U_Z_NxtApprover = '" + objEN.UserCode + "')"
                     objDA.strQuery += " And isnull(T2.U_Z_AMan,'N')='Y' AND isnull(T3.U_Z_Active,'N')='Y'  and  T2.U_Z_AUser = '" + objEN.UserCode + "' And T3.U_Z_DocType = '" + objEN.HeaderType + "' Order by Convert(Numeric,Code) Desc"
                 Case "TraReq"
                     objDA.strQuery = " Select T0.DocEntry,T0.U_Z_EmpId,T4.U_Z_EmpID as 'TAEmpID',U_Z_EmpName,Convert(Varchar(10),U_Z_DocDate,103) AS U_Z_DocDate,U_Z_TraName,U_Z_TraStLoc,U_Z_TraEdLoc,Convert(Varchar(10),U_Z_TraStDate,103) AS U_Z_TraStDate,Convert(Varchar(10),U_Z_TraEndDate,103) AS U_Z_TraEndDate,Case U_Z_AppStatus when 'P' then 'Pending' when 'A' then 'Approved' when 'R' then 'Rejected' end AS U_Z_AppStatus, U_Z_CurApprover,U_Z_NxtApprover, "
@@ -343,6 +350,7 @@ Public Class DynamicApprovalDA
                     objDA.strQuery += " JOIN [@Z_HR_APPT1] T1 ON T4.empID = T1.U_Z_OUser "
                     objDA.strQuery += " JOIN [@Z_HR_APPT2] T2 ON T1.DocEntry = T2.DocEntry "
                     objDA.strQuery += " JOIN [@Z_HR_OAPPT] T3 ON T2.DocEntry = T3.DocEntry  "
+                    objDA.strQuery += " And (T0.U_Z_CurApprover = '" + objEN.UserCode + "' OR T0.U_Z_NxtApprover = '" + objEN.UserCode + "')"
                     objDA.strQuery += " And isnull(T2.U_Z_AMan,'N')='Y' AND isnull(T3.U_Z_Active,'N')='Y'  and  T2.U_Z_AUser = '" + objEN.UserCode + "' And T3.U_Z_DocType = '" + objEN.HeaderType + "' Order by T0.DocEntry desc "
                 Case "LveReq"
                     Select Case objEN.HistoryType
@@ -358,6 +366,7 @@ Public Class DynamicApprovalDA
                             objDA.strQuery += " JOIN [@Z_HR_APPT2] T2 ON T1.DocEntry = T2.DocEntry "
                             objDA.strQuery += " JOIN [@Z_HR_OAPPT] T3 ON T2.DocEntry = T3.DocEntry  "
                             objDA.strQuery += " And isnull(T2.U_Z_AMan,'N')='Y' AND isnull(T3.U_Z_Active,'N')='Y'  and  T2.U_Z_AUser = '" + objEN.UserCode + "'"
+                            objDA.strQuery += " And (T0.U_Z_CurApprover = '" + objEN.UserCode + "' OR T0.U_Z_NxtApprover = '" + objEN.UserCode + "')"
                             objDA.strQuery += " And T3.U_Z_DocType = '" + objEN.HeaderType + "' AND ""U_Z_TrnsCode"" in (" & strLvetype & ")) T20 Order by Convert(Numeric,T20.Code) Desc"
                         Case "RetLve"
                             Dim strLvetype As String = getLeaveType(objEN.UserCode)
@@ -371,6 +380,7 @@ Public Class DynamicApprovalDA
                             objDA.strQuery += " JOIN [@Z_HR_APPT2] T2 ON T1.DocEntry = T2.DocEntry "
                             objDA.strQuery += " JOIN [@Z_HR_OAPPT] T3 ON T2.DocEntry = T3.DocEntry  "
                             objDA.strQuery += " And isnull(T2.U_Z_AMan,'N')='Y' AND isnull(T3.U_Z_Active,'N')='Y'  and  T2.U_Z_AUser = '" + objEN.UserCode + "'"
+                            objDA.strQuery += " And (T0.U_Z_CurApprover = '" + objEN.UserCode + "' OR T0.U_Z_NxtApprover = '" + objEN.UserCode + "')"
                             objDA.strQuery += " And T3.U_Z_DocType = '" + objEN.HeaderType + "' AND ""U_Z_TrnsCode"" in (" & strLvetype & ")) T20 Order by Convert(Numeric,T20.Code) Desc"
                             Case "BankTime"
                             Dim strLvetype As String = getLeaveType(objEN.UserCode)
@@ -382,6 +392,7 @@ Public Class DynamicApprovalDA
                             objDA.strQuery += " JOIN [@Z_HR_APPT2] T2 ON T1.DocEntry = T2.DocEntry "
                             objDA.strQuery += " JOIN [@Z_HR_OAPPT] T3 ON T2.DocEntry = T3.DocEntry  "
                             objDA.strQuery += " And isnull(T2.U_Z_AMan,'N')='Y' AND isnull(T3.U_Z_Active,'N')='Y'  and  T2.U_Z_AUser = '" + objEN.UserCode + "'"
+                            objDA.strQuery += " And (T0.U_Z_CurApprover = '" + objEN.UserCode + "' OR T0.U_Z_NxtApprover = '" + objEN.UserCode + "')"
                             objDA.strQuery += " And T3.U_Z_DocType = '" + objEN.HeaderType + "' AND ""U_Z_TrnsCode"" in (" & strLvetype & ")) T20 Order by Convert(Numeric,T20.Code) Desc"
                     End Select
                 Case "Rec"
@@ -393,6 +404,7 @@ Public Class DynamicApprovalDA
                             objDA.strQuery += " JOIN [@Z_HR_APPT3] T1 ON T0.U_Z_DeptCode = T1.U_Z_DeptCode "
                             objDA.strQuery += " JOIN [@Z_HR_APPT2] T2 ON T1.DocEntry = T2.DocEntry "
                             objDA.strQuery += " JOIN [@Z_HR_OAPPT] T3 ON T2.DocEntry = T3.DocEntry  "
+                            objDA.strQuery += " And (T0.U_Z_CurApprover = '" + objEN.UserCode + "' OR T0.U_Z_NxtApprover = '" + objEN.UserCode + "')"
                             objDA.strQuery += " And isnull(T2.U_Z_AMan,'N')='Y' AND isnull(T3.U_Z_Active,'N')='Y'  and   T2.U_Z_AUser = '" + objEN.UserCode + "' And T3.U_Z_DocType = '" + objEN.HeaderType + "' Order by T0.DocEntry Desc"
                         Case "AppShort"
                             objDA.strQuery = " Select T0.DocEntry,T0.U_Z_HRAppID,T0.U_Z_HRAppName,T0.U_Z_ReqNo,convert(varchar(10),T0.""U_Z_AppDate"",103) AS U_Z_AppDate,T1.U_Z_DeptCode,T0.U_Z_DeptName,T0.U_Z_Email,T0.U_Z_YrExp,T0.U_Z_Skills,Case T0.U_Z_AppStatus when 'P' then 'Pending' when 'A' then 'Approved' when 'R' then 'Rejected' end AS U_Z_AppStatus,"
@@ -401,6 +413,7 @@ Public Class DynamicApprovalDA
                             objDA.strQuery += " JOIN [@Z_HR_APPT3] T2 ON T1.U_Z_DeptCode = T2.U_Z_DeptCode"
                             objDA.strQuery += " JOIN [@Z_HR_APPT2] T3 ON T2.DocEntry = T3.DocEntry "
                             objDA.strQuery += " JOIN [@Z_HR_OAPPT] T4 ON T3.DocEntry = T4.DocEntry  "
+                            objDA.strQuery += " And (T0.U_Z_CurApprover = '" + objEN.UserCode + "' OR T0.U_Z_NxtApprover = '" + objEN.UserCode + "')"
                             objDA.strQuery += " And isnull(T3.U_Z_AMan,'N')='Y' AND isnull(T4.U_Z_Active,'N')='Y'  And T3.U_Z_AUser = '" + objEN.UserCode + "' And T4.U_Z_DocType = '" + objEN.HeaderType + "' Order by T0.DocEntry Desc"
                         Case "IntAppReq"
                             objDA.strQuery = " SELECT ""U_DocEntry"",""U_Empid"", ""U_Empname"", ""U_EmpPosCode"", ""U_EmpPosName"", ""U_EmpdeptCode"", ""U_EmpdeptName"", ""U_ReqdeptCode"", ""U_ReqdeptName"", ""U_ReqPosCode"", ""U_Remarks"", ""U_ReqPosName"", ""U_RequestCode"",Convert(Varchar(10),""U_ApplyDate"",103) AS ""U_ApplyDate"","
@@ -408,6 +421,7 @@ Public Class DynamicApprovalDA
                             objDA.strQuery += ", U_CurApprover,U_NxtApprover From [U_VACPOSITION] T0 JOIN [@Z_HR_APPT3] T1 ON T0.U_EmpdeptCode = T1.U_Z_DeptCode"
                             objDA.strQuery += " JOIN [@Z_HR_APPT2] T2 ON T1.DocEntry = T2.DocEntry "
                             objDA.strQuery += " JOIN [@Z_HR_OAPPT] T3 ON T2.DocEntry = T3.DocEntry  "
+                            objDA.strQuery += " And (T0.U_CurApprover = '" + objEN.UserCode + "' OR T0.U_NxtApprover = '" + objEN.UserCode + "')"
                             objDA.strQuery += " And isnull(T2.U_Z_AMan,'N')='Y' AND isnull(T3.U_Z_Active,'N')='Y'  and   T2.U_Z_AUser = '" + objEN.UserCode + "' And T3.U_Z_DocType = '" + objEN.HeaderType + "' Order by T0.U_DocEntry Desc"
                     End Select
             End Select
@@ -844,6 +858,35 @@ Public Class DynamicApprovalDA
             mail.Dispose()
         End Try
     End Sub
+    Public Sub SendMail_RequestApprovalApp(ByVal aMessage As String, ByVal Empid As String, ByVal aCompany As SAPbobsCOM.Company, Optional ByVal aMail As String = "", Optional ByVal SerialNo As String = "", Optional ByVal ReqNo As String = "")
+        Dim oRecordset As SAPbobsCOM.Recordset
+        oRecordset = aCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset)
+        oRecordset.DoQuery("Select U_Z_SMTPSERV,U_Z_SMTPPORT,U_Z_SMTPUSER,U_Z_SMTPPWD,U_Z_SSL From [@Z_HR_OMAIL]")
+        If Not oRecordset.EoF Then
+            mailServer = oRecordset.Fields.Item("U_Z_SMTPSERV").Value
+            mailPort = oRecordset.Fields.Item("U_Z_SMTPPORT").Value
+            mailId = oRecordset.Fields.Item("U_Z_SMTPUSER").Value
+            mailPwd = oRecordset.Fields.Item("U_Z_SMTPPWD").Value
+            mailSSL = oRecordset.Fields.Item("U_Z_SSL").Value
+            If mailServer <> "" And mailId <> "" And mailPwd <> "" Then
+                oRecordset.DoQuery("Select * from [@Z_HR_OCRAPP] where DocEntry='" & Empid & "'")
+                aMail = oRecordset.Fields.Item("U_Z_EmailId").Value
+                If aMail <> "" Then
+                    Dim oTest As SAPbobsCOM.Recordset
+                    oTest = aCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset)
+                    oTest.DoQuery("Select * from [@Z_HR_OWEB]")
+                    Dim strESSLink As String = ""
+                    If oTest.RecordCount > 0 Then
+                        strESSLink = oTest.Fields.Item("U_Z_WebPath").Value
+                    End If
+                    SendMailforApproval(mailServer, mailPort, mailId, mailPwd, mailSSL, aMail, aMail, "Approval", aMessage, aCompany, strESSLink, SerialNo, ReqNo, "HR")
+                End If
+            Else
+                ' oApplication.Utilities.Message("Mail Server Details Not Configured...", SAPbouiCOM.BoStatusBarMessageType.smt_Warning)
+            End If
+
+        End If
+    End Sub
     Public Sub SendMail_RequestApproval(ByVal aMessage As String, ByVal Empid As String, ByVal aCompany As SAPbobsCOM.Company, Optional ByVal aMail As String = "", Optional ByVal SerialNo As String = "", Optional ByVal ReqNo As String = "")
         Dim oRecordset As SAPbobsCOM.Recordset
         oRecordset = aCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset)
@@ -975,31 +1018,34 @@ Public Class DynamicApprovalDA
                         Case "Rec"
                             objDA.strQuery = "Update [@Z_HR_ORMPREQ] Set U_Z_AppStatus = 'A',U_Z_HODRemarks='" & objEN.Remarks & "' Where DocEntry = '" + objEN.DocEntry + "'"
                             oRecordSet.DoQuery(objDA.strQuery)
-                            StrMailMessage = "Recruitment request has been approved for the request number " & CInt(objEN.DocEntry)
-                            SendMail_RequestApproval(StrMailMessage, objEN.EmpId, objEN.SapCompany)
+                            StrMailMessage = "Recruitment request has been approved for the request number: " & CInt(objEN.DocEntry)
+                            SendMail_RequestApproval(StrMailMessage, objEN.ReqEmpId, objEN.SapCompany)
                             objDA.strmsg = "Success"
                         Case "AppShort"
                             objDA.strQuery = "Update [@Z_HR_OHEM1] Set U_Z_AppStatus = 'A',U_Z_MgrRemarks='" & objEN.Remarks & "' Where DocEntry = '" + objEN.DocEntry + "'"
                             oRecordSet.DoQuery(objDA.strQuery)
-                            objDA.strQuery = "Select U_Z_HRAppID from [@Z_HR_OHEM1] where DocEntry = '" + objEN.DocEntry + "'"
+                            objDA.strQuery = "Select U_Z_HRAppID,U_Z_ReqNo from [@Z_HR_OHEM1] where DocEntry = '" + objEN.DocEntry + "'"
                             oRecordSet.DoQuery(objDA.strQuery)
                             If oRecordSet.RecordCount > 0 Then
                                 objDA.strQuery = "Update [@Z_HR_OCRAPP] Set U_Z_Status = 'N' Where DocEntry = '" + oRecordSet.Fields.Item(0).Value + "'"
                                 oTemp.DoQuery(objDA.strQuery)
                             End If
-
+                            objDA.strQuery = "Select U_Z_PosName from [@Z_HR_ORMPREQ] where DocEntry = '" + oRecordSet.Fields.Item("U_Z_ReqNo").Value + "'"
+                            oRecordSet.DoQuery(objDA.strQuery)
+                            StrMailMessage = "You has been Shorlisted for the position : " & oRecordSet.Fields.Item("U_Z_PosName").Value
+                            SendMail_RequestApprovalApp(StrMailMessage, objEN.ReqEmpId, objEN.SapCompany)
                             objDA.strmsg = "Success"
                         Case "EmpPro"
                             objDA.strQuery = "Update [@Z_HR_HEM2] Set U_Z_AppStatus = 'A' Where Code = '" + objEN.DocEntry + "'"
                             oRecordSet.DoQuery(objDA.strQuery)
                             StrMailMessage = "Employee promotion request has been approved for the request number " & CInt(objEN.DocEntry)
-                            SendMail_RequestApproval(StrMailMessage, objEN.EmpId, objEN.SapCompany)
+                            SendMail_RequestApproval(StrMailMessage, objEN.ReqEmpId, objEN.SapCompany)
                             objDA.strmsg = "Success"
                         Case "EmpPos"
                             objDA.strQuery = "Update [@Z_HR_HEM4] Set U_Z_AppStatus = 'A' Where Code = '" + objEN.DocEntry + "'"
                             oRecordSet.DoQuery(objDA.strQuery)
                             StrMailMessage = "Employee position change request has been approved for the request number " & CInt(objEN.DocEntry)
-                            SendMail_RequestApproval(StrMailMessage, objEN.EmpId, objEN.SapCompany)
+                            SendMail_RequestApproval(StrMailMessage, objEN.ReqEmpId, objEN.SapCompany)
                             objDA.strmsg = "Success"
                         Case "Final"
                             objDA.strQuery = "Update [@Z_HR_OHEM1] set  U_Z_APPlStatus='A', U_Z_IntervStatus = 'A',U_Z_IPHODSta = 'S', U_Z_Finished = 'Y' where DocEntry = '" & objEN.DocEntry & "'"
@@ -1105,7 +1151,7 @@ Public Class DynamicApprovalDA
                             objDA.strQuery = "Update [@Z_HR_ORMPREQ] Set U_Z_AppStatus = 'R',U_Z_HODRemarks='" & objEN.Remarks & "'  Where DocEntry = '" + objEN.DocEntry + "'"
                             oRecordSet.DoQuery(objDA.strQuery)
                             StrMailMessage = "Recruitment request has been rejected for the request number " & CInt(objEN.DocEntry)
-                            SendMail_RequestApproval(StrMailMessage, objEN.EmpId, objEN.SapCompany)
+                            SendMail_RequestApproval(StrMailMessage, objEN.ReqEmpId, objEN.SapCompany)
                             objDA.strmsg = "Success"
                         Case "AppShort"
                             objDA.strQuery = "Update [@Z_HR_OHEM1] Set U_Z_AppStatus = 'R',U_Z_MgrRemarks='" & objEN.Remarks & "'  Where DocEntry = '" + objEN.DocEntry + "'"
@@ -1116,18 +1162,22 @@ Public Class DynamicApprovalDA
                                 objDA.strQuery = "Update [@Z_HR_OCRAPP] Set U_Z_Status = 'N' Where DocEntry = '" + oRecordSet.Fields.Item(0).Value + "'"
                                 oTemp.DoQuery(objDA.strQuery)
                             End If
+                            objDA.strQuery = "Select U_Z_PosName from [@Z_HR_ORMPREQ] where DocEntry = '" + oRecordSet.Fields.Item("U_Z_ReqNo").Value + "'"
+                            oRecordSet.DoQuery(objDA.strQuery)
+                            StrMailMessage = "You has been Rejected for the position " & oRecordSet.Fields.Item("U_Z_PosName").Value & "."
+                            SendMail_RequestApprovalApp(StrMailMessage, objEN.ReqEmpId, objEN.SapCompany)
                             objDA.strmsg = "Success"
                         Case "EmpPro"
                             objDA.strQuery = "Update [@Z_HR_HEM2] Set U_Z_AppStatus = 'R' Where Code = '" + objEN.DocEntry + "'"
                             oRecordSet.DoQuery(objDA.strQuery)
                             StrMailMessage = "Employee promotion request has been rejected for the request number " & CInt(objEN.DocEntry)
-                            SendMail_RequestApproval(StrMailMessage, objEN.EmpId, objEN.SapCompany)
+                            SendMail_RequestApproval(StrMailMessage, objEN.ReqEmpId, objEN.SapCompany)
                             objDA.strmsg = "Success"
                         Case "EmpPos"
                             objDA.strQuery = "Update [@Z_HR_HEM4] Set U_Z_AppStatus = 'R' Where Code = '" + objEN.DocEntry + "'"
                             oRecordSet.DoQuery(objDA.strQuery)
                             StrMailMessage = "Employee position change request has been rejected for the request number " & CInt(objEN.DocEntry)
-                            SendMail_RequestApproval(StrMailMessage, objEN.EmpId, objEN.SapCompany)
+                            SendMail_RequestApproval(StrMailMessage, objEN.ReqEmpId, objEN.SapCompany)
                             objDA.strmsg = "Success"
                         Case "Final"
                             objDA.strQuery = "Update [@Z_HR_OHEM1] set  U_Z_APPlStatus='R', U_Z_IntervStatus = 'R',U_Z_IPHODSta = 'R', U_Z_Finished = 'Y' where DocEntry = '" & objEN.DocEntry & "'"
@@ -1795,12 +1845,14 @@ Public Class DynamicApprovalDA
                         Vjov.JournalEntries.Lines.Add()
                         Vjov.JournalEntries.Lines.SetCurrentLine(LineNo)
                     End If
-                    Vjov.JournalEntries.Reference = oTemp.Fields.Item("U_Z_EmpID").Value
+                    Vjov.JournalEntries.Reference = oTemp.Fields.Item("U_Z_DocRefNo").Value ' oTemp.Fields.Item("U_Z_EmpID").Value
                     Vjov.JournalEntries.Reference2 = objDA.getEmpName(oTemp.Fields.Item("U_Z_EmpID").Value)
                     strDimentions = oTemp.Fields.Item("U_Z_Dimension").Value
                     strDim = strDimentions.Split(";")
                     strdebitCode = objDA.getSAPAccount(oTemp.Fields.Item("U_Z_DebitCode").Value, SAPCompany)
                     Vjov.JournalEntries.Lines.AccountCode = strdebitCode
+                    Vjov.JournalEntries.Lines.LineMemo = oTemp.Fields.Item("U_Z_RejRemark").Value
+                    Vjov.JournalEntries.Lines.Reference1 = oTemp.Fields.Item("Code").Value
                     If dblTransAmt > 0 Then
                         'If strDocCurrency <> SAPCompany.GetCompanyService.GetAdminInfo.LocalCurrency Then
                         '    Vjov.JournalEntries.Lines.FCCurrency = strDocCurrency
@@ -1870,6 +1922,8 @@ Public Class DynamicApprovalDA
                         Dim BussCode As String = oRecSet.Fields.Item("U_Z_CardCode").Value.ToString()
                         Vjov.JournalEntries.Lines.ShortName = BussCode
                     End If
+                    Vjov.JournalEntries.Lines.LineMemo = oTemp.Fields.Item("U_Z_RejRemark").Value
+                    Vjov.JournalEntries.Lines.Reference1 = oTemp.Fields.Item("Code").Value
                     If dblTransAmt > 0 Then
                         If strDocCurrency <> SAPCompany.GetCompanyService.GetAdminInfo.LocalCurrency Then
                             Vjov.JournalEntries.Lines.FCCurrency = strDocCurrency

@@ -1,0 +1,16 @@
+	 AMessage = "<table width-'100%'>"
+                       AMessage += "<tr><td>Activity No :</td><td>" & lbldocnum.Text.Trim()
+                     AMessage += "</td></tr>"
+                     AMessage += "<tr><td>Activity Type :</td><td>" & ddltype.SelectedItem.Text
+                     AMessage += "</td></tr>"
+                     AMessage += "<tr><td>Activity Subject :</td><td>" & ddlSubject.SelectedItem.Text
+                     AMessage += "</td></tr>"
+                     AMessage += "<tr><td>Content :</td><td>" & txtContent.Text.Trim()
+                     AMessage += "</td></tr>"
+                     AMessage += "<tr><td>Remarks :</td><td>" & txtRemarks.Text.Trim()
+                     AMessage += "</td></tr>"
+                     AMessage += "<tr><td>Priority :</td><td>" & ddlpriority.SelectedItem.Text
+                     AMessage += "</td></tr>"
+                     AMessage += "<tr><td> needs your attention from " & txtFirstName.Text.Trim() & " </td><td>"
+                     AMessage += "</td></tr>"
+                     AMessage += "</table>"

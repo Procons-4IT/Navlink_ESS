@@ -1,0 +1,442 @@
+Public Function expenceclaimValidations(aEmpID As String, aChoice As String, aFromDate As Date, aToDate As Date, Optional aCode As String = "") As String
+        Dim strSQL, StrQuery, strResponse As String
+        Dim ORec As SAPbobsCOM.Recordset
+        ORec = oApplication.Company.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset)
+        strResponse = ""
+        Select Case aChoice
+            Case "Exp"
+                'BTA Validation
+                StrQuery = "select * from [@Z_HR_OTRAREQ] where U_Z_EmpId='" & aEmpID & "' and U_Z_AppStatus<>'R' and '" & aFromDate.ToString("yyyy-MM-dd") & "' between U_Z_TraStDate and U_Z_TraEndDate"
+                strResponse = "You have an Approved/Pending BTA for this date …., you cannot proceed with another Loanee expense claim"
+                If StrQuery <> "" Then
+                    ORec.DoQuery(StrQuery)
+                    If ORec.RecordCount > 0 Then
+                        oApplication.Utilities.Message(strResponse, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                        Return strResponse
+                    End If
+                End If
+
+                'Same Expense Claim validation
+                If aCode <> "" Then
+                    '  StrQuery = "select * from [@Z_HR_OTRAREQ] where U_Z_EmpId='" & aEmpID & "' and U_Z_AppStatus<>'R' and '" & aFromDate.ToString("yyyy-MM-dd") & "' between U_Z_TraStDate and U_Z_TraEndDate"
+                    StrQuery = "select * from [@Z_HR_LEXPCL] where U_Z_ExpType='" & aCode & "' and   U_Z_AppStatus <>'R' and  U_Z_OverLap='Y' and U_Z_Claimdt  ='" & aFromDate.ToString("yyyy-MM-dd") & "'"
+                    strResponse = "You have an Approved/Pending Same Expense for this date ., you cannot proceed another Loanee expense claim"
+                    If StrQuery <> "" Then
+                        ORec.DoQuery(StrQuery)
+                        If ORec.RecordCount > 0 Then
+                            oApplication.Utilities.Message(strResponse, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                            Return strResponse
+                        End If
+                    End If
+                End If
+
+                'New Training Requet Validation
+                StrQuery = "select U_Z_TrainFrdt,U_Z_TrainTodt ,U_Z_HREmpID,U_Z_AppStatus,* from [@Z_HR_ONTREQ] where U_Z_AppStatus<>'R' and  U_Z_HREmpID='" & aEmpID & "' and '" & aFromDate.ToString("yyyy-MM-dd") & "' between U_Z_TrainFrdt and U_Z_TrainTodt "
+                strResponse = "You have an Approved/Pending Training request or New Training request for this date ., you cannot proceed another Loanee expense claim"
+                If StrQuery <> "" Then
+                    ORec.DoQuery(StrQuery)
+                    If ORec.RecordCount > 0 Then
+                        oApplication.Utilities.Message(strResponse, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                        Return strResponse
+                    End If
+                End If
+                'Apply Existing Training Request
+                StrQuery = "select * from [@Z_HR_TRIN1] where U_Z_AppStatus<>'R' and  U_Z_HREmpID='" & aEmpID & "' and '" & aFromDate.ToString("yyyy-MM-dd") & "' between U_Z_Startdt and U_Z_Enddt "
+                strResponse = "You have an Approved/Pending Training request or New Training request for this date ., you cannot proceed another Loanee expense claim"
+                If StrQuery <> "" Then
+                    ORec.DoQuery(StrQuery)
+                    If ORec.RecordCount > 0 Then
+                        oApplication.Utilities.Message(strResponse, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                        Return strResponse
+                    End If
+                End If
+
+
+            Case "BTA"
+                StrQuery = "select * from [@Z_HR_LEXPCL] where  U_Z_AppStatus <>'R' and  U_Z_OverLap='Y' and U_Z_Claimdt between '" & aFromDate.ToString("yyyy-MM-dd") & "' and '" & aToDate.ToString("yyyy-MM-dd") & "'"
+                strResponse = "You have an Approved/Pending Loanee Expenses for this date ., you cannot proceed with the BTA"
+                If StrQuery <> "" Then
+                    ORec.DoQuery(StrQuery)
+                    If ORec.RecordCount > 0 Then
+                        oApplication.Utilities.Message(strResponse, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                        Return strResponse
+                    End If
+                End If
+
+                'Apply Existing Training Request
+                'StrQuery = "select * from [@Z_HR_TRIN1] where U_Z_AppStatus<>'R' and  U_Z_HREmpID='" & aEmpID & "' and '" & aFromDate.ToString("yyyy-MM-dd") & "' between U_Z_Startdt and U_Z_Enddt "
+                StrQuery = "select * from [@Z_HR_TRIN1] where U_Z_AppStatus<>'R' and  U_Z_HREmpID='" & aEmpID & "' and U_Z_Startdt between '" & aFromDate.ToString("yyyy-MM-dd") & "' and '" & aToDate.ToString("yyyy-MM-dd") & "'"
+
+                strResponse = "You have an Approved/Pending Training request or New Training request for this date ., you cannot proceed with the BTA"""
+                If StrQuery <> "" Then
+                    ORec.DoQuery(StrQuery)
+                    If ORec.RecordCount > 0 Then
+                        oApplication.Utilities.Message(strResponse, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                        Return strResponse
+                    End If
+                End If
+
+                'Apply Existing Training Request
+                ' StrQuery = "select * from [@Z_HR_TRIN1] where U_Z_AppStatus<>'R' and  U_Z_HREmpID='" & aEmpID & "' and '" & aToDate.ToString("yyyy-MM-dd") & "' between U_Z_Startdt and U_Z_Enddt "
+                StrQuery = "select * from [@Z_HR_TRIN1] where U_Z_AppStatus<>'R' and  U_Z_HREmpID='" & aEmpID & "' and U_Z_Enddt between '" & aFromDate.ToString("yyyy-MM-dd") & "' and '" & aToDate.ToString("yyyy-MM-dd") & "'"
+
+                strResponse = "You have an Approved/Pending Training request or New Training request for this date ., you cannot proceed with the BTA"""
+                If StrQuery <> "" Then
+                    ORec.DoQuery(StrQuery)
+                    If ORec.RecordCount > 0 Then
+                        oApplication.Utilities.Message(strResponse, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                        Return strResponse
+                    End If
+                End If
+                'New Training Requet Validation
+                ' StrQuery = "select U_Z_TrainFrdt,U_Z_TrainTodt ,U_Z_HREmpID,U_Z_AppStatus,* from [@Z_HR_ONTREQ] where U_Z_AppStatus<>'R' and  U_Z_HREmpID='" & aEmpID & "' and '" & aFromDate.ToString("yyyy-MM-dd") & "' between U_Z_TrainFrdt and U_Z_TrainTodt "
+
+                StrQuery = "select U_Z_TrainFrdt,U_Z_TrainTodt ,U_Z_HREmpID,U_Z_AppStatus,* from [@Z_HR_ONTREQ] where U_Z_AppStatus<>'R' and  U_Z_HREmpID='" & aEmpID & "' and U_Z_TrainFrdt between '" & aFromDate.ToString("yyyy-MM-dd") & "' and '" & aToDate.ToString("yyyy-MM-dd") & "'"
+                strResponse = "You have an Approved/Pending Training request or New Training request for this date ., you cannot proceed with the BTA"
+                If StrQuery <> "" Then
+                    ORec.DoQuery(StrQuery)
+                    If ORec.RecordCount > 0 Then
+                        oApplication.Utilities.Message(strResponse, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                        Return strResponse
+                    End If
+                End If
+                'StrQuery = "select U_Z_TrainFrdt,U_Z_TrainTodt ,U_Z_HREmpID,U_Z_AppStatus,* from [@Z_HR_ONTREQ] where U_Z_AppStatus<>'R' and  U_Z_HREmpID='" & aEmpID & "' and '" & aToDate.ToString("yyyy-MM-dd") & "' between U_Z_TrainFrdt and U_Z_TrainTodt "
+                StrQuery = "select U_Z_TrainFrdt,U_Z_TrainTodt ,U_Z_HREmpID,U_Z_AppStatus,* from [@Z_HR_ONTREQ] where U_Z_AppStatus<>'R' and  U_Z_HREmpID='" & aEmpID & "' and U_Z_TrainTodt between '" & aFromDate.ToString("yyyy-MM-dd") & "' and '" & aToDate.ToString("yyyy-MM-dd") & "'"
+                strResponse = "You have an Approved/Pending Training request or New Training request for this date ., you cannot proceed with the BTA"
+                If StrQuery <> "" Then
+                    ORec.DoQuery(StrQuery)
+                    If ORec.RecordCount > 0 Then
+                        oApplication.Utilities.Message(strResponse, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                        Return strResponse
+                    End If
+                End If
+
+
+                'Leave Entry checking
+                ' StrQuery = "SELECT T0.[U_Z_StartDate], T0.[U_Z_EndDate], T0.[U_Z_EMPID] FROM [dbo].[@Z_PAY_OLETRANS]  T0 where  U_Z_EMPID='" & aEmpID & "' and '" & aFromDate.ToString("yyyy-MM-dd") & "' between U_Z_StartDate and U_Z_EndDate "
+                StrQuery = "SELECT T0.[U_Z_StartDate], T0.[U_Z_EndDate], T0.[U_Z_EMPID] FROM [dbo].[@Z_PAY_OLETRANS]  T0 where  U_Z_EMPID='" & aEmpID & "' and U_Z_StartDate between '" & aFromDate.ToString("yyyy-MM-dd") & "' and '" & aToDate.ToString("yyyy-MM-dd") & "'"
+
+                strResponse = "You have an Approved/Pending Leave request for this date ., you cannot proceed with the BTA"
+                If StrQuery <> "" Then
+                    ORec.DoQuery(StrQuery)
+                    If ORec.RecordCount > 0 Then
+                        oApplication.Utilities.Message(strResponse, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                        Return strResponse
+                    End If
+                End If
+
+                'StrQuery = "SELECT T0.[U_Z_StartDate], T0.[U_Z_EndDate], T0.[U_Z_EMPID] FROM [dbo].[@Z_PAY_OLETRANS]  T0 where  U_Z_EMPID='" & aEmpID & "' and '" & aToDate.ToString("yyyy-MM-dd") & "' between U_Z_StartDate and U_Z_EndDate "
+                StrQuery = "SELECT T0.[U_Z_StartDate], T0.[U_Z_EndDate], T0.[U_Z_EMPID] FROM [dbo].[@Z_PAY_OLETRANS]  T0 where  U_Z_EMPID='" & aEmpID & "' and U_Z_EndDate between '" & aFromDate.ToString("yyyy-MM-dd") & "' and '" & aToDate.ToString("yyyy-MM-dd") & "'"
+                strResponse = "You have an  Approved/Pending Leave request for this date ., you cannot proceed with the BTA"
+                If StrQuery <> "" Then
+                    ORec.DoQuery(StrQuery)
+                    If ORec.RecordCount > 0 Then
+                        oApplication.Utilities.Message(strResponse, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                        Return strResponse
+                    End If
+                End If
+
+            Case "Traning"
+                StrQuery = "select * from [@Z_HR_LEXPCL] where  U_Z_AppStatus <>'R' and  U_Z_OverLap='Y' and U_Z_Claimdt between '" & aFromDate.ToString("yyyy-MM-dd") & "' and '" & aToDate.ToString("yyyy-MM-dd") & "'"
+                strResponse = "you have an Approved/Pending Loanee Expenses for this date., you cannot proceed with the New Training Rquest"
+                If StrQuery <> "" Then
+                    ORec.DoQuery(StrQuery)
+                    If ORec.RecordCount > 0 Then
+                        oApplication.Utilities.Message(strResponse, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                        Return strResponse
+                    End If
+                End If
+
+                'New Training Requet Validation
+                '  StrQuery = "select U_Z_TrainFrdt,U_Z_TrainTodt ,U_Z_HREmpID,U_Z_AppStatus,* from [@Z_HR_ONTREQ] where U_Z_AppStatus<>'R' and  U_Z_HREmpID='" & aEmpID & "' and '" & aFromDate.ToString("yyyy-MM-dd") & "' between U_Z_TrainFrdt and U_Z_TrainTodt "
+
+                '  StrQuery = "select U_Z_TrainFrdt,U_Z_TrainTodt ,U_Z_HREmpID,U_Z_AppStatus,* from [@Z_HR_ONTREQ] where U_Z_AppStatus<>'R' and  U_Z_HREmpID='" & aEmpID & "' and '" & aFromDate.ToString("yyyy-MM-dd") & "' between U_Z_TrainFrdt and U_Z_TrainTodt "
+                StrQuery = "select U_Z_TrainFrdt,U_Z_TrainTodt ,U_Z_HREmpID,U_Z_AppStatus,* from [@Z_HR_ONTREQ] where U_Z_AppStatus<>'R' and  U_Z_HREmpID='" & aEmpID & "' and U_Z_TrainFrdt between '" & aFromDate.ToString("yyyy-MM-dd") & "' and '" & aToDate.ToString("yyyy-MM-dd") & "'"
+                strResponse = "You have an Approved/Pending Training request or New Training request for this date .,you cannot proceed with the New Training Rquest"
+                If StrQuery <> "" Then
+                    ORec.DoQuery(StrQuery)
+                    If ORec.RecordCount > 0 Then
+                        oApplication.Utilities.Message(strResponse, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                        Return strResponse
+                    End If
+                End If
+                ' StrQuery = "select U_Z_TrainFrdt,U_Z_TrainTodt ,U_Z_HREmpID,U_Z_AppStatus,* from [@Z_HR_ONTREQ] where U_Z_AppStatus<>'R' and  U_Z_HREmpID='" & aEmpID & "' and '" & aToDate.ToString("yyyy-MM-dd") & "' between U_Z_TrainFrdt and U_Z_TrainTodt "
+                StrQuery = "select U_Z_TrainFrdt,U_Z_TrainTodt ,U_Z_HREmpID,U_Z_AppStatus,* from [@Z_HR_ONTREQ] where U_Z_AppStatus<>'R' and  U_Z_HREmpID='" & aEmpID & "' and U_Z_TrainTodt between '" & aFromDate.ToString("yyyy-MM-dd") & "' and '" & aToDate.ToString("yyyy-MM-dd") & "'"
+
+                strResponse = "You have an Approved/Pending Training request or New Training request for this date .,you cannot proceed with the New Training Rquest"
+                If StrQuery <> "" Then
+                    ORec.DoQuery(StrQuery)
+                    If ORec.RecordCount > 0 Then
+                        oApplication.Utilities.Message(strResponse, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                        Return strResponse
+                    End If
+                End If
+
+                'Apply Existing Training Request
+                '  StrQuery = "select * from [@Z_HR_TRIN1] where U_Z_AppStatus<>'R' and  U_Z_HREmpID='" & aEmpID & "' and '" & aFromDate.ToString("yyyy-MM-dd") & "' between U_Z_Startdt and U_Z_Enddt "
+                StrQuery = "select * from [@Z_HR_TRIN1] where U_Z_AppStatus<>'R' and  U_Z_HREmpID='" & aEmpID & "' and U_Z_Startdt between  '" & aFromDate.ToString("yyyy-MM-dd") & "' and '" & aToDate.ToString("yyyy-MM-dd") & "'"
+                strResponse = "You have an Approved/Pending Training request or New Training request for this date ., you cannot proceed with the New Training Rquest"
+                If StrQuery <> "" Then
+                    ORec.DoQuery(StrQuery)
+                    If ORec.RecordCount > 0 Then
+                        oApplication.Utilities.Message(strResponse, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                        Return strResponse
+                    End If
+                End If
+                '   StrQuery = "select * from [@Z_HR_TRIN1] where U_Z_AppStatus<>'R' and  U_Z_HREmpID='" & aEmpID & "' and '" & aToDate.ToString("yyyy-MM-dd") & "' between U_Z_Startdt and U_Z_Enddt "
+                StrQuery = "select * from [@Z_HR_TRIN1] where U_Z_AppStatus<>'R' and  U_Z_HREmpID='" & aEmpID & "' and U_Z_Enddt between  '" & aFromDate.ToString("yyyy-MM-dd") & "' and '" & aToDate.ToString("yyyy-MM-dd") & "'"
+                strResponse = "You have an Approved/Pending Training request or New Training request for this date ., you cannot proceed with the New Training Rquest"
+                If StrQuery <> "" Then
+                    ORec.DoQuery(StrQuery)
+                    If ORec.RecordCount > 0 Then
+                        oApplication.Utilities.Message(strResponse, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                        Return strResponse
+                    End If
+                End If
+
+                'BTA Validation
+                '   StrQuery = "select * from [@Z_HR_OTRAREQ] where U_Z_EmpId='" & aEmpID & "' and U_Z_AppStatus<>'R' and '" & aFromDate.ToString("yyyy-MM-dd") & "' between U_Z_TraStDate and U_Z_TraEndDate"
+                StrQuery = "select * from [@Z_HR_OTRAREQ] where U_Z_EmpId='" & aEmpID & "' and U_Z_AppStatus<>'R' and U_Z_TraStDate between '" & aFromDate.ToString("yyyy-MM-dd") & "' and '" & aToDate.ToString("yyyy-MM-dd") & "'"
+                strResponse = "You have an Approved/Pending BTA for this date ….,you cannot proceed with the New Training Rquest"
+                If StrQuery <> "" Then
+                    ORec.DoQuery(StrQuery)
+                    If ORec.RecordCount > 0 Then
+                        oApplication.Utilities.Message(strResponse, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                        Return strResponse
+                    End If
+                End If
+
+                '  StrQuery = "select * from [@Z_HR_OTRAREQ] where U_Z_EmpId='" & aEmpID & "' and U_Z_AppStatus<>'R' and '" & aToDate.ToString("yyyy-MM-dd") & "' between U_Z_TraStDate and U_Z_TraEndDate"
+                StrQuery = "select * from [@Z_HR_OTRAREQ] where U_Z_EmpId='" & aEmpID & "' and U_Z_AppStatus<>'R' and U_Z_TraEndDate between '" & aFromDate.ToString("yyyy-MM-dd") & "' and '" & aToDate.ToString("yyyy-MM-dd") & "'"
+                strResponse = "You have an Approved/Pending BTA for this date …., you cannot proceed with the New Training Rquest"
+                If StrQuery <> "" Then
+                    ORec.DoQuery(StrQuery)
+                    If ORec.RecordCount > 0 Then
+                        oApplication.Utilities.Message(strResponse, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                        Return strResponse
+                    End If
+                End If
+
+
+                'Leave Entry checking
+                '  StrQuery = "SELECT T0.[U_Z_StartDate], T0.[U_Z_EndDate], T0.[U_Z_EMPID] FROM [dbo].[@Z_PAY_OLETRANS]  T0 where  U_Z_EMPID='" & aEmpID & "' and '" & aFromDate.ToString("yyyy-MM-dd") & "' between U_Z_StartDate and U_Z_EndDate "
+                StrQuery = "SELECT T0.[U_Z_StartDate], T0.[U_Z_EndDate], T0.[U_Z_EMPID] FROM [dbo].[@Z_PAY_OLETRANS]  T0 where  U_Z_EMPID='" & aEmpID & "' and U_Z_StartDate between '" & aFromDate.ToString("yyyy-MM-dd") & "'  and '" & aToDate.ToString("yyyy-MM-dd") & "'"
+                strResponse = "You have an Approved/Pending Leave request for this date .,  you cannot proceed with the New Training Rquest"
+                If StrQuery <> "" Then
+                    ORec.DoQuery(StrQuery)
+                    If ORec.RecordCount > 0 Then
+                        oApplication.Utilities.Message(strResponse, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                        Return strResponse
+                    End If
+                End If
+
+                '    StrQuery = "SELECT T0.[U_Z_StartDate], T0.[U_Z_EndDate], T0.[U_Z_EMPID] FROM [dbo].[@Z_PAY_OLETRANS]  T0 where  U_Z_EMPID='" & aEmpID & "' and '" & aToDate.ToString("yyyy-MM-dd") & "' between U_Z_StartDate and U_Z_EndDate "
+                StrQuery = "SELECT T0.[U_Z_StartDate], T0.[U_Z_EndDate], T0.[U_Z_EMPID] FROM [dbo].[@Z_PAY_OLETRANS]  T0 where  U_Z_EMPID='" & aEmpID & "' and U_Z_EndDate between '" & aFromDate.ToString("yyyy-MM-dd") & "'  and '" & aToDate.ToString("yyyy-MM-dd") & "'"
+                strResponse = "You have an Leave request for this date .,  you cannot proceed with the New Training Rquest"
+                If StrQuery <> "" Then
+                    ORec.DoQuery(StrQuery)
+                    If ORec.RecordCount > 0 Then
+                        oApplication.Utilities.Message(strResponse, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                        Return strResponse
+                    End If
+                End If
+
+            Case "NetTraining"
+                StrQuery = "select * from [@Z_HR_LEXPCL] where  U_Z_AppStatus <>'R' and  U_Z_OverLap='Y' and U_Z_Claimdt between '" & aFromDate.ToString("yyyy-MM-dd") & "' and '" & aToDate.ToString("yyyy-MM-dd") & "'"
+                strResponse = "you have an Approved/Pending Loanee Expenses for this date., you cannot proceed with the New Training Rquest"
+                If StrQuery <> "" Then
+                    ORec.DoQuery(StrQuery)
+                    If ORec.RecordCount > 0 Then
+                        oApplication.Utilities.Message(strResponse, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                        Return strResponse
+                    End If
+                End If
+
+                'New Training Requet Validation
+                '  StrQuery = "select U_Z_TrainFrdt,U_Z_TrainTodt ,U_Z_HREmpID,U_Z_AppStatus,* from [@Z_HR_ONTREQ] where U_Z_AppStatus<>'R' and  U_Z_HREmpID='" & aEmpID & "' and '" & aFromDate.ToString("yyyy-MM-dd") & "' between U_Z_TrainFrdt and U_Z_TrainTodt "
+                StrQuery = "select U_Z_TrainFrdt,U_Z_TrainTodt ,U_Z_HREmpID,U_Z_AppStatus,* from [@Z_HR_ONTREQ] where U_Z_AppStatus<>'R' and  U_Z_HREmpID='" & aEmpID & "'  and  U_Z_TrainFrdt between '" & aFromDate.ToString("yyyy-MM-dd") & "' and '" & aToDate.ToString("yyyy-MM-dd") & "'"
+                strResponse = "You have an Approved/Pending Training request or New Training request for this date .,you cannot proceed with the New Training Rquest"
+                If StrQuery <> "" Then
+                    ORec.DoQuery(StrQuery)
+                    If ORec.RecordCount > 0 Then
+                        oApplication.Utilities.Message(strResponse, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                        Return strResponse
+                    End If
+                End If
+                '  StrQuery = "select U_Z_TrainFrdt,U_Z_TrainTodt ,U_Z_HREmpID,U_Z_AppStatus,* from [@Z_HR_ONTREQ] where U_Z_AppStatus<>'R' and  U_Z_HREmpID='" & aEmpID & "' and '" & aToDate.ToString("yyyy-MM-dd") & "' between U_Z_TrainFrdt and U_Z_TrainTodt "
+                StrQuery = "select U_Z_TrainFrdt,U_Z_TrainTodt ,U_Z_HREmpID,U_Z_AppStatus,* from [@Z_HR_ONTREQ] where U_Z_AppStatus<>'R' and  U_Z_HREmpID='" & aEmpID & "'  and  U_Z_TrainTodt between '" & aFromDate.ToString("yyyy-MM-dd") & "' and '" & aToDate.ToString("yyyy-MM-dd") & "'"
+                strResponse = "You have an Approved/Pending Training request or New Training request for this date .,you cannot proceed with the New Training Rquest"
+                If StrQuery <> "" Then
+                    ORec.DoQuery(StrQuery)
+                    If ORec.RecordCount > 0 Then
+                        oApplication.Utilities.Message(strResponse, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                        Return strResponse
+                    End If
+                End If
+
+                'Apply Existing Training Request
+                '   StrQuery = "select * from [@Z_HR_TRIN1] where U_Z_AppStatus<>'R' and  U_Z_HREmpID='" & aEmpID & "' and '" & aFromDate.ToString("yyyy-MM-dd") & "' between U_Z_Startdt and U_Z_Enddt "
+
+                StrQuery = "select * from [@Z_HR_TRIN1] where U_Z_AppStatus<>'R' and  U_Z_HREmpID='" & aEmpID & "' and U_Z_Startdt between '" & aFromDate.ToString("yyyy-MM-dd") & "' and '" & aToDate.ToString("yyyy-MM-dd") & "'"
+                strResponse = "You have an Approved/Pending Training request or New Training request for this date ., you cannot proceed with the New Training Rquest"
+                If StrQuery <> "" Then
+                    ORec.DoQuery(StrQuery)
+                    If ORec.RecordCount > 0 Then
+                        oApplication.Utilities.Message(strResponse, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                        Return strResponse
+                    End If
+                End If
+                '   StrQuery = "select * from [@Z_HR_TRIN1] where U_Z_AppStatus<>'R' and  U_Z_HREmpID='" & aEmpID & "' and '" & aToDate.ToString("yyyy-MM-dd") & "' between U_Z_Startdt and U_Z_Enddt "
+                StrQuery = "select * from [@Z_HR_TRIN1] where U_Z_AppStatus<>'R' and  U_Z_HREmpID='" & aEmpID & "' and U_Z_Enddt between '" & aFromDate.ToString("yyyy-MM-dd") & "' and '" & aToDate.ToString("yyyy-MM-dd") & "'"
+                strResponse = "You have an Approved/Pending Training request or New Training request for this date ., you cannot proceed with the New Training Rquest"
+                If StrQuery <> "" Then
+                    ORec.DoQuery(StrQuery)
+                    If ORec.RecordCount > 0 Then
+                        oApplication.Utilities.Message(strResponse, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                        Return strResponse
+                    End If
+                End If
+
+                'BTA
+
+                '  StrQuery = "select * from [@Z_HR_OTRAREQ] where U_Z_EmpId='" & aEmpID & "' and U_Z_AppStatus<>'R' and '" & aFromDate.ToString("yyyy-MM-dd") & "' between U_Z_TraStDate and U_Z_TraEndDate"
+                StrQuery = "select * from [@Z_HR_OTRAREQ] where U_Z_EmpId='" & aEmpID & "' and U_Z_AppStatus<>'R' and U_Z_TraStDate between '" & aFromDate.ToString("yyyy-MM-dd") & "' and '" & aToDate.ToString("yyyy-MM-dd") & "'"
+                strResponse = "You have an Approved/Pending BTA for this date …., you cannot proceed with the New Training Rquest"
+                If StrQuery <> "" Then
+                    ORec.DoQuery(StrQuery)
+                    If ORec.RecordCount > 0 Then
+                        oApplication.Utilities.Message(strResponse, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                        Return strResponse
+                    End If
+                End If
+
+                '  StrQuery = "select * from [@Z_HR_OTRAREQ] where U_Z_EmpId='" & aEmpID & "' and U_Z_AppStatus<>'R' and '" & aToDate.ToString("yyyy-MM-dd") & "' between U_Z_TraStDate and U_Z_TraEndDate"
+                StrQuery = "select * from [@Z_HR_OTRAREQ] where U_Z_EmpId='" & aEmpID & "' and U_Z_AppStatus<>'R' and U_Z_TraEndDate between '" & aFromDate.ToString("yyyy-MM-dd") & "' and '" & aToDate.ToString("yyyy-MM-dd") & "'"
+                strResponse = "You have an Approved/Pending BTA for this date ….,you cannot proceed with the New Training Rquest"
+                If StrQuery <> "" Then
+                    ORec.DoQuery(StrQuery)
+                    If ORec.RecordCount > 0 Then
+                        oApplication.Utilities.Message(strResponse, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                        Return strResponse
+                    End If
+                End If
+
+                'Leave Entry checking
+                ' StrQuery = "SELECT T0.[U_Z_StartDate], T0.[U_Z_EndDate], T0.[U_Z_EMPID] FROM [dbo].[@Z_PAY_OLETRANS]  T0 where  U_Z_EMPID='" & aEmpID & "' and '" & aFromDate.ToString("yyyy-MM-dd") & "' between U_Z_StartDate and U_Z_EndDate "
+                StrQuery = "SELECT T0.[U_Z_StartDate], T0.[U_Z_EndDate], T0.[U_Z_EMPID] FROM [dbo].[@Z_PAY_OLETRANS]  T0 where  U_Z_EMPID='" & aEmpID & "'  and  U_Z_StartDate between'" & aFromDate.ToString("yyyy-MM-dd") & "' and '" & aToDate.ToString("yyyy-MM-dd") & "'"
+                strResponse = "You have an Approved/Pending Leave request for this date .,  you cannot proceed with the New Training Rquest"
+                If StrQuery <> "" Then
+                    ORec.DoQuery(StrQuery)
+                    If ORec.RecordCount > 0 Then
+                        oApplication.Utilities.Message(strResponse, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                        Return strResponse
+                    End If
+                End If
+
+                ' StrQuery = "SELECT T0.[U_Z_StartDate], T0.[U_Z_EndDate], T0.[U_Z_EMPID] FROM [dbo].[@Z_PAY_OLETRANS]  T0 where  U_Z_EMPID='" & aEmpID & "' and '" & aToDate.ToString("yyyy-MM-dd") & "' between U_Z_StartDate and U_Z_EndDate "
+                StrQuery = "SELECT T0.[U_Z_StartDate], T0.[U_Z_EndDate], T0.[U_Z_EMPID] FROM [dbo].[@Z_PAY_OLETRANS]  T0 where  U_Z_EMPID='" & aEmpID & "'  and  U_Z_EndDate between'" & aFromDate.ToString("yyyy-MM-dd") & "' and '" & aToDate.ToString("yyyy-MM-dd") & "'"
+                strResponse = "You have an Approved/Pending Leave request for this date .,  you cannot proceed with the New Training Rquest"
+                If StrQuery <> "" Then
+                    ORec.DoQuery(StrQuery)
+                    If ORec.RecordCount > 0 Then
+                        oApplication.Utilities.Message(strResponse, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                        Return strResponse
+                    End If
+                End If
+
+            Case "Leave"
+                'BTA
+
+                '    StrQuery = "select * from [@Z_HR_OTRAREQ] where U_Z_EmpId='" & aEmpID & "' and U_Z_AppStatus<>'R' and '" & aFromDate.ToString("yyyy-MM-dd") & "' between U_Z_TraStDate and U_Z_TraEndDate"
+                StrQuery = "select * from [@Z_HR_OTRAREQ] where U_Z_EmpId='" & aEmpID & "' and U_Z_AppStatus<>'R' and  U_Z_TraStDate between '" & aFromDate.ToString("yyyy-MM-dd") & "' and '" & aToDate.ToString("yyyy-MM-dd") & "'"
+                strResponse = "You have an Approved/Pending BTA for this date …., you cannot proceed with the New Leave Rquest"
+                If StrQuery <> "" Then
+                    ORec.DoQuery(StrQuery)
+                    If ORec.RecordCount > 0 Then
+                        oApplication.Utilities.Message(strResponse, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                        Return strResponse
+                    End If
+                End If
+
+                '  StrQuery = "select * from [@Z_HR_OTRAREQ] where U_Z_EmpId='" & aEmpID & "' and U_Z_AppStatus<>'R' and '" & aToDate.ToString("yyyy-MM-dd") & "' between U_Z_TraStDate and U_Z_TraEndDate"
+                StrQuery = "select * from [@Z_HR_OTRAREQ] where U_Z_EmpId='" & aEmpID & "' and U_Z_AppStatus<>'R' and U_Z_TraEndDate  between '" & aFromDate.ToString("yyyy-MM-dd") & "' and '" & aToDate.ToString("yyyy-MM-dd") & "'"
+                strResponse = "You have an Approved/Pending BTA for this date ….,you cannot proceed with the New Leave Rquest"
+                If StrQuery <> "" Then
+                    ORec.DoQuery(StrQuery)
+                    If ORec.RecordCount > 0 Then
+                        oApplication.Utilities.Message(strResponse, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                        Return strResponse
+                    End If
+                End If
+
+                'Leave Entry checking
+                '  StrQuery = "SELECT T0.[U_Z_StartDate], T0.[U_Z_EndDate], T0.[U_Z_EMPID] FROM [dbo].[@Z_PAY_OLETRANS]  T0 where  U_Z_EMPID='" & aEmpID & "' and '" & aFromDate.ToString("yyyy-MM-dd") & "' between U_Z_StartDate and U_Z_EndDate "
+                StrQuery = "SELECT T0.[U_Z_StartDate], T0.[U_Z_EndDate], T0.[U_Z_EMPID] FROM [dbo].[@Z_PAY_OLETRANS]  T0 where  U_Z_EMPID='" & aEmpID & "'  and  U_Z_StartDate between'" & aFromDate.ToString("yyyy-MM-dd") & "' and '" & aToDate.ToString("yyyy-MM-dd") & "'"
+                strResponse = "You have an Approved/Pending Leave request for this date .,  you cannot proceed with the  New Leave Rquest"
+                If StrQuery <> "" Then
+                    ORec.DoQuery(StrQuery)
+                    If ORec.RecordCount > 0 Then
+                        oApplication.Utilities.Message(strResponse, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                        Return strResponse
+                    End If
+                End If
+
+                '     StrQuery = "SELECT T0.[U_Z_StartDate], T0.[U_Z_EndDate], T0.[U_Z_EMPID] FROM [dbo].[@Z_PAY_OLETRANS]  T0 where  U_Z_EMPID='" & aEmpID & "' and '" & aToDate.ToString("yyyy-MM-dd") & "' between U_Z_StartDate and U_Z_EndDate "
+                StrQuery = "SELECT T0.[U_Z_StartDate], T0.[U_Z_EndDate], T0.[U_Z_EMPID] FROM [dbo].[@Z_PAY_OLETRANS]  T0 where  U_Z_EMPID='" & aEmpID & "'  and  U_Z_EndDate between'" & aFromDate.ToString("yyyy-MM-dd") & "' and '" & aToDate.ToString("yyyy-MM-dd") & "'"
+                strResponse = "You have an Approved/Pending Leave request for this date .,  you cannot proceed with the  New Leave Rquest"
+                If StrQuery <> "" Then
+                    ORec.DoQuery(StrQuery)
+                    If ORec.RecordCount > 0 Then
+                        oApplication.Utilities.Message(strResponse, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                        Return strResponse
+                    End If
+                End If
+
+
+                'Apply Existing Training Request
+                '  StrQuery = "select * from [@Z_HR_TRIN1] where U_Z_AppStatus<>'R' and  U_Z_HREmpID='" & aEmpID & "' and '" & aFromDate.ToString("yyyy-MM-dd") & "' between U_Z_Startdt and U_Z_Enddt "
+                StrQuery = "select * from [@Z_HR_TRIN1] where U_Z_AppStatus<>'R' and  U_Z_HREmpID='" & aEmpID & "' and U_Z_Startdt between '" & aFromDate.ToString("yyyy-MM-dd") & "' and '" & aToDate.ToString("yyyy-MM-dd") & "'"
+                strResponse = "You have an Approved/Pending Training request or New Training request for this date ., you cannot proceed with the  New Leave Rquest"""
+                If StrQuery <> "" Then
+                    ORec.DoQuery(StrQuery)
+                    If ORec.RecordCount > 0 Then
+                        oApplication.Utilities.Message(strResponse, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                        Return strResponse
+                    End If
+                End If
+
+                '   StrQuery = "select * from [@Z_HR_TRIN1] where U_Z_AppStatus<>'R' and  U_Z_HREmpID='" & aEmpID & "' and '" & aToDate.ToString("yyyy-MM-dd") & "' between U_Z_Startdt and U_Z_Enddt "
+                StrQuery = "select * from [@Z_HR_TRIN1] where U_Z_AppStatus<>'R' and  U_Z_HREmpID='" & aEmpID & "' and U_Z_Enddt between '" & aFromDate.ToString("yyyy-MM-dd") & "' and '" & aToDate.ToString("yyyy-MM-dd") & "'"
+                strResponse = "You have an Approved/Pending Training request or New Training request for this date ., you cannot proceed with the  New Leave Rquest"""
+                If StrQuery <> "" Then
+                    ORec.DoQuery(StrQuery)
+                    If ORec.RecordCount > 0 Then
+                        oApplication.Utilities.Message(strResponse, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                        Return strResponse
+                    End If
+                End If
+                'New Training Requet Validation
+                '   StrQuery = "select U_Z_TrainFrdt,U_Z_TrainTodt ,U_Z_HREmpID,U_Z_AppStatus,* from [@Z_HR_ONTREQ] where U_Z_AppStatus<>'R' and  U_Z_HREmpID='" & aEmpID & "' and '" & aFromDate.ToString("yyyy-MM-dd") & "' between U_Z_TrainFrdt and U_Z_TrainTodt "
+                StrQuery = "select U_Z_TrainFrdt,U_Z_TrainTodt ,U_Z_HREmpID,U_Z_AppStatus,* from [@Z_HR_ONTREQ] where U_Z_AppStatus<>'R' and  U_Z_HREmpID='" & aEmpID & "' and U_Z_TrainFrdt between '" & aFromDate.ToString("yyyy-MM-dd") & "' and '" & aToDate.ToString("yyyy-MM-dd") & "'"
+                strResponse = "You have an Approved/Pending Training request or New Training request for this date ., you cannot proceed with the  New Leave Rquest"
+                If StrQuery <> "" Then
+                    ORec.DoQuery(StrQuery)
+                    If ORec.RecordCount > 0 Then
+                        oApplication.Utilities.Message(strResponse, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                        Return strResponse
+                    End If
+                End If
+                ' StrQuery = "select U_Z_TrainFrdt,U_Z_TrainTodt ,U_Z_HREmpID,U_Z_AppStatus,* from [@Z_HR_ONTREQ] where U_Z_AppStatus<>'R' and  U_Z_HREmpID='" & aEmpID & "' and '" & aToDate.ToString("yyyy-MM-dd") & "' between U_Z_TrainFrdt and U_Z_TrainTodt "
+                StrQuery = "select U_Z_TrainFrdt,U_Z_TrainTodt ,U_Z_HREmpID,U_Z_AppStatus,* from [@Z_HR_ONTREQ] where U_Z_AppStatus<>'R' and  U_Z_HREmpID='" & aEmpID & "' and U_Z_TrainTodt between '" & aFromDate.ToString("yyyy-MM-dd") & "' and '" & aToDate.ToString("yyyy-MM-dd") & "'"
+                strResponse = "You have an Approved/Pending Training request or New Training request for this date ., you cannot proceed with the  New Leave Rquest"
+                If StrQuery <> "" Then
+                    ORec.DoQuery(StrQuery)
+                    If ORec.RecordCount > 0 Then
+                        oApplication.Utilities.Message(strResponse, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+                        Return strResponse
+                    End If
+                End If
+        End Select
+
+
+    End Function

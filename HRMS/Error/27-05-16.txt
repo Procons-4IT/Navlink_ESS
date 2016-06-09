@@ -1,0 +1,10 @@
+
+Log Entry : 
+05/27/2016 11:37:19
+Error in: http://localhost:48860/favicon.ico. Error Message:Error in: http://localhost:48860/favicon.ico. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+05/27/2016 11:44:35
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________

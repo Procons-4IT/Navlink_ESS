@@ -149,6 +149,15 @@ Partial Public Class PosChangeApproval
     Protected WithEvents txtempid As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''txtreqempid control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtreqempid As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
     '''ddlAppStatus control.
     '''</summary>
     '''<remarks>

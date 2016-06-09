@@ -14,11 +14,11 @@
             }
         }
 
-      
+
 
         function Confirmation1() {
             var amount = document.getElementById("<%=txtreqcode.ClientID %>").innerHTML;
-            var msg = "Are you sure you want to withdraw training request  "
+            var msg = "Are you sure you want to withdraw/Cancel training request  "
             var Result = msg + " " + amount + "?";
             if (confirm(Result) == true) {
                 return true;
@@ -107,14 +107,13 @@
                                                         Width="100%">
                                                         <ajx:TabPanel ID="TabPanel3" runat="server" HeaderText="New Training Request">
                                                             <ContentTemplate>
-                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                               
                                                                 <table width="100%" border="0" cellspacing="0" cellpadding="3" class="main_content">
-                                                                    <tr>
-                                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                    <tr>                                                                       
                                                                         <td>
                                                                             <asp:GridView ID="grdTrainingRequest" runat="server" CellPadding="4" AllowPaging="True"
                                                                                 ShowHeaderWhenEmpty="true" CssClass="mGrid" HeaderStyle-CssClass="GridBG" PagerStyle-CssClass="pgr"
-                                                                                AlternatingRowStyle-CssClass="alt" AutoGenerateColumns="false" Width="100%" PageSize="10">
+                                                                                AlternatingRowStyle-CssClass="alt" AutoGenerateColumns="false" Width="100%" PageSize="15">
                                                                                 <Columns>
                                                                                     <asp:TemplateField HeaderText="Request Code">
                                                                                         <ItemTemplate>
@@ -126,14 +125,14 @@
                                                                                     </asp:TemplateField>
                                                                                     <asp:TemplateField HeaderText="Request Date">
                                                                                         <ItemTemplate>
-                                                                                            <div align="center">
+                                                                                            <div align="left">
                                                                                                 <asp:Label ID="lbllReqdt" runat="server" Text='<%#Bind("U_Z_ReqDate") %>'></asp:Label>
                                                                                             </div>
                                                                                         </ItemTemplate>
                                                                                     </asp:TemplateField>
                                                                                     <asp:TemplateField HeaderText="Training Title">
                                                                                         <ItemTemplate>
-                                                                                            <div align="center">
+                                                                                            <div align="left">
                                                                                                 <asp:Label ID="lblTrtitle" runat="server" Text='<%#Bind("U_Z_CourseName") %>'></asp:Label>
                                                                                             </div>
                                                                                         </ItemTemplate>
@@ -173,6 +172,14 @@
                                                                                             </div>
                                                                                         </ItemTemplate>
                                                                                     </asp:TemplateField>
+                                                                                     <asp:TemplateField HeaderText="Attachment">
+                                                                                            <ItemTemplate>
+                                                                                                <div align="center">
+                                                                                                    <asp:LinkButton ID="lnkEDownload" Text="Download" CommandArgument='<%# Eval("U_Z_Attachment") %>' ToolTip='<%# Eval("U_Z_Attachment") %>'
+                                                                                                        runat="server" Width="100px" OnClick="lnkEDownload_Click"></asp:LinkButton>
+                                                                                                </div>
+                                                                                            </ItemTemplate>
+                                                                                        </asp:TemplateField>
                                                                                     <asp:TemplateField HeaderText="Approval Status">
                                                                                         <ItemTemplate>
                                                                                             <div align="left">
@@ -207,7 +214,7 @@
                                                     Request Code
                                                 </td>
                                                 <td>
-                                                    <asp:Label ID="txtreqcode" CssClass="txtbox" runat="server" ></asp:Label>
+                                                    <asp:Label ID="txtreqcode" CssClass="txtbox" runat="server"></asp:Label>
                                                     <asp:TextBox ID="txtcode" CssClass="txtbox" runat="server" Visible="False"></asp:TextBox>
                                                 </td>
                                                 <td>
@@ -394,8 +401,11 @@
                                                     </ajx:CalendarExtender>
                                                 </td>
                                                 <td>
+                                                    Attachment
                                                 </td>
                                                 <td>
+                                                <asp:Label ID="lblAttach" CssClass="txtbox" runat="server" Visible="false"></asp:Label>
+                                                    <asp:FileUpload ID="fileattach" runat="server" />
                                                 </td>
                                             </tr>
                                             <tr>
@@ -410,7 +420,7 @@
                                             <tr>
                                                 <td colspan="2" align="center">
                                                     <br />
-                                                    <asp:Button ID="btnAdd" CssClass="btn" Width="85px" runat="server" Text="Save" OnClientClick="return Confirmation();" />
+                                                    <asp:Button ID="btnAdd" CssClass="btn" Width="85px" runat="server" Text="Save"  /> <%--OnClientClick="return Confirmation();"--%>
                                                     <asp:Button ID="btncancel" CssClass="btn" Width="85px" runat="server" Text="Cancel" />
                                                     <asp:Button ID="btnWithdraw" CssClass="btn" runat="server" Text="WithDraw Request"
                                                         Visible="false" OnClientClick="return Confirmation1();" />
@@ -513,5 +523,8 @@
                 </tr>
             </table>
         </ContentTemplate>
+        <Triggers>
+            <asp:PostBackTrigger ControlID="PanelNewRequest$btnAdd" />
+        </Triggers>
     </asp:UpdatePanel>
 </asp:Content>

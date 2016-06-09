@@ -212,6 +212,13 @@
                                                                                             </div>
                                                                                         </ItemTemplate>
                                                                                     </asp:TemplateField>
+                                                                                     <asp:TemplateField>
+                                                                                        <ItemTemplate>
+                                                                                            <asp:ImageButton ID="imgSPrint" runat="server" Height="20" 
+                                                                                                ImageUrl="~/Images/Print.png" OnClick="imgSPrint_Click" Text="Edit" 
+                                                                                                ToolTip="Print" Width="20" />
+                                                                                        </ItemTemplate>
+                                                                                    </asp:TemplateField>
                                                                                 </Columns>
                                                                             </asp:GridView>
                                                                             </div>
@@ -435,6 +442,7 @@
                                                                                                 </div>
                                                                                             </ItemTemplate>
                                                                                         </asp:TemplateField>
+                                                                                        
                                                                                     </Columns>
                                                                                     <HeaderStyle HorizontalAlign="Center" Height="25px" BackColor="#CCCCCC" />
                                                                                     <FooterStyle Height="25px" BackColor="#CCCCCC" Font-Bold="true" />

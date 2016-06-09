@@ -1,6 +1,7 @@
 ﻿Imports System
 Imports System.Drawing
 Imports System.Globalization
+Imports System.IO
 Imports BusinessLogic
 Imports DataAccess
 Imports EN
@@ -82,6 +83,13 @@ Public Class NewTrainApproval
         If e.Row.RowType = DataControlRowType.DataRow Then
             e.Row.Attributes("Style") = "cursor:pointer"
             e.Row.ToolTip = "Click first column for selecting this row."
+            Dim LiAttachment As LinkButton = CType(e.Row.FindControl("lnkEDownload"), LinkButton)
+            Dim strAttached As String = e.Row.DataItem("U_Z_Attachment")
+            If strAttached = "" Then
+                LiAttachment.Visible = False
+            Else
+                LiAttachment.Visible = True
+            End If
         End If
     End Sub
 
@@ -240,5 +248,43 @@ Public Class NewTrainApproval
         objEN.HeaderType = "Train"
         objEN.HistoryType = "NewTra"
         ReqApproval(objEN)
+    End Sub
+    Protected Sub lnkEDownload_Click(ByVal sender As Object, ByVal e As EventArgs)
+        Dim filePath As String = TryCast(sender, LinkButton).CommandArgument
+        Dim filename As String = Path.GetFileName(filePath)
+        If filename <> "" Then
+            Dim path As String = System.IO.Path.Combine(Server.MapPath("~\Document\"), filename)
+            If File.Exists(path) = True Then
+                ScriptManager.RegisterStartupScript(Page, [GetType](), "MyScript", "window.open('../Download.aspx?ifile=" + HttpUtility.UrlEncode(path) + "');", True)
+            Else
+                dbcon.strmsg = "File is not available"
+                ClientScript.RegisterStartupScript(Me.GetType(), "msg", "<script>alert('" & dbcon.strmsg & "')</script>")
+            End If
+        End If
+    End Sub
+    Protected Sub lnkSDownload_Click(ByVal sender As Object, ByVal e As EventArgs)
+        Dim filePath As String = TryCast(sender, LinkButton).CommandArgument
+        Dim filename As String = Path.GetFileName(filePath)
+        If filename <> "" Then
+            Dim path As String = System.IO.Path.Combine(Server.MapPath("~\Document\"), filename)
+            If File.Exists(path) = True Then
+                ScriptManager.RegisterStartupScript(Page, [GetType](), "MyScript", "window.open('../Download.aspx?ifile=" + HttpUtility.UrlEncode(path) + "');", True)
+            Else
+                dbCon.strmsg = "File is not available"
+                ClientScript.RegisterStartupScript(Me.GetType(), "msg", "<script>alert('" & dbCon.strmsg & "')</script>")
+            End If
+        End If
+    End Sub
+
+    Private Sub grdSummary_RowDataBound(sender As Object, e As System.Web.UI.WebControls.GridViewRowEventArgs) Handles grdSummary.RowDataBound
+        If e.Row.RowType = DataControlRowType.DataRow Then
+            Dim LiAttachment As LinkButton = CType(e.Row.FindControl("lnkSDownload"), LinkButton)
+            Dim strAttached As String = e.Row.DataItem("U_Z_Attachment")
+            If strAttached = "" Then
+                LiAttachment.Visible = False
+            Else
+                LiAttachment.Visible = True
+            End If
+        End If
     End Sub
 End Class

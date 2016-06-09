@@ -91,7 +91,7 @@ Public Class ExpClaimApprovalDA
 
     Public Function ExpensesRequestApproval(ByVal objEN As ExpClaimApprovalEN) As DataSet
         Try
-            objDA.strQuery = " Select T0.U_Z_DocRefNo,T0.Code,T0.U_Z_EmpID,T0.U_Z_EmpName,T0.U_Z_Notes,Convert(Varchar(10),T0.U_Z_SubDt,103) AS U_Z_SubDt,T0.U_Z_Client,T0.U_Z_Project,Convert(Varchar(10),U_Z_Claimdt,103) AS U_Z_Claimdt,U_Z_ExpType,U_Z_Currency,cast(U_Z_CurAmt as decimal(10,2)) AS ""U_Z_CurAmt"",cast(U_Z_ExcRate as decimal(10,2)) AS ""U_Z_ExcRate"",U_Z_UsdAmt,U_Z_ReimAmt,U_Z_Attachment,Isnull(T5.U_Z_AppStatus,'P') AS U_Z_AppStatus,Convert(Varchar(10),isnull(T5.""U_Z_Month"",MONTH(U_Z_Claimdt))) AS ""U_Z_Month"",Convert(Varchar(10),isnull(T5.""U_Z_Year"",YEAR(U_Z_Claimdt))) AS ""U_Z_Year"","
+            objDA.strQuery = " Select T0.U_Z_DocRefNo,T0.Code,T0.U_Z_EmpID,T0.U_Z_EmpName,T0.U_Z_Notes,Convert(Varchar(10),T0.U_Z_SubDt,103) AS U_Z_SubDt,T0.U_Z_Client,T0.U_Z_Project,Convert(Varchar(10),U_Z_Claimdt,103) AS U_Z_Claimdt,U_Z_ExpType,U_Z_Currency,cast(U_Z_CurAmt as decimal(25,2)) AS ""U_Z_CurAmt"",cast(U_Z_ExcRate as decimal(25,6)) AS ""U_Z_ExcRate"",U_Z_UsdAmt,U_Z_ReimAmt,U_Z_Attachment,Isnull(T5.U_Z_AppStatus,'P') AS U_Z_AppStatus,Convert(Varchar(10),isnull(T5.""U_Z_Month"",MONTH(U_Z_Claimdt))) AS ""U_Z_Month"",Convert(Varchar(10),isnull(T5.""U_Z_Year"",YEAR(U_Z_Claimdt))) AS ""U_Z_Year"","
             objDA.strQuery += "T5.U_Z_Remarks,Case T0.U_Z_TripType when 'N' then 'New' else 'Existing' End as U_Z_TripType,T0.U_Z_Posting,T0.U_Z_TraDesc,U_Z_CurApprover,U_Z_NxtApprover,T1.U_Z_EmpID as 'TAEmpID', Case T0.U_Z_Reimburse when 'Y' then 'Yes' else 'No' End as  'U_Z_Reimburse', "
             objDA.strQuery += " Case U_Z_AppRequired when 'Y' then 'Yes' else 'No' End as  'U_Z_AppRequired',Convert(Varchar(10),T0.U_Z_AppReqDate,103) AS U_Z_AppReqDate,CONVERT(VARCHAR(8),U_Z_ReqTime,108) AS 'U_Z_ReqTime'"
             objDA.strQuery += ",T5.DocEntry  From [@Z_HR_EXPCL] T0 Left Outer Join [@Z_HR_APHIS] T5 on T0.Code=T5.U_Z_DocEntry And T5.U_Z_DocType= 'ExpCli' and T5.U_Z_ApproveBy='" + objEN.UserCode + "'"
@@ -117,11 +117,12 @@ Public Class ExpClaimApprovalDA
     End Function
     Public Function BindExpenseSummaryApproval(ByVal objEN As ExpClaimApprovalEN) As DataSet
         Try
-            objDA.strQuery = " Select Code,T0.U_Z_EmpID,U_Z_EmpName,T1.U_Z_EmpID as 'TAEmpID',T0.U_Z_Notes, U_Z_Client,Case U_Z_TripType when 'N' then 'New' else 'Existing' End as U_Z_TripType,U_Z_TraDesc,Convert(Varchar(10),T0.U_Z_SubDt,103) AS U_Z_SubDt,Convert(Varchar(10),U_Z_Claimdt,103) AS U_Z_Claimdt,U_Z_ExpType,U_Z_Currency,cast(U_Z_CurAmt as decimal(10,2)) AS ""U_Z_CurAmt"",cast(U_Z_ExcRate as decimal(10,2)) AS ""U_Z_ExcRate"",U_Z_UsdAmt,U_Z_ReimAmt,U_Z_Attachment,Case U_Z_AppStatus when 'P' then 'Pending' when 'A' then 'Approved' when 'R' then 'Rejected' end AS U_Z_AppStatus,Convert(Varchar(10),DateName( month , DateAdd(month,""U_Z_Month"" , -1 ))) AS  ""U_Z_Month"",Convert(Varchar(10),isnull(T0.""U_Z_Year"",YEAR(U_Z_Claimdt))) AS ""U_Z_Year"",U_Z_Project, "
+            objDA.strQuery = " Select Code,T0.U_Z_EmpID,U_Z_EmpName,T1.U_Z_EmpID as 'TAEmpID',T0.U_Z_Notes, U_Z_Client,Case U_Z_TripType when 'N' then 'New' else 'Existing' End as U_Z_TripType,U_Z_TraDesc,Convert(Varchar(10),T0.U_Z_SubDt,103) AS U_Z_SubDt,Convert(Varchar(10),U_Z_Claimdt,103) AS U_Z_Claimdt,U_Z_ExpType,U_Z_Currency,cast(U_Z_CurAmt as decimal(25,2)) AS ""U_Z_CurAmt"",cast(U_Z_ExcRate as decimal(25,6)) AS ""U_Z_ExcRate"",U_Z_UsdAmt,U_Z_ReimAmt,U_Z_Attachment,Case U_Z_AppStatus when 'P' then 'Pending' when 'A' then 'Approved' when 'R' then 'Rejected' end AS U_Z_AppStatus,Convert(Varchar(10),DateName( month , DateAdd(month,""U_Z_Month"" , -1 ))) AS  ""U_Z_Month"",Convert(Varchar(10),isnull(T0.""U_Z_Year"",YEAR(U_Z_Claimdt))) AS ""U_Z_Year"",U_Z_Project, "
             objDA.strQuery += " Case U_Z_AppRequired when 'Y' then 'Yes' else 'No' End as  'U_Z_AppRequired',Convert(Varchar(10),T0.U_Z_AppReqDate,103) AS U_Z_AppReqDate,CONVERT(VARCHAR(8),U_Z_ReqTime,108) AS 'U_Z_ReqTime'"
             objDA.strQuery += " , U_Z_CurApprover,U_Z_NxtApprover From [@Z_HR_EXPCL] T0 JOIN [@Z_HR_APPT1] T1 ON T0.U_Z_EmpID = T1.U_Z_OUser "
             objDA.strQuery += " JOIN [@Z_HR_APPT2] T2 ON T1.DocEntry = T2.DocEntry "
             objDA.strQuery += " JOIN [@Z_HR_OAPPT] T3 ON T2.DocEntry = T3.DocEntry  "
+            objDA.strQuery += " And (T0.U_Z_CurApprover = '" + objEN.UserCode + "' OR T0.U_Z_NxtApprover = '" + objEN.UserCode + "')"
             objDA.strQuery += " And isnull(T2.U_Z_AMan,'N')='Y' AND isnull(T3.U_Z_Active,'N')='Y' and  T2.U_Z_AUser = '" + objEN.UserCode + "' And T3.U_Z_DocType = 'ExpCli' where T0.U_Z_DocRefNo='" & objEN.DocEntry & "' Order by Convert(Numeric,Code) Desc"
             objDA.sqlda = New SqlDataAdapter(objDA.strQuery, objDA.con)
             objDA.sqlda.Fill(objDA.ds3)
@@ -290,6 +291,8 @@ Public Class ExpClaimApprovalDA
                         objDA.strmsg = "Success"
                     End If
                 End If
+                objDA.strQuery = "Update [@Z_HR_EXPCL] Set U_Z_RejRemark='" & objEN.Remarks & "' Where Code = '" + objEN.DocEntry + "'"
+                oRecordSet.DoQuery(objDA.strQuery)
             ElseIf objEN.AppStatus = "R" Then
                 objDA.strQuery = " Select T2.DocEntry "
                 objDA.strQuery += " From [@Z_HR_APPT2] T2 "

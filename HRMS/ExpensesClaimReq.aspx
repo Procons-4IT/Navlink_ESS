@@ -7,8 +7,8 @@
 
         function Confirmation() {
             var amount = document.getElementById("<%=lbldocmsg.ClientID %>").innerHTML;
-                  var msg = "Do you want to submit Expense Claim number  "
-                  var Result = msg + " " + amount;
+            var msg = "Do you want to submit Expense Claim number  "
+            var Result = msg + " " + amount;
             if (confirm(Result) == true) {
                 return true;
             }
@@ -49,7 +49,7 @@
 
         function checkDec1(el) {
             //            el.value = el.value.replace(/^[ 0]+/, '');
-            var ex = /^\-?\d*\.?\d{0,2}$/;
+            var ex = /^\-?\d*\.?\d{0,6}$/;
             if (ex.test(el.value) == false) {
                 el.value = el.value.substring(0, el.value.length - 1);
             }
@@ -61,6 +61,7 @@
                 el.value = el.value.substring(0, el.value.length - 1);
             }
         }
+             
 
         function RemoveZero(el) {
             //            el.value = el.value.replace(/^[ ]+/, '');
@@ -144,8 +145,9 @@
                                                                     <tr>
                                                                         <td>
                                                                             <asp:GridView ID="grdExpClaimRequest" runat="server" CellPadding="4" AllowPaging="True"
-                                                                                ShowHeaderWhenEmpty="true" CssClass="mGrid" HeaderStyle-CssClass="GridBG" PagerStyle-CssClass="pgr"
-                                                                                AlternatingRowStyle-CssClass="alt" AutoGenerateColumns="false" Width="100%" PageSize="15">
+                                                                                ShowHeaderWhenEmpty="True" CssClass="mGrid" AutoGenerateColumns="False" 
+                                                                                Width="100%" PageSize="15">
+                                                                                <AlternatingRowStyle CssClass="alt" />
                                                                                 <Columns>
                                                                                     <asp:TemplateField HeaderText="Expenses Claim  Number">
                                                                                         <ItemTemplate>
@@ -155,14 +157,14 @@
                                                                                             </div>
                                                                                         </ItemTemplate>
                                                                                     </asp:TemplateField>
-                                                                                    <asp:TemplateField HeaderText="Employee T&A No" Visible="false">
+                                                                                    <asp:TemplateField HeaderText="Employee T&amp;A No" Visible="False">
                                                                                         <ItemTemplate>
                                                                                             <div align="center">
                                                                                                 <asp:Label ID="lblgtano" runat="server" Text='<%#Bind("U_Z_TAEmpID") %>'></asp:Label>
                                                                                             </div>
                                                                                         </ItemTemplate>
                                                                                     </asp:TemplateField>
-                                                                                    <asp:TemplateField HeaderText="Employee ID" Visible="false">
+                                                                                    <asp:TemplateField HeaderText="Employee ID" Visible="False">
                                                                                         <ItemTemplate>
                                                                                             <div align="center">
                                                                                                 <asp:Label ID="lblgempid" runat="server" Text='<%#Bind("U_Z_EmpID") %>'></asp:Label>
@@ -204,8 +206,17 @@
                                                                                             </div>
                                                                                         </ItemTemplate>
                                                                                     </asp:TemplateField>
+                                                                                    <asp:TemplateField>
+                                                                                        <ItemTemplate>
+                                                                                            <asp:ImageButton ID="imgSPrint" runat="server" Height="20" 
+                                                                                                ImageUrl="~/Images/Print.png" OnClick="imgSPrint_Click" Text="Edit" 
+                                                                                                ToolTip="Print" Width="20" />
+                                                                                        </ItemTemplate>
+                                                                                    </asp:TemplateField>
                                                                                 </Columns>
-                                                                                <HeaderStyle HorizontalAlign="Center" Height="25px" BackColor="#CCCCCC" />
+                                                                                <HeaderStyle HorizontalAlign="Center" Height="25px" BackColor="#CCCCCC" 
+                                                                                    CssClass="GridBG" />
+                                                                                <PagerStyle CssClass="pgr" />
                                                                             </asp:GridView>
                                                                         </td>
                                                                     </tr>
@@ -228,7 +239,7 @@
                                                     </td>
                                                     <td width="15%">
                                                         <asp:Label ID="lbldocno" CssClass="txtbox" Width="200px" runat="server" Style="display: none"></asp:Label>
-                                                         <asp:Label ID="lbldocmsg" CssClass="txtbox"    runat="server" ></asp:Label>
+                                                        <asp:Label ID="lbldocmsg" CssClass="txtbox" runat="server"></asp:Label>
                                                     </td>
                                                     <td width="5%">
                                                     </td>
@@ -317,7 +328,7 @@
                                                             <asp:ListItem Value="O">Opened</asp:ListItem>
                                                             <asp:ListItem Value="C">Closed</asp:ListItem>
                                                         </asp:DropDownList>
-                                                          <asp:DropDownList ID="ddlDocStatusTemp" runat="server" CssClass="txtbox1" >
+                                                        <asp:DropDownList ID="ddlDocStatusTemp" runat="server" CssClass="txtbox1" AutoPostBack="true">
                                                             <asp:ListItem Value="D">Draft</asp:ListItem>
                                                             <asp:ListItem Value="O">Confirm</asp:ListItem>
                                                         </asp:DropDownList>
@@ -404,7 +415,7 @@
                                                                                                 </div>
                                                                                             </ItemTemplate>
                                                                                         </asp:TemplateField>
-                                                                                      <asp:TemplateField HeaderText="Transaction Currency">
+                                                                                        <asp:TemplateField HeaderText="Transaction Currency">
                                                                                             <ItemTemplate>
                                                                                                 <div align="right">
                                                                                                     &nbsp;<asp:Label ID="lblETraCur" runat="server" Text='<%#Bind("U_Currency") %>'></asp:Label>
@@ -456,7 +467,7 @@
                                                                                                 <div align="right">
                                                                                                     &nbsp;<asp:Label ID="lblEreimbamt" runat="server" Text='<%#Bind("U_ReImAmt") %>'></asp:Label>
                                                                                                 </div>
-                                                                                            </ItemTemplate>                                                                                            
+                                                                                            </ItemTemplate>
                                                                                         </asp:TemplateField>
                                                                                         <asp:TemplateField HeaderText="Notes">
                                                                                             <ItemTemplate>
@@ -468,8 +479,8 @@
                                                                                         <asp:TemplateField HeaderText="Attachment">
                                                                                             <ItemTemplate>
                                                                                                 <div align="center">
-                                                                                                    <asp:LinkButton ID="lnkEDownload" Text="Download" CommandArgument='<%# Eval("U_Attachment") %>' ToolTip='<%# Eval("U_Attachment") %>'
-                                                                                                        runat="server" Width="100px" OnClick="lnkEDownload_Click"></asp:LinkButton>
+                                                                                                    <asp:LinkButton ID="lnkEDownload" Text="Download" CommandArgument='<%# Eval("U_Attachment") %>'
+                                                                                                        ToolTip='<%# Eval("U_Attachment") %>' runat="server" Width="100px" OnClick="lnkEDownload_Click"></asp:LinkButton>
                                                                                                 </div>
                                                                                             </ItemTemplate>
                                                                                         </asp:TemplateField>
@@ -479,12 +490,12 @@
                                                                                                     &nbsp;<asp:Label ID="lblEstatus" runat="server" Text='<%#Bind("U_AppStatus") %>'></asp:Label>
                                                                                                 </div>
                                                                                             </ItemTemplate>
-                                                                                        </asp:TemplateField>                                                                                      
+                                                                                        </asp:TemplateField>
                                                                                     </Columns>
                                                                                     <HeaderStyle BackColor="Gray" HorizontalAlign="Center" ForeColor="White" Height="25px" />
                                                                                     <RowStyle HorizontalAlign="Left" />
                                                                                     <AlternatingRowStyle HorizontalAlign="Left" />
-                                                                                     <FooterStyle Height="25px" BackColor="#CCCCCC" Font-Bold="true" />
+                                                                                    <FooterStyle Height="25px" BackColor="#CCCCCC" Font-Bold="true" />
                                                                                 </asp:GridView>
                                                                             </td>
                                                                         </tr>
@@ -550,13 +561,13 @@
                                                                                                 </div>
                                                                                             </ItemTemplate>
                                                                                         </asp:TemplateField>
-                                                                                       <asp:TemplateField HeaderText="Transaction Currency">
+                                                                                        <asp:TemplateField HeaderText="Transaction Currency">
                                                                                             <ItemTemplate>
                                                                                                 <div align="right">
                                                                                                     &nbsp;<asp:Label ID="lblTraCur" runat="server" Text='<%#Bind("U_Z_Currency") %>'></asp:Label>
                                                                                                 </div>
                                                                                             </ItemTemplate>
-                                                                                              <FooterTemplate>
+                                                                                            <FooterTemplate>
                                                                                                 <div align="right">
                                                                                                     <asp:Label ID="lblACur" runat="server" Text="Total :"></asp:Label>&nbsp;</div>
                                                                                             </FooterTemplate>
@@ -567,7 +578,7 @@
                                                                                                     &nbsp;<asp:Label ID="lbltramt" runat="server" Text='<%#Bind("U_Z_CurAmt") %>'></asp:Label>
                                                                                                 </div>
                                                                                             </ItemTemplate>
-                                                                                              <FooterTemplate>
+                                                                                            <FooterTemplate>
                                                                                                 <div align="right">
                                                                                                     <asp:Label ID="lblACurTotal" runat="server"></asp:Label>&nbsp;</div>
                                                                                             </FooterTemplate>
@@ -585,7 +596,7 @@
                                                                                                     &nbsp;<asp:Label ID="lblLocCur" runat="server" Text='<%#Bind("U_Z_UsdAmt") %>'></asp:Label>
                                                                                                 </div>
                                                                                             </ItemTemplate>
-                                                                                              <FooterTemplate>
+                                                                                            <FooterTemplate>
                                                                                                 <div align="right">
                                                                                                     <asp:Label ID="lblALocCurTotal" runat="server"></asp:Label>&nbsp;</div>
                                                                                             </FooterTemplate>
@@ -602,7 +613,7 @@
                                                                                                 <div align="right">
                                                                                                     &nbsp;<asp:Label ID="lblreimbamt" runat="server" Text='<%#Bind("U_Z_ReimAmt") %>'></asp:Label>
                                                                                                 </div>
-                                                                                            </ItemTemplate>                                                                                           
+                                                                                            </ItemTemplate>
                                                                                         </asp:TemplateField>
                                                                                         <asp:TemplateField HeaderText="Notes">
                                                                                             <ItemTemplate>
@@ -613,8 +624,8 @@
                                                                                         </asp:TemplateField>
                                                                                         <asp:TemplateField HeaderText="Attachment">
                                                                                             <ItemTemplate>
-                                                                                                <asp:LinkButton ID="lnkDownload" Text="Download" CommandArgument='<%# Eval("U_Z_Attachment") %>' ToolTip='<%# Eval("U_Z_Attachment") %>'
-                                                                                                    runat="server" Width="100px" OnClick="lnkDownload_Click"></asp:LinkButton>
+                                                                                                <asp:LinkButton ID="lnkDownload" Text="Download" CommandArgument='<%# Eval("U_Z_Attachment") %>'
+                                                                                                    ToolTip='<%# Eval("U_Z_Attachment") %>' runat="server" Width="100px" OnClick="lnkDownload_Click"></asp:LinkButton>
                                                                                             </ItemTemplate>
                                                                                         </asp:TemplateField>
                                                                                         <asp:TemplateField HeaderText="Approval Status">
@@ -646,7 +657,7 @@
                                                                                     <HeaderStyle BackColor="Gray" HorizontalAlign="Center" ForeColor="White" Height="25px" />
                                                                                     <RowStyle HorizontalAlign="Left" />
                                                                                     <AlternatingRowStyle HorizontalAlign="Left" />
-                                                                                       <FooterStyle Height="25px" BackColor="#CCCCCC" Font-Bold="true" />
+                                                                                    <FooterStyle Height="25px" BackColor="#CCCCCC" Font-Bold="true" />
                                                                                 </asp:GridView>
                                                                             </td>
                                                                         </tr>
@@ -712,7 +723,7 @@
                                                                                                     &nbsp;<asp:Label ID="lblRTraCur" runat="server" Text='<%#Bind("U_Z_Currency") %>'></asp:Label>
                                                                                                 </div>
                                                                                             </ItemTemplate>
-                                                                                               <FooterTemplate>
+                                                                                            <FooterTemplate>
                                                                                                 <div align="right">
                                                                                                     <asp:Label ID="lblRCur" runat="server" Text="Total :"></asp:Label>&nbsp;</div>
                                                                                             </FooterTemplate>
@@ -723,7 +734,7 @@
                                                                                                     &nbsp;<asp:Label ID="lblRtramt" runat="server" Text='<%#Bind("U_Z_CurAmt") %>'></asp:Label>
                                                                                                 </div>
                                                                                             </ItemTemplate>
-                                                                                              <FooterTemplate>
+                                                                                            <FooterTemplate>
                                                                                                 <div align="right">
                                                                                                     <asp:Label ID="lblRCurTotal" runat="server"></asp:Label>&nbsp;</div>
                                                                                             </FooterTemplate>
@@ -741,7 +752,7 @@
                                                                                                     &nbsp;<asp:Label ID="lblRLocCur" runat="server" Text='<%#Bind("U_Z_UsdAmt") %>'></asp:Label>
                                                                                                 </div>
                                                                                             </ItemTemplate>
-                                                                                              <FooterTemplate>
+                                                                                            <FooterTemplate>
                                                                                                 <div align="right">
                                                                                                     <asp:Label ID="lblRLocCurTotal" runat="server"></asp:Label>&nbsp;</div>
                                                                                             </FooterTemplate>
@@ -758,7 +769,7 @@
                                                                                                 <div align="right">
                                                                                                     &nbsp;<asp:Label ID="lblRreimbamt" runat="server" Text='<%#Bind("U_Z_ReimAmt") %>'></asp:Label>
                                                                                                 </div>
-                                                                                            </ItemTemplate>                                                                                            
+                                                                                            </ItemTemplate>
                                                                                         </asp:TemplateField>
                                                                                         <asp:TemplateField HeaderText="Notes">
                                                                                             <ItemTemplate>
@@ -769,8 +780,8 @@
                                                                                         </asp:TemplateField>
                                                                                         <asp:TemplateField HeaderText="Attachment">
                                                                                             <ItemTemplate>
-                                                                                                <asp:LinkButton ID="lnkRDownload" Text="Download" CommandArgument='<%# Eval("U_Z_Attachment") %>' ToolTip='<%# Eval("U_Z_Attachment") %>'
-                                                                                                    runat="server" Width="100px" OnClick="lnkRDownload_Click"></asp:LinkButton>
+                                                                                                <asp:LinkButton ID="lnkRDownload" Text="Download" CommandArgument='<%# Eval("U_Z_Attachment") %>'
+                                                                                                    ToolTip='<%# Eval("U_Z_Attachment") %>' runat="server" Width="100px" OnClick="lnkRDownload_Click"></asp:LinkButton>
                                                                                             </ItemTemplate>
                                                                                         </asp:TemplateField>
                                                                                         <asp:TemplateField HeaderText="Approval Status">
@@ -802,7 +813,7 @@
                                                                                     <HeaderStyle BackColor="Gray" HorizontalAlign="Center" ForeColor="White" Height="25px" />
                                                                                     <RowStyle HorizontalAlign="Left" />
                                                                                     <AlternatingRowStyle HorizontalAlign="Left" />
-                                                                                       <FooterStyle Height="25px" BackColor="#CCCCCC" Font-Bold="true" />
+                                                                                    <FooterStyle Height="25px" BackColor="#CCCCCC" Font-Bold="true" />
                                                                                 </asp:GridView>
                                                                             </td>
                                                                         </tr>
@@ -886,8 +897,8 @@
                                             </td>
                                             <td>
                                                 <asp:TextBox ID="txttrasamt" CssClass="txtbox" runat="server" autocomplete="off"
-                                                    AutoPostBack="true" onkeypress="AllowNumbers1(this);checkDec1(this);RemoveZero(this);"
-                                                    onkeyup="AllowNumbers1(this);checkDec1(this);RemoveZero(this);"></asp:TextBox>
+                                                    AutoPostBack="true" onkeypress="AllowNumbers1(this);checkDec(this);RemoveZero(this);"
+                                                    onkeyup="AllowNumbers1(this);checkDec(this);RemoveZero(this);"></asp:TextBox>
                                             </td>
                                         </tr>
                                         <tr>
@@ -896,7 +907,7 @@
                                             </td>
                                             <td>
                                                 <asp:TextBox ID="txtexrate" CssClass="txtbox" runat="server" autocomplete="off" AutoPostBack="true"
-                                                    onkeypress="AllowNumbers(this);checkDec(this);RemoveZero(this);" onkeyup="AllowNumbers(this);checkDec(this);RemoveZero(this);"></asp:TextBox>
+                                                    onkeypress="AllowNumbers(this);checkDec1(this);RemoveZero(this);" onkeyup="AllowNumbers(this);checkDec1(this);RemoveZero(this);"></asp:TextBox>
                                             </td>
                                             <td>
                                                 Local Currency Amount
@@ -1152,7 +1163,7 @@
                                                 <div align="center">
                                                     <asp:Label ID="lbltype" runat="server" Text='<%#Bind("U_Z_ApproveBy") %>'></asp:Label></div>
                                             </ItemTemplate>
-                                        </asp:TemplateField>                                      
+                                        </asp:TemplateField>
                                         <asp:TemplateField HeaderText="Approved Date">
                                             <ItemTemplate>
                                                 <div align="center">

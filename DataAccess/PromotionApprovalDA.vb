@@ -13,9 +13,9 @@ Public Class PromotionApprovalDA
         Try
             objen.EmpCode = getEmpIDforMangers(objen)
             objDA.strQuery1 = "	select ""U_Z_Status"",  ""Code"",""U_Z_EmpId"",""U_Z_FirstName"",""U_Z_DeptName"",""U_Z_PosName"",""U_Z_JobName"",""U_Z_OrgName"","
-            objDA.strQuery1 += "CAST(""U_Z_ProJoinDate"" AS varchar(11)) AS ""U_Z_ProJoinDate"",CONVERT(decimal(10,2),""U_Z_IncAmount"") as ""U_Z_IncAmount"",CAST(""U_Z_EffFromdt"" AS varchar(11)) AS ""U_Z_EffFromdt"",CAST(""U_Z_EffTodt"" AS varchar(11)) AS ""U_Z_EffTodt"" from ""@Z_HR_HEM2"" where ""U_Z_Posting""='N' and  ""U_Z_EmpId"" in ( " & objen.EmpCode & ") Order by ""Code"" Desc;"
+            objDA.strQuery1 += "CAST(""U_Z_ProJoinDate"" AS varchar(11)) AS ""U_Z_ProJoinDate"",CONVERT(decimal(25,2),""U_Z_IncAmount"") as ""U_Z_IncAmount"",CAST(""U_Z_EffFromdt"" AS varchar(11)) AS ""U_Z_EffFromdt"",CAST(""U_Z_EffTodt"" AS varchar(11)) AS ""U_Z_EffTodt"" from ""@Z_HR_HEM2"" where ""U_Z_Posting""='N' and  ""U_Z_EmpId"" in ( " & objen.EmpCode & ") Order by ""Code"" Desc;"
             objDA.strQuery1 += "select case ""U_Z_Status"" when 'A' then 'Approved' when 'P' then 'Pending' when 'C' then 'Cancelled' end as ""U_Z_Status"" , ""Code"",""U_Z_EmpId"",""U_Z_FirstName"",""U_Z_DeptName"",""U_Z_PosName"",""U_Z_JobName"",""U_Z_OrgName"","
-            objDA.strQuery1 += "CAST(""U_Z_ProJoinDate"" AS varchar(11)) AS ""U_Z_ProJoinDate"",CONVERT(decimal(10,2),""U_Z_IncAmount"") as ""U_Z_IncAmount"",CAST(""U_Z_EffFromdt"" AS varchar(11)) AS ""U_Z_EffFromdt"",CAST(""U_Z_EffTodt"" AS varchar(11)) AS ""U_Z_EffTodt""  from ""@Z_HR_HEM2"" where  ""U_Z_EmpId"" in (" & objen.EmpCode & ") Order by ""Code"" Desc;"
+            objDA.strQuery1 += "CAST(""U_Z_ProJoinDate"" AS varchar(11)) AS ""U_Z_ProJoinDate"",CONVERT(decimal(25,2),""U_Z_IncAmount"") as ""U_Z_IncAmount"",CAST(""U_Z_EffFromdt"" AS varchar(11)) AS ""U_Z_EffFromdt"",CAST(""U_Z_EffTodt"" AS varchar(11)) AS ""U_Z_EffTodt""  from ""@Z_HR_HEM2"" where  ""U_Z_EmpId"" in (" & objen.EmpCode & ") Order by ""Code"" Desc;"
             objDA.strQuery1 += "Select ""Code"",""Name"" from OUDP order by ""Code"";"
             objDA.strQuery1 += "select ""name"",""descriptio"" from OHPS ;"
             objDA.sqlda = New SqlDataAdapter(objDA.strQuery1, objDA.con)
@@ -95,7 +95,7 @@ Public Class PromotionApprovalDA
         Try
             objen.EmpCode = getEmpIDforMangers(objen)
             objDA.strQuery1 = "	select ""U_Z_Status"",  ""Code"",""U_Z_EmpId"",""U_Z_FirstName"",""U_Z_DeptName"",""U_Z_PosName"",""U_Z_JobName"",""U_Z_OrgName"","
-            objDA.strQuery1 += "CAST(""U_Z_ProJoinDate"" AS varchar(11)) AS ""U_Z_ProJoinDate"",CONVERT(decimal(10,2),""U_Z_IncAmount"") as ""U_Z_IncAmount"",CAST(""U_Z_EffFromdt"" AS varchar(11)) AS ""U_Z_EffFromdt"",CAST(""U_Z_EffTodt"" AS varchar(11)) AS ""U_Z_EffTodt"" from ""@Z_HR_HEM2"" where ""U_Z_Posting""='N' and  ""U_Z_EmpId"" in ( " & objen.EmpCode & ") and " & objen.EmpCondition & " Order by ""Code"" Desc;"
+            objDA.strQuery1 += "CAST(""U_Z_ProJoinDate"" AS varchar(11)) AS ""U_Z_ProJoinDate"",CONVERT(decimal(25,2),""U_Z_IncAmount"") as ""U_Z_IncAmount"",CAST(""U_Z_EffFromdt"" AS varchar(11)) AS ""U_Z_EffFromdt"",CAST(""U_Z_EffTodt"" AS varchar(11)) AS ""U_Z_EffTodt"" from ""@Z_HR_HEM2"" where ""U_Z_Posting""='N' and  ""U_Z_EmpId"" in ( " & objen.EmpCode & ") and " & objen.EmpCondition & " Order by ""Code"" Desc;"
             objDA.sqlda = New SqlDataAdapter(objDA.strQuery1, objDA.con)
             objDA.sqlda.Fill(objDA.dss1)
             Return objDA.dss1
@@ -108,7 +108,7 @@ Public Class PromotionApprovalDA
         Try
             objen.EmpCode = getEmpIDforMangers(objen)
             objDA.strQuery1 = "select case ""U_Z_Status"" when 'A' then 'Approved' when 'P' then 'Pending' when 'C' then 'Cancelled' end as ""U_Z_Status"" , ""Code"",""U_Z_EmpId"",""U_Z_FirstName"",""U_Z_DeptName"",""U_Z_PosName"",""U_Z_JobName"",""U_Z_OrgName"","
-            objDA.strQuery1 += "CAST(""U_Z_ProJoinDate"" AS varchar(11)) AS ""U_Z_ProJoinDate"",CONVERT(decimal(10,2),""U_Z_IncAmount"") as ""U_Z_IncAmount"",CAST(""U_Z_EffFromdt"" AS varchar(11)) AS ""U_Z_EffFromdt"",CAST(""U_Z_EffTodt"" AS varchar(11)) AS ""U_Z_EffTodt""  from ""@Z_HR_HEM2"" where  ""U_Z_EmpId"" in (" & objen.EmpCode & ") and " & objen.EmpCondition & " Order by ""Code"" Desc;"
+            objDA.strQuery1 += "CAST(""U_Z_ProJoinDate"" AS varchar(11)) AS ""U_Z_ProJoinDate"",CONVERT(decimal(25,2),""U_Z_IncAmount"") as ""U_Z_IncAmount"",CAST(""U_Z_EffFromdt"" AS varchar(11)) AS ""U_Z_EffFromdt"",CAST(""U_Z_EffTodt"" AS varchar(11)) AS ""U_Z_EffTodt""  from ""@Z_HR_HEM2"" where  ""U_Z_EmpId"" in (" & objen.EmpCode & ") and " & objen.EmpCondition & " Order by ""Code"" Desc;"
             objDA.sqlda = New SqlDataAdapter(objDA.strQuery1, objDA.con)
             objDA.sqlda.Fill(objDA.dss3)
             Return objDA.dss3

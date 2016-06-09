@@ -147,7 +147,7 @@
                                                                                                 &#160;<asp:Label ID="lblreqdt" runat="server" Text='<%#Bind("U_Z_AppReqDate") %>'></asp:Label></div>
                                                                                         </ItemTemplate>
                                                                                     </asp:TemplateField>
-                                                                                    <asp:TemplateField HeaderText="Requested Time">
+                                                                                    <asp:TemplateField HeaderText="Requested Time" Visible="false">
                                                                                         <ItemTemplate>
                                                                                             <div align="left">
                                                                                                 &#160;<asp:Label ID="lblreqtime" runat="server" Text='<%#Bind("U_Z_ReqTime") %>'></asp:Label></div>
@@ -268,6 +268,7 @@
                                                                                     <td>
                                                                                         <asp:TextBox ID="txtcode" runat="server" CssClass="txtbox" Visible="false"></asp:TextBox>
                                                                                         <asp:TextBox ID="txtempid" runat="server" CssClass="txtbox" Visible="false"></asp:TextBox>
+                                                                                        <asp:TextBox ID="txtreqempid" runat="server" CssClass="txtbox" Visible="false"></asp:TextBox>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
@@ -394,7 +395,7 @@
                                                                                                 &#160;<asp:Label ID="lblSAppstatus" runat="server" Text='<%#Bind("U_Z_AppStatus") %>'></asp:Label></div>
                                                                                         </ItemTemplate>
                                                                                     </asp:TemplateField>
-                                                                                    <asp:TemplateField HeaderText="Requested Time">
+                                                                                    <asp:TemplateField HeaderText="Requested Time" Visible="false">
                                                                                         <ItemTemplate>
                                                                                             <div align="left">
                                                                                                 &#160;<asp:Label ID="lblSreqtime" runat="server" Text='<%#Bind("U_Z_ReqTime") %>'></asp:Label></div>

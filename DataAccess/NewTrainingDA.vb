@@ -11,8 +11,8 @@ Public Class NewTrainingDA
     End Sub
     Public Function BindNewTraining(ByVal objEN As NewTrainingEN) As DataSet
         Try
-            objDA.strQuery = " select DocEntry,convert(varchar(10),U_Z_ReqDate,103) AS U_Z_ReqDate,U_Z_HREmpID,U_Z_HREmpName,U_Z_DeptName,U_Z_PosiName,U_Z_CourseName,U_Z_CourseDetails,convert(varchar(10),U_Z_TrainFrdt,103) as U_Z_TrainFrdt,convert(varchar(10),U_Z_TrainTodt,103) as U_Z_TrainTodt,cast(U_Z_TrainCost as decimal(10,2)) AS U_Z_TrainCost,U_Z_Notes,"
-            objDA.strQuery += " case U_Z_AppStatus when 'P' then 'Pending' when 'A' then 'Approved' when 'R' then 'Rejected' end as U_Z_AppStatus  from [@Z_HR_ONTREQ] where U_Z_HREmpID='" & objEN.EmpId & "' Order by DocEntry Desc"
+            objDA.strQuery = " select DocEntry,convert(varchar(10),U_Z_ReqDate,103) AS U_Z_ReqDate,U_Z_HREmpID,U_Z_HREmpName,U_Z_DeptName,U_Z_PosiName,U_Z_CourseName,U_Z_CourseDetails,convert(varchar(10),U_Z_TrainFrdt,103) as U_Z_TrainFrdt,convert(varchar(10),U_Z_TrainTodt,103) as U_Z_TrainTodt,cast(U_Z_TrainCost as decimal(25,2)) AS U_Z_TrainCost,U_Z_Notes,"
+            objDA.strQuery += " case U_Z_AppStatus when 'P' then 'Pending' when 'A' then 'Approved' when 'R' then 'Rejected' when 'C' then 'Canceled' end as U_Z_AppStatus,ISNULL(U_Z_Attachment,'') AS U_Z_Attachment  from [@Z_HR_ONTREQ] where U_Z_HREmpID='" & objEN.EmpId & "' Order by DocEntry Desc"
             objDA.sqlda = New SqlDataAdapter(objDA.strQuery, objDA.con)
             objDA.sqlda.Fill(objDA.ds)
             Return objDA.ds
@@ -65,6 +65,22 @@ Public Class NewTrainingDA
         End If
         Return objen.DeptName
     End Function
+    Public Function TargetPath() As String
+        Dim TargetsapPath As String
+        Try
+
+            objDA.strQuery = "select AttachPath from OADP"
+            objDA.sqlda = New SqlDataAdapter(objDA.strQuery, objDA.con)
+            objDA.sqlda.Fill(objDA.dss1)
+            If objDA.dss1.Tables(0).Rows.Count > 0 Then
+                TargetsapPath = objDA.dss1.Tables(0).Rows(0)(0).ToString()
+            End If
+            Return TargetsapPath
+        Catch ex As Exception
+            DBConnectionDA.WriteError(ex.Message)
+            Throw ex
+        End Try
+    End Function
     Public Function SaveNewTrainingRequest(ByVal objen As NewTrainingEN) As String
         Try
             objDA.objMainCompany = objen.SapCompany
@@ -100,6 +116,7 @@ Public Class NewTrainingDA
             oGeneralData1.SetProperty("U_Z_AwayOff", objen.AwayoffBus)
             oGeneralData1.SetProperty("U_Z_CerTestAvail", objen.TestAvail)
             oGeneralData1.SetProperty("U_Z_CerTestIncl", objen.TestInclude)
+            oGeneralData1.SetProperty("U_Z_Attachment", objen.Attachment)
             If objen.LveDutyOn <> "01/01/1900" Then
                 oGeneralData1.SetProperty("U_Z_LveDuty", objen.LveDutyOn)
             End If
@@ -131,11 +148,11 @@ Public Class NewTrainingDA
     Public Function populateTrainRequest(ByVal objEN As NewTrainingEN) As DataSet
         Try
             objDA.strQuery = "select DocEntry,convert(varchar(10),U_Z_ReqDate,103) AS U_Z_ReqDate,U_Z_HREmpID,U_Z_HREmpName,U_Z_DeptName,U_Z_PosiName,"
-            objDA.strQuery += " U_Z_CourseName,U_Z_CourseDetails,convert(varchar(10),U_Z_TrainFrdt,103) as U_Z_TrainFrdt,U_Z_PosiCode,U_Z_DeptCode,cast(U_Z_TrainCost as decimal(10,2)) AS U_Z_TrainCost,"
-            objDA.strQuery += " cast(U_Z_EstExpe as decimal(10,2)) AS U_Z_EstExpe ,U_Z_TrainLoc,cast(U_Z_BussDays as decimal(10,1)) AS U_Z_BussDays,cast(U_Z_CalDays as decimal(10,1)) AS U_Z_CalDays,cast(U_Z_AwayOff as decimal(10,1)) AS U_Z_AwayOff,U_Z_CerTestAvail,U_Z_CerTestIncl,"
+            objDA.strQuery += " U_Z_CourseName,U_Z_CourseDetails,convert(varchar(10),U_Z_TrainFrdt,103) as U_Z_TrainFrdt,U_Z_PosiCode,U_Z_DeptCode,cast(U_Z_TrainCost as decimal(25,2)) AS U_Z_TrainCost,"
+            objDA.strQuery += " cast(U_Z_EstExpe as decimal(25,2)) AS U_Z_EstExpe ,U_Z_TrainLoc,cast(U_Z_BussDays as decimal(10,1)) AS U_Z_BussDays,cast(U_Z_CalDays as decimal(10,1)) AS U_Z_CalDays,cast(U_Z_AwayOff as decimal(10,1)) AS U_Z_AwayOff,U_Z_CerTestAvail,U_Z_CerTestIncl,"
             objDA.strQuery += " convert(varchar(10),U_Z_TrainTodt,103) as U_Z_TrainTodt,U_Z_Notes,U_Z_AppStatus,"
             objDA.strQuery += " convert(varchar(10),U_Z_LveDuty,103) AS U_Z_LveDuty,convert(varchar(10),U_Z_TravelOn,103) AS U_Z_TravelOn,"
-            objDA.strQuery += " convert(varchar(10),U_Z_ReturnOn,103) AS U_Z_ReturnOn,convert(varchar(10),U_Z_ResumeOn,103) AS U_Z_ResumeOn from [@Z_HR_ONTREQ] where U_Z_HREmpID='" & objEN.EmpId & "' AND DocEntry='" & objEN.ReqCode & "'"
+            objDA.strQuery += " convert(varchar(10),U_Z_ReturnOn,103) AS U_Z_ReturnOn,convert(varchar(10),U_Z_ResumeOn,103) AS U_Z_ResumeOn,ISNULL(U_Z_Attachment,'') AS U_Z_Attachment from [@Z_HR_ONTREQ] where U_Z_HREmpID='" & objEN.EmpId & "' AND DocEntry='" & objEN.ReqCode & "'"
             objDA.sqlda = New SqlDataAdapter(objDA.strQuery, objDA.con)
             objDA.sqlda.Fill(objDA.dss1)
             If objDA.dss1.Tables(0).Rows.Count <> 0 Then
@@ -154,6 +171,23 @@ Public Class NewTrainingDA
             objDA.cmd.ExecuteNonQuery()
             objDA.con.Close()
             objDA.strmsg = "Training Request " & objen.ReqCode & " deleted Successfully..."
+        Catch ex As Exception
+            DBConnectionDA.WriteError(ex.Message)
+            Throw ex
+            objDA.strmsg = ex.Message
+        End Try
+        Return objDA.strmsg
+    End Function
+    Public Function CancelRequest(ByVal objen As NewTrainingEN) As String
+        Try
+            objDA.strQuery = "Update [@Z_HR_ONTREQ] set U_Z_AppStatus='C' where DocEntry='" & objen.ReqCode & "' AND U_Z_HREmpID='" & objen.EmpId & "'"
+            objDA.cmd = New SqlCommand(objDA.strQuery, objDA.con)
+            objDA.con.Open()
+            objDA.cmd.ExecuteNonQuery()
+            objDA.con.Close()
+            objDA.strmsg = "Training Request " & objen.ReqCode & " Canceled Successfully..."
+            Dim strEmailmsg As String = "New Training request number :" & objen.ReqCode & " has been cancelled by " & objen.EmpName
+            objDA.SendMail_RequestApproval(strEmailmsg, objen.EmpId, objen.SapCompany, , , , "C")
         Catch ex As Exception
             DBConnectionDA.WriteError(ex.Message)
             Throw ex

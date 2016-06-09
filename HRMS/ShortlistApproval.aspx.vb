@@ -97,6 +97,7 @@ Public Class ShortlistApproval
             Dim gv As GridViewRow = CType((link.Parent.Parent), GridViewRow)
             Dim DocNo As LinkButton = CType(gv.FindControl("lblCode"), LinkButton)
             Dim Empid As Label = CType(gv.FindControl("lbldept"), Label)
+            Dim ReqEmpId As Label = CType(gv.FindControl("lblEmpid"), Label)
             Dim introw As Integer = gv.RowIndex
             For Each row1 As GridViewRow In grdRequestApproval.Rows
                 If row1.RowIndex <> introw Then
@@ -107,6 +108,7 @@ Public Class ShortlistApproval
             Next
             txtcode.Text = DocNo.Text.Trim()
             txtempid.Text = Empid.Text.Trim()
+            txtreqempid.Text = ReqEmpId.Text.Trim()
             objEN.EmpId = Session("UserCode").ToString()
             objEN.DocEntry = DocNo.Text.Trim()
             objEN.HistoryType = "AppShort"
@@ -184,6 +186,7 @@ Public Class ShortlistApproval
                 objEN.EmpUserId = objBL.GetEmpUserid(objEN)
                 objEN.DocEntry = txtcode.Text.Trim()
                 objEN.EmpId = txtempid.Text.Trim()
+                objEN.ReqEmpId = txtreqempid.Text.Trim()
                 objEN.HistoryType = "AppShort"
                 objEN.HeaderType = "Rec"
                 objEN.AppStatus = ddlAppStatus.SelectedValue

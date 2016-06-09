@@ -3,6 +3,8 @@ Imports System.Globalization
 Imports BusinessLogic
 Imports DataAccess
 Imports EN
+Imports System.IO
+
 Public Class MNewTrainingReq
     Inherits System.Web.UI.Page
     Dim objEN As NewTrainingEN = New NewTrainingEN()
@@ -33,8 +35,10 @@ Public Class MNewTrainingReq
             BindNewTraining(objEN)
             panelview.Visible = True
             PanelNewRequest.Visible = False
+            Page.Form.Enctype = "multipart/form-data"
         End If
     End Sub
+   
     Private Sub BindNewTraining(ByVal objen As NewTrainingEN)
         Try
             dbCon.ds = objBL.BindNewTraining(objen)
@@ -72,7 +76,7 @@ Public Class MNewTrainingReq
             mess(dbCon.strmsg)
         End Try
     End Sub
-   
+
     Private Sub PopulateEmployee(ByVal objen As NewTrainingEN)
         objen = objBL.PopulateEmployee(objen)
         txtdeptcode.Text = objen.DeptCode
@@ -132,11 +136,14 @@ Public Class MNewTrainingReq
     End Function
 
     Protected Sub btnAdd_Click(ByVal sender As Object, ByVal e As EventArgs) Handles btnAdd.Click
+        System.Threading.Thread.Sleep(2000)
+        Dim strpath, fileName, Targetpath, fileName1 As String
+        strpath = Server.MapPath("~\Document\")
+        Try
+            If Session("UserCode") Is Nothing Or Session("SAPCompany") Is Nothing Then
+                Response.Redirect("Login.aspx?sessionExpired=true", True)
+            Else
 
-        If Session("UserCode") Is Nothing Or Session("SAPCompany") Is Nothing Then
-            Response.Redirect("Login.aspx?sessionExpired=true", True)
-        Else
-            Try
                 If Validation(objEN) = True Then
                     objEN.ReqCode = txtcode.Text.Trim()
                     objEN.EmpId = txtempid.Text.Trim()
@@ -147,6 +154,7 @@ Public Class MNewTrainingReq
                     objEN.PositionName = txtpositionName.Text.Trim()
                     objEN.TrainTitle = txttrtitle.Text.Trim()
                     objEN.Justification = txtjust.Text.Trim()
+                    fileName = fileattach.FileName
                     If txtcost.Text.Trim <> "" Then
                         objEN.TrainCost = CDbl(txtcost.Text.Trim())
                     Else
@@ -206,6 +214,26 @@ Public Class MNewTrainingReq
                     objEN.Notes = txtComments.Text.Trim()
                     objEN.Status = dbCon.DocApproval("Train", txtempid.Text.Trim())
                     objEN.SapCompany = Session("SAPCompany")
+
+
+
+                    If fileName <> "" Then
+                        fileName1 = DateTime.Now.ToString("yyyyMMddHH:mm:ss").Replace(":", "") & "_" & fileName
+                        fileName = Session("UserName").ToString() & "_NT" & "_" & CInt(txtreqcode.Text.Trim()) & "_" & fileName1
+                        Targetpath = objBL.TargetPath()
+                        fileattach.SaveAs(strpath + fileName)
+                        If Targetpath <> "" Then
+                            Try
+                                fileattach.SaveAs(Targetpath + fileName)
+                            Catch ex As Exception
+                            End Try
+                        End If
+                        objEN.Attachment = strpath + fileName
+                    Else
+                        objEN.Attachment = dbCon.GetAttachment(txtreqcode.Text.Trim(), txtempid.Text.Trim())
+
+                    End If
+
                     blValue = objBL.SaveNewTrainingRequest(objEN)
                     dbCon.strmsg = "alert('" & blValue & "')"
                     mess(dbCon.strmsg)
@@ -225,10 +253,24 @@ Public Class MNewTrainingReq
                     End If
                     Clear()
                 End If
-            Catch ex As Exception
-                dbCon.strmsg = "alert('" & ex.Message & "')"
-                mess(dbCon.strmsg)
-            End Try
+
+            End If
+        Catch ex As Exception
+            dbCon.strmsg = "alert('" & ex.Message & "')"
+            mess(dbCon.strmsg)
+        End Try
+    End Sub
+    Protected Sub lnkEDownload_Click(ByVal sender As Object, ByVal e As EventArgs)
+        Dim filePath As String = TryCast(sender, LinkButton).CommandArgument
+        Dim filename As String = Path.GetFileName(filePath)
+        If filename <> "" Then
+            Dim path As String = System.IO.Path.Combine(Server.MapPath("~\Document\"), filename)
+            If File.Exists(path) = True Then
+                ScriptManager.RegisterStartupScript(Page, [GetType](), "MyScript", "window.open('../Download.aspx?ifile=" + HttpUtility.UrlEncode(path) + "');", True)
+            Else
+                dbcon.strmsg = "File is not available"
+                ClientScript.RegisterStartupScript(Me.GetType(), "msg", "<script>alert('" & dbcon.strmsg & "')</script>")
+            End If
         End If
     End Sub
     Protected Sub lbtndocnum_Click(ByVal sender As Object, ByVal e As EventArgs)
@@ -278,6 +320,7 @@ Public Class MNewTrainingReq
                 txtReturnon.Text = dbCon.dss1.Tables(0).Rows(0)("U_Z_ReturnOn").ToString()
                 txtresumes.Text = dbCon.dss1.Tables(0).Rows(0)("U_Z_ResumeOn").ToString()
                 txtComments.Text = dbCon.dss1.Tables(0).Rows(0)("U_Z_Notes").ToString()
+                lblAttach.Text = dbCon.dss1.Tables(0).Rows(0)("U_Z_Attachment").ToString()
                 Blflag = dbCon.WithDrawStatus("NewTra", txtcode.Text.Trim())
                 If Blflag = True Or dbCon.dss1.Tables(0).Rows(0)("U_Z_AppStatus").ToString() <> "P" Then
                     btnWithdraw.Visible = False
@@ -285,6 +328,12 @@ Public Class MNewTrainingReq
                 Else
                     btnWithdraw.Visible = True
                     btnAdd.Visible = True
+                    btnWithdraw.Text = "WithDraw Request"
+                End If
+                Dim dtFrom As Date = dbCon.GetDate(txtfrmdate.Text.Trim())
+                If dbCon.dss1.Tables(0).Rows(0)("U_Z_AppStatus").ToString() = "A" And dtFrom > Now.Date Then
+                    btnWithdraw.Visible = True
+                    btnWithdraw.Text = "Cancel Request"
                 End If
             End If
         Catch ex As Exception
@@ -323,11 +372,21 @@ Public Class MNewTrainingReq
 
     Private Sub btnWithdraw_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnWithdraw.Click
         Try
-            objEN.ReqCode = txtreqcode.Text.Trim()
-            objEN.EmpId = txtempid.Text.Trim()
-            blValue = objBL.WithdrawRequest(objEN)
-            dbCon.strmsg = "alert('" & blValue & "')"
-            mess(dbCon.strmsg)
+            If btnWithdraw.Text = "WithDraw Request" Then
+                objEN.ReqCode = txtreqcode.Text.Trim()
+                objEN.EmpId = txtempid.Text.Trim()
+                blValue = objBL.WithdrawRequest(objEN)
+                dbCon.strmsg = "alert('" & blValue & "')"
+                mess(dbCon.strmsg)
+            Else
+                objEN.ReqCode = txtreqcode.Text.Trim()
+                objEN.EmpId = txtempid.Text.Trim()
+                objEN.EmpName = txtempname.Text.Trim()
+                objEN.SapCompany = Session("SAPCompany")
+                blValue = objBL.CancelRequest(objEN)
+                dbCon.strmsg = "alert('" & blValue & "')"
+                mess(dbCon.strmsg)
+            End If
             panelview.Visible = True
             PanelNewRequest.Visible = False
             objEN.EmpId = Session("UserCode").ToString()
@@ -387,11 +446,18 @@ Public Class MNewTrainingReq
         If e.Row.RowType = DataControlRowType.DataRow Then
             Dim LiDocNo As LinkButton = CType(e.Row.FindControl("lbtndocnum"), LinkButton)
             Dim Liview As LinkButton = CType(e.Row.FindControl("lbtAppHistory"), LinkButton)
+            Dim LiAttachment As LinkButton = CType(e.Row.FindControl("lnkEDownload"), LinkButton)
             Blflag = dbCon.WithDrawStatus("NewTra", LiDocNo.Text.Trim())
             If Blflag = True Then
                 Liview.Visible = True
             Else
                 Liview.Visible = False
+            End If
+            Dim strAttached As String = e.Row.DataItem("U_Z_Attachment")
+            If strAttached = "" Then
+                LiAttachment.Visible = False
+            Else
+                LiAttachment.Visible = True
             End If
         End If
     End Sub

@@ -35,6 +35,7 @@ Public Class Login
         objEn.Userid = TxtUid.Text.Trim()
         objEn.Password = TxtPwd.Text.Trim()
         'strError = dbCon.Connection()
+        UserID = TxtUid.Text.Trim()
         ESSWebLink = dbCon.ESSLink()
         If objEn.Userid = "" Then
             ClientScript.RegisterStartupScript([GetType](), "Message", "<script>alert('Enter the UserName')</script>")

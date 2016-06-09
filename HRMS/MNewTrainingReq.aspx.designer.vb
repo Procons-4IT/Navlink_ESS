@@ -419,6 +419,24 @@ Partial Public Class MNewTrainingReq
     Protected WithEvents CalendarExtender6 As Global.AjaxControlToolkit.CalendarExtender
 
     '''<summary>
+    '''lblAttach control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblAttach As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''fileattach control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents fileattach As Global.System.Web.UI.WebControls.FileUpload
+
+    '''<summary>
     '''txtComments control.
     '''</summary>
     '''<remarks>

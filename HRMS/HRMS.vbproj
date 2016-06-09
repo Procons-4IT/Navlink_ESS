@@ -14,6 +14,7 @@
     <AssemblyName>HRMS</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -210,6 +211,7 @@
     <Content Include="Images\logo.png" />
     <Content Include="Images\log_top.png" />
     <Content Include="Images\Middle_texture.jpg" />
+    <Content Include="Images\Print.png" />
     <Content Include="Images\search.jpg" />
     <Content Include="Images\Search1.jpg" />
     <Content Include="Images\Tabindex.png" />
@@ -432,6 +434,12 @@
     </Compile>
     <Compile Include="Reports\dsAppraisal.vb">
       <DependentUpon>dsAppraisal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ExpenseClaim.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExpenseClaim.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Reports\rptApp.vb">
       <SubType>Component</SubType>
@@ -722,6 +730,10 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\Debug\HRMS.Resources.resources" />
+    <EmbeddedResource Include="Reports\ExpenseClaim.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ExpenseClaim.vb</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\rptPayslip.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptPayslip.vb</LastGenOutput>

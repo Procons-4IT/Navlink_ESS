@@ -26,12 +26,21 @@
     Private _Notes As String
     Private _Status As String
     Private _SapCompany As SAPbobsCOM.Company
+    Private _Attachment As String
     Public Property SapCompany() As SAPbobsCOM.Company
         Get
             Return _SapCompany
         End Get
         Set(ByVal value As SAPbobsCOM.Company)
             _SapCompany = value
+        End Set
+    End Property
+    Public Property Attachment() As String
+        Get
+            Return _Attachment
+        End Get
+        Set(ByVal value As String)
+            _Attachment = value
         End Set
     End Property
     Public Property StrQry() As String

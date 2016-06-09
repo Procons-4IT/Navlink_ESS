@@ -2032,3 +2032,153 @@ F:\Internation Projects 2016\Procons4it\HumanResource\ESS\20160518_HRMS Web _Nav
 F:\Internation Projects 2016\Procons4it\HumanResource\ESS\20160518_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.dll
 F:\Internation Projects 2016\Procons4it\HumanResource\ESS\20160518_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.xml
 F:\Internation Projects 2016\Procons4it\HumanResource\ESS\20160518_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.pdb
+E:\Projects\Web Developments\HRMS\SourceCode\20160520_HRMS Web _Navlink\HRMS\bin\HRMS.dll
+E:\Projects\Web Developments\HRMS\SourceCode\20160520_HRMS Web _Navlink\HRMS\bin\HRMS.pdb
+E:\Projects\Web Developments\HRMS\SourceCode\20160520_HRMS Web _Navlink\HRMS\bin\HRMS.xml
+E:\Projects\Web Developments\HRMS\SourceCode\20160520_HRMS Web _Navlink\HRMS\bin\BusinessLogic.dll
+E:\Projects\Web Developments\HRMS\SourceCode\20160520_HRMS Web _Navlink\HRMS\bin\CrystalDecisions.CrystalReports.Engine.dll
+E:\Projects\Web Developments\HRMS\SourceCode\20160520_HRMS Web _Navlink\HRMS\bin\CrystalDecisions.ReportSource.dll
+E:\Projects\Web Developments\HRMS\SourceCode\20160520_HRMS Web _Navlink\HRMS\bin\CrystalDecisions.Shared.dll
+E:\Projects\Web Developments\HRMS\SourceCode\20160520_HRMS Web _Navlink\HRMS\bin\CrystalDecisions.Web.dll
+E:\Projects\Web Developments\HRMS\SourceCode\20160520_HRMS Web _Navlink\HRMS\bin\DataAccess.dll
+E:\Projects\Web Developments\HRMS\SourceCode\20160520_HRMS Web _Navlink\HRMS\bin\EN.dll
+E:\Projects\Web Developments\HRMS\SourceCode\20160520_HRMS Web _Navlink\HRMS\bin\AjaxMin.dll
+E:\Projects\Web Developments\HRMS\SourceCode\20160520_HRMS Web _Navlink\HRMS\bin\BusinessLogic.pdb
+E:\Projects\Web Developments\HRMS\SourceCode\20160520_HRMS Web _Navlink\HRMS\bin\BusinessLogic.xml
+E:\Projects\Web Developments\HRMS\SourceCode\20160520_HRMS Web _Navlink\HRMS\bin\DataAccess.pdb
+E:\Projects\Web Developments\HRMS\SourceCode\20160520_HRMS Web _Navlink\HRMS\bin\DataAccess.xml
+E:\Projects\Web Developments\HRMS\SourceCode\20160520_HRMS Web _Navlink\HRMS\bin\EN.pdb
+E:\Projects\Web Developments\HRMS\SourceCode\20160520_HRMS Web _Navlink\HRMS\bin\EN.xml
+E:\Projects\Web Developments\HRMS\SourceCode\20160520_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.vbprojResolveAssemblyReference.cache
+E:\Projects\Web Developments\HRMS\SourceCode\20160520_HRMS Web _Navlink\HRMS\obj\Debug\Interop.SAPbobsCOM.dll
+E:\Projects\Web Developments\HRMS\SourceCode\20160520_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.vbproj.ResolveComReference.cache
+E:\Projects\Web Developments\HRMS\SourceCode\20160520_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.Resources.resources
+E:\Projects\Web Developments\HRMS\SourceCode\20160520_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.vbproj.GenerateResource.Cache
+E:\Projects\Web Developments\HRMS\SourceCode\20160520_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.dll
+E:\Projects\Web Developments\HRMS\SourceCode\20160520_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.xml
+E:\Projects\Web Developments\HRMS\SourceCode\20160520_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.pdb
+E:\Projects\Web Developments\HRMS\SourceCode\20160531_HRMS Web _Navlink\HRMS\bin\HRMS.dll
+E:\Projects\Web Developments\HRMS\SourceCode\20160531_HRMS Web _Navlink\HRMS\bin\HRMS.pdb
+E:\Projects\Web Developments\HRMS\SourceCode\20160531_HRMS Web _Navlink\HRMS\bin\HRMS.xml
+E:\Projects\Web Developments\HRMS\SourceCode\20160531_HRMS Web _Navlink\HRMS\bin\BusinessLogic.dll
+E:\Projects\Web Developments\HRMS\SourceCode\20160531_HRMS Web _Navlink\HRMS\bin\CrystalDecisions.CrystalReports.Engine.dll
+E:\Projects\Web Developments\HRMS\SourceCode\20160531_HRMS Web _Navlink\HRMS\bin\CrystalDecisions.ReportSource.dll
+E:\Projects\Web Developments\HRMS\SourceCode\20160531_HRMS Web _Navlink\HRMS\bin\CrystalDecisions.Shared.dll
+E:\Projects\Web Developments\HRMS\SourceCode\20160531_HRMS Web _Navlink\HRMS\bin\CrystalDecisions.Web.dll
+E:\Projects\Web Developments\HRMS\SourceCode\20160531_HRMS Web _Navlink\HRMS\bin\DataAccess.dll
+E:\Projects\Web Developments\HRMS\SourceCode\20160531_HRMS Web _Navlink\HRMS\bin\EN.dll
+E:\Projects\Web Developments\HRMS\SourceCode\20160531_HRMS Web _Navlink\HRMS\bin\AjaxMin.dll
+E:\Projects\Web Developments\HRMS\SourceCode\20160531_HRMS Web _Navlink\HRMS\bin\BusinessLogic.pdb
+E:\Projects\Web Developments\HRMS\SourceCode\20160531_HRMS Web _Navlink\HRMS\bin\BusinessLogic.xml
+E:\Projects\Web Developments\HRMS\SourceCode\20160531_HRMS Web _Navlink\HRMS\bin\DataAccess.pdb
+E:\Projects\Web Developments\HRMS\SourceCode\20160531_HRMS Web _Navlink\HRMS\bin\DataAccess.xml
+E:\Projects\Web Developments\HRMS\SourceCode\20160531_HRMS Web _Navlink\HRMS\bin\EN.pdb
+E:\Projects\Web Developments\HRMS\SourceCode\20160531_HRMS Web _Navlink\HRMS\bin\EN.xml
+E:\Projects\Web Developments\HRMS\SourceCode\20160531_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.vbprojResolveAssemblyReference.cache
+E:\Projects\Web Developments\HRMS\SourceCode\20160531_HRMS Web _Navlink\HRMS\obj\Debug\Interop.SAPbobsCOM.dll
+E:\Projects\Web Developments\HRMS\SourceCode\20160531_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.vbproj.ResolveComReference.cache
+E:\Projects\Web Developments\HRMS\SourceCode\20160531_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.Resources.resources
+E:\Projects\Web Developments\HRMS\SourceCode\20160531_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.vbproj.GenerateResource.Cache
+E:\Projects\Web Developments\HRMS\SourceCode\20160531_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.dll
+E:\Projects\Web Developments\HRMS\SourceCode\20160531_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.xml
+E:\Projects\Web Developments\HRMS\SourceCode\20160531_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.pdb
+E:\Projects\Web Developments\HRMS\Delivery\20160603_ESS Delivery_NavLink\20160603_HRMS Web _Navlink\HRMS\bin\HRMS.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160603_ESS Delivery_NavLink\20160603_HRMS Web _Navlink\HRMS\bin\HRMS.pdb
+E:\Projects\Web Developments\HRMS\Delivery\20160603_ESS Delivery_NavLink\20160603_HRMS Web _Navlink\HRMS\bin\HRMS.xml
+E:\Projects\Web Developments\HRMS\Delivery\20160603_ESS Delivery_NavLink\20160603_HRMS Web _Navlink\HRMS\bin\BusinessLogic.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160603_ESS Delivery_NavLink\20160603_HRMS Web _Navlink\HRMS\bin\CrystalDecisions.CrystalReports.Engine.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160603_ESS Delivery_NavLink\20160603_HRMS Web _Navlink\HRMS\bin\CrystalDecisions.ReportSource.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160603_ESS Delivery_NavLink\20160603_HRMS Web _Navlink\HRMS\bin\CrystalDecisions.Shared.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160603_ESS Delivery_NavLink\20160603_HRMS Web _Navlink\HRMS\bin\CrystalDecisions.Web.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160603_ESS Delivery_NavLink\20160603_HRMS Web _Navlink\HRMS\bin\DataAccess.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160603_ESS Delivery_NavLink\20160603_HRMS Web _Navlink\HRMS\bin\EN.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160603_ESS Delivery_NavLink\20160603_HRMS Web _Navlink\HRMS\bin\AjaxMin.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160603_ESS Delivery_NavLink\20160603_HRMS Web _Navlink\HRMS\bin\BusinessLogic.pdb
+E:\Projects\Web Developments\HRMS\Delivery\20160603_ESS Delivery_NavLink\20160603_HRMS Web _Navlink\HRMS\bin\BusinessLogic.xml
+E:\Projects\Web Developments\HRMS\Delivery\20160603_ESS Delivery_NavLink\20160603_HRMS Web _Navlink\HRMS\bin\DataAccess.pdb
+E:\Projects\Web Developments\HRMS\Delivery\20160603_ESS Delivery_NavLink\20160603_HRMS Web _Navlink\HRMS\bin\DataAccess.xml
+E:\Projects\Web Developments\HRMS\Delivery\20160603_ESS Delivery_NavLink\20160603_HRMS Web _Navlink\HRMS\bin\EN.pdb
+E:\Projects\Web Developments\HRMS\Delivery\20160603_ESS Delivery_NavLink\20160603_HRMS Web _Navlink\HRMS\bin\EN.xml
+E:\Projects\Web Developments\HRMS\Delivery\20160603_ESS Delivery_NavLink\20160603_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.vbprojResolveAssemblyReference.cache
+E:\Projects\Web Developments\HRMS\Delivery\20160603_ESS Delivery_NavLink\20160603_HRMS Web _Navlink\HRMS\obj\Debug\Interop.SAPbobsCOM.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160603_ESS Delivery_NavLink\20160603_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.vbproj.ResolveComReference.cache
+E:\Projects\Web Developments\HRMS\Delivery\20160603_ESS Delivery_NavLink\20160603_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.Resources.resources
+E:\Projects\Web Developments\HRMS\Delivery\20160603_ESS Delivery_NavLink\20160603_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.vbproj.GenerateResource.Cache
+E:\Projects\Web Developments\HRMS\Delivery\20160603_ESS Delivery_NavLink\20160603_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160603_ESS Delivery_NavLink\20160603_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.xml
+E:\Projects\Web Developments\HRMS\Delivery\20160603_ESS Delivery_NavLink\20160603_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.pdb
+E:\Projects\Web Developments\HRMS\SourceCode\20160603_HRMS Web _Navlink\HRMS\bin\HRMS.dll
+E:\Projects\Web Developments\HRMS\SourceCode\20160603_HRMS Web _Navlink\HRMS\bin\HRMS.pdb
+E:\Projects\Web Developments\HRMS\SourceCode\20160603_HRMS Web _Navlink\HRMS\bin\HRMS.xml
+E:\Projects\Web Developments\HRMS\SourceCode\20160603_HRMS Web _Navlink\HRMS\bin\BusinessLogic.dll
+E:\Projects\Web Developments\HRMS\SourceCode\20160603_HRMS Web _Navlink\HRMS\bin\CrystalDecisions.CrystalReports.Engine.dll
+E:\Projects\Web Developments\HRMS\SourceCode\20160603_HRMS Web _Navlink\HRMS\bin\CrystalDecisions.ReportSource.dll
+E:\Projects\Web Developments\HRMS\SourceCode\20160603_HRMS Web _Navlink\HRMS\bin\CrystalDecisions.Shared.dll
+E:\Projects\Web Developments\HRMS\SourceCode\20160603_HRMS Web _Navlink\HRMS\bin\CrystalDecisions.Web.dll
+E:\Projects\Web Developments\HRMS\SourceCode\20160603_HRMS Web _Navlink\HRMS\bin\DataAccess.dll
+E:\Projects\Web Developments\HRMS\SourceCode\20160603_HRMS Web _Navlink\HRMS\bin\EN.dll
+E:\Projects\Web Developments\HRMS\SourceCode\20160603_HRMS Web _Navlink\HRMS\bin\AjaxMin.dll
+E:\Projects\Web Developments\HRMS\SourceCode\20160603_HRMS Web _Navlink\HRMS\bin\BusinessLogic.pdb
+E:\Projects\Web Developments\HRMS\SourceCode\20160603_HRMS Web _Navlink\HRMS\bin\BusinessLogic.xml
+E:\Projects\Web Developments\HRMS\SourceCode\20160603_HRMS Web _Navlink\HRMS\bin\DataAccess.pdb
+E:\Projects\Web Developments\HRMS\SourceCode\20160603_HRMS Web _Navlink\HRMS\bin\DataAccess.xml
+E:\Projects\Web Developments\HRMS\SourceCode\20160603_HRMS Web _Navlink\HRMS\bin\EN.pdb
+E:\Projects\Web Developments\HRMS\SourceCode\20160603_HRMS Web _Navlink\HRMS\bin\EN.xml
+E:\Projects\Web Developments\HRMS\SourceCode\20160603_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.vbprojResolveAssemblyReference.cache
+E:\Projects\Web Developments\HRMS\SourceCode\20160603_HRMS Web _Navlink\HRMS\obj\Debug\Interop.SAPbobsCOM.dll
+E:\Projects\Web Developments\HRMS\SourceCode\20160603_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.vbproj.ResolveComReference.cache
+E:\Projects\Web Developments\HRMS\SourceCode\20160603_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.Resources.resources
+E:\Projects\Web Developments\HRMS\SourceCode\20160603_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.vbproj.GenerateResource.Cache
+E:\Projects\Web Developments\HRMS\SourceCode\20160603_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.dll
+E:\Projects\Web Developments\HRMS\SourceCode\20160603_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.xml
+E:\Projects\Web Developments\HRMS\SourceCode\20160603_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.pdb
+E:\Projects\Web Developments\HRMS\Delivery\20160608_ESS Delivery_NavLink\20160608_HRMS Web _Navlink\HRMS\bin\HRMS.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160608_ESS Delivery_NavLink\20160608_HRMS Web _Navlink\HRMS\bin\HRMS.pdb
+E:\Projects\Web Developments\HRMS\Delivery\20160608_ESS Delivery_NavLink\20160608_HRMS Web _Navlink\HRMS\bin\HRMS.xml
+E:\Projects\Web Developments\HRMS\Delivery\20160608_ESS Delivery_NavLink\20160608_HRMS Web _Navlink\HRMS\bin\BusinessLogic.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160608_ESS Delivery_NavLink\20160608_HRMS Web _Navlink\HRMS\bin\CrystalDecisions.CrystalReports.Engine.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160608_ESS Delivery_NavLink\20160608_HRMS Web _Navlink\HRMS\bin\CrystalDecisions.ReportSource.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160608_ESS Delivery_NavLink\20160608_HRMS Web _Navlink\HRMS\bin\CrystalDecisions.Shared.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160608_ESS Delivery_NavLink\20160608_HRMS Web _Navlink\HRMS\bin\CrystalDecisions.Web.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160608_ESS Delivery_NavLink\20160608_HRMS Web _Navlink\HRMS\bin\DataAccess.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160608_ESS Delivery_NavLink\20160608_HRMS Web _Navlink\HRMS\bin\EN.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160608_ESS Delivery_NavLink\20160608_HRMS Web _Navlink\HRMS\bin\AjaxMin.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160608_ESS Delivery_NavLink\20160608_HRMS Web _Navlink\HRMS\bin\BusinessLogic.pdb
+E:\Projects\Web Developments\HRMS\Delivery\20160608_ESS Delivery_NavLink\20160608_HRMS Web _Navlink\HRMS\bin\BusinessLogic.xml
+E:\Projects\Web Developments\HRMS\Delivery\20160608_ESS Delivery_NavLink\20160608_HRMS Web _Navlink\HRMS\bin\DataAccess.pdb
+E:\Projects\Web Developments\HRMS\Delivery\20160608_ESS Delivery_NavLink\20160608_HRMS Web _Navlink\HRMS\bin\DataAccess.xml
+E:\Projects\Web Developments\HRMS\Delivery\20160608_ESS Delivery_NavLink\20160608_HRMS Web _Navlink\HRMS\bin\EN.pdb
+E:\Projects\Web Developments\HRMS\Delivery\20160608_ESS Delivery_NavLink\20160608_HRMS Web _Navlink\HRMS\bin\EN.xml
+E:\Projects\Web Developments\HRMS\Delivery\20160608_ESS Delivery_NavLink\20160608_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.vbprojResolveAssemblyReference.cache
+E:\Projects\Web Developments\HRMS\Delivery\20160608_ESS Delivery_NavLink\20160608_HRMS Web _Navlink\HRMS\obj\Debug\Interop.SAPbobsCOM.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160608_ESS Delivery_NavLink\20160608_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.vbproj.ResolveComReference.cache
+E:\Projects\Web Developments\HRMS\Delivery\20160608_ESS Delivery_NavLink\20160608_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.Resources.resources
+E:\Projects\Web Developments\HRMS\Delivery\20160608_ESS Delivery_NavLink\20160608_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.vbproj.GenerateResource.Cache
+E:\Projects\Web Developments\HRMS\Delivery\20160608_ESS Delivery_NavLink\20160608_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160608_ESS Delivery_NavLink\20160608_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.xml
+E:\Projects\Web Developments\HRMS\Delivery\20160608_ESS Delivery_NavLink\20160608_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.pdb
+E:\Projects\Web Developments\HRMS\Delivery\20160609_ESS Delivery_NavLink\20160609_HRMS Web _Navlink\HRMS\bin\HRMS.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160609_ESS Delivery_NavLink\20160609_HRMS Web _Navlink\HRMS\bin\HRMS.pdb
+E:\Projects\Web Developments\HRMS\Delivery\20160609_ESS Delivery_NavLink\20160609_HRMS Web _Navlink\HRMS\bin\HRMS.xml
+E:\Projects\Web Developments\HRMS\Delivery\20160609_ESS Delivery_NavLink\20160609_HRMS Web _Navlink\HRMS\bin\BusinessLogic.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160609_ESS Delivery_NavLink\20160609_HRMS Web _Navlink\HRMS\bin\CrystalDecisions.CrystalReports.Engine.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160609_ESS Delivery_NavLink\20160609_HRMS Web _Navlink\HRMS\bin\CrystalDecisions.ReportSource.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160609_ESS Delivery_NavLink\20160609_HRMS Web _Navlink\HRMS\bin\CrystalDecisions.Shared.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160609_ESS Delivery_NavLink\20160609_HRMS Web _Navlink\HRMS\bin\CrystalDecisions.Web.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160609_ESS Delivery_NavLink\20160609_HRMS Web _Navlink\HRMS\bin\DataAccess.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160609_ESS Delivery_NavLink\20160609_HRMS Web _Navlink\HRMS\bin\EN.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160609_ESS Delivery_NavLink\20160609_HRMS Web _Navlink\HRMS\bin\AjaxMin.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160609_ESS Delivery_NavLink\20160609_HRMS Web _Navlink\HRMS\bin\BusinessLogic.pdb
+E:\Projects\Web Developments\HRMS\Delivery\20160609_ESS Delivery_NavLink\20160609_HRMS Web _Navlink\HRMS\bin\BusinessLogic.xml
+E:\Projects\Web Developments\HRMS\Delivery\20160609_ESS Delivery_NavLink\20160609_HRMS Web _Navlink\HRMS\bin\DataAccess.pdb
+E:\Projects\Web Developments\HRMS\Delivery\20160609_ESS Delivery_NavLink\20160609_HRMS Web _Navlink\HRMS\bin\DataAccess.xml
+E:\Projects\Web Developments\HRMS\Delivery\20160609_ESS Delivery_NavLink\20160609_HRMS Web _Navlink\HRMS\bin\EN.pdb
+E:\Projects\Web Developments\HRMS\Delivery\20160609_ESS Delivery_NavLink\20160609_HRMS Web _Navlink\HRMS\bin\EN.xml
+E:\Projects\Web Developments\HRMS\Delivery\20160609_ESS Delivery_NavLink\20160609_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.vbprojResolveAssemblyReference.cache
+E:\Projects\Web Developments\HRMS\Delivery\20160609_ESS Delivery_NavLink\20160609_HRMS Web _Navlink\HRMS\obj\Debug\Interop.SAPbobsCOM.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160609_ESS Delivery_NavLink\20160609_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.vbproj.ResolveComReference.cache
+E:\Projects\Web Developments\HRMS\Delivery\20160609_ESS Delivery_NavLink\20160609_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.Resources.resources
+E:\Projects\Web Developments\HRMS\Delivery\20160609_ESS Delivery_NavLink\20160609_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.vbproj.GenerateResource.Cache
+E:\Projects\Web Developments\HRMS\Delivery\20160609_ESS Delivery_NavLink\20160609_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160609_ESS Delivery_NavLink\20160609_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.xml
+E:\Projects\Web Developments\HRMS\Delivery\20160609_ESS Delivery_NavLink\20160609_HRMS Web _Navlink\HRMS\obj\Debug\HRMS.pdb

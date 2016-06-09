@@ -47,4 +47,18 @@ Public Class NewTrainingBL
             Throw ex
         End Try
     End Function
+    Public Function CancelRequest(ByVal objen As NewTrainingEN) As String
+        Try
+            Return objDA.CancelRequest(objen)
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Function
+    Public Function TargetPath() As String
+        Try
+            Return objDA.TargetPath()
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Function
 End Class

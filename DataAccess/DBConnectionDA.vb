@@ -551,7 +551,7 @@ Public Class DBConnectionDA
     End Sub
 
     Public Sub InitialMessage(ByVal strReqType As String, ByVal strReqNo As String, ByVal strAppStatus As String _
-           , ByVal strTemplateNo As String, ByVal strOrginator As String, ByVal enDocType As String, ByVal objMainCompany As SAPbobsCOM.Company, Optional ByVal strExpNo As String = "", Optional ByVal ESSlink As String = "")
+           , ByVal strTemplateNo As String, ByVal strOrginator As String, ByVal enDocType As String, ByVal objMainCompany As SAPbobsCOM.Company, Optional ByVal strExpNo As String = "", Optional ByVal ESSlink As String = "", Optional ByVal ESSUserID As String = "")
         Try
             'If ConnectSAP() = True Then
             Dim strQuery As String
@@ -717,7 +717,7 @@ Public Class DBConnectionDA
                 If enDocType = "ExpCli" Then
                     ' Dim IntReqNo1 As Integer = strExpNo
                     ' strExpReqNo1 = IntReqNo1.ToString()
-                    strEmailMessage = "Expense Claim " & strExpReqNo & " " & strOrginator & " is awaiting your approval.Please login to ESS  " & ESSlink
+                    strEmailMessage = "Expense Claim " & strExpReqNo & " " & strOrginator & " is awaiting your approval.Please login to ESS  " & ESSlink & ". "'ESS UserID : " & ESSUserID
                     ' strEmailMessage = strReqType + "  " + strExpReqNo + " with Expenses :  " + strExpReqNo1 + " " + strOrginator + " Needs Your Approval "
                 ElseIf enDocType = "RetLve" Then
                     strEmailMessage = strReqType + " is awaiting your approval "
@@ -799,7 +799,7 @@ Public Class DBConnectionDA
         Dim oHTML, oHTML1, oHtml2, strPath As String
         Dim strCompany As String
         Dim strName As String
-        Dim Address1, Address2, Mail, empid, empName, client, project, total As String
+        Dim Address1, Address2, Mail, empid, empName, client, project, total, UserID As String
         Dim CourseCode, CourseName, StDate, EdDate, StTime, EndTime, TotalHours, Instrutor, AppED As String
         Dim strCode, SerialNo, ExpType, TransAmut, LocAmt, tobeRem, Notes, RejRemarks, trancur, ExcRate, ReimAmt As String
 
@@ -833,8 +833,14 @@ Public Class DBConnectionDA
                 client = oRecordSet.Fields.Item("U_Z_Client").Value
                 project = oRecordSet.Fields.Item("U_Z_Project").Value
                 total = oRecordSet.Fields.Item("U_Z_CurAmt").Value
-
+                sQuery = "select U_Z_UID  from [@Z_HR_LOGIN] where U_Z_EMPID='" & empid & "'"
+                oRecordSet.DoQuery(sQuery)
+                If oRecordSet.RecordCount > 0 Then
+                    UserID = oRecordSet.Fields.Item("U_Z_UID").Value
+                End If
             End If
+
+
             sQuery = "select SUM(cast(isnull(replace(U_Z_UsdAmt,left(U_Z_UsdAmt,3),''),0) as decimal(12,2))) AS U_Z_CurAmt,U_Z_EmpID,U_Z_EmpName,U_Z_Client,U_Z_Project,U_Z_DocRefNo from [@Z_HR_EXPCL] "
             sQuery += " where Code in (" & DocEntry & ") and U_Z_Reimburse='Y' group by U_Z_DocRefNo,U_Z_EmpID,U_Z_EmpName,U_Z_Client,U_Z_Project"
             oRecordSet.DoQuery(sQuery)
@@ -845,6 +851,11 @@ Public Class DBConnectionDA
                 oHTML = oHTML.Replace("$$Messages$$", strMessage)
             Else
                 oHTML = oHTML.Replace("$$Messages$$", "")
+            End If
+            If Not IsDBNull(UserID) Then
+                oHTML = oHTML.Replace("$$ESSUserID$$", UserID)
+            Else
+                oHTML = oHTML.Replace("$$ESSUserID$$", "")
             End If
             If Not IsDBNull(empid) Then
                 oHTML = oHTML.Replace("$$EmpCode$$", empid)
@@ -1249,7 +1260,7 @@ Public Class DBConnectionDA
         End Try
     End Function
 
-    Public Sub SendMail_RequestApproval(ByVal aMessage As String, ByVal Empid As String, ByVal aCompany As SAPbobsCOM.Company, Optional ByVal aMail As String = "", Optional ByVal SerialNo As String = "", Optional ByVal ReqNo As String = "")
+    Public Sub SendMail_RequestApproval(ByVal aMessage As String, ByVal Empid As String, ByVal aCompany As SAPbobsCOM.Company, Optional ByVal aMail As String = "", Optional ByVal SerialNo As String = "", Optional ByVal ReqNo As String = "", Optional ByVal CancelReq As String = "")
         Try
             Dim oRecordset As SAPbobsCOM.Recordset
             oRecordset = aCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset)
@@ -1262,7 +1273,11 @@ Public Class DBConnectionDA
                 mailSSL = oRecordset.Fields.Item("U_Z_SSL").Value
                 If mailServer <> "" And mailId <> "" And mailPwd <> "" Then
                     oRecordset.DoQuery("Select * from OHEM where empID='" & Empid & "'")
-                    aMail = oRecordset.Fields.Item("email").Value
+                    If CancelReq = "" Then
+                        aMail = oRecordset.Fields.Item("email").Value
+                    Else
+                        aMail = oRecordset.Fields.Item("U_Z_HRMail").Value
+                    End If
                     If aMail <> "" Then
                         Dim oTest As SAPbobsCOM.Recordset
                         oTest = aCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset)
@@ -1281,5 +1296,22 @@ Public Class DBConnectionDA
         End Try
 
     End Sub
-
+    Public Function GetAttachment(ByVal acode As String, empID As String) As String
+        Try
+            Dim con As SqlConnection = New SqlConnection(GetConnection)
+            con.Open()
+            cmd = New SqlCommand("SELECT ISNULL(U_Z_Attachment,'') AS U_Z_Attachment   FROM [@Z_HR_ONTREQ] WHERE U_Z_HREmpID='" & empID.Trim() & "' AND DocEntry='" & acode.Trim() & "'", con)
+            cmd.CommandType = CommandType.Text
+            Dim status As String
+            status = cmd.ExecuteScalar()
+            con.Close()
+            If status Is Nothing Then
+                status = ""
+            End If
+            Return status
+        Catch ex As Exception
+            DBConnectionDA.WriteError(ex.Message)
+            Throw ex
+        End Try
+    End Function
 End Class

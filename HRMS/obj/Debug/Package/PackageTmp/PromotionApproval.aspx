@@ -316,6 +316,7 @@
                                                                                     <td>
                                                                                         <asp:TextBox ID="txtcode" CssClass="txtbox" runat="server" Visible="false"></asp:TextBox>
                                                                                         <asp:TextBox ID="txtempid" CssClass="txtbox" runat="server" Visible="false"></asp:TextBox>
+                                                                                       <asp:TextBox ID="txtreqempid" runat="server" CssClass="txtbox" Visible="false"></asp:TextBox>
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>

@@ -4,6 +4,8 @@ Imports System.Globalization
 Imports System.Configuration
 Imports System.Xml
 Imports System.IO
+Imports CrystalDecisions.CrystalReports.Engine
+Imports CrystalDecisions.Shared
 Imports BusinessLogic
 Imports DataAccess
 Imports EN
@@ -49,9 +51,17 @@ Public Class ExpensesClaimApproval
                     PanelMain.Visible = True
                     panelview.Visible = False
                     ReqApproval(objEN)
+                    Me.RegisterPostBackControl()
                 End If
             End If
+
         End If
+    End Sub
+    Private Sub RegisterPostBackControl()
+        For Each row As GridViewRow In grdSummaryLoad.Rows
+            Dim lnkFull As ImageButton = TryCast(row.FindControl("imgSPrint"), ImageButton)
+            ScriptManager.GetCurrent(Me).RegisterPostBackControl(lnkFull)
+        Next
     End Sub
     Private Sub ReqApproval(ByVal objEN As ExpClaimApprovalEN)
         Try
@@ -521,9 +531,11 @@ Public Class ExpensesClaimApproval
                                     objDBL.SendMail_RequestApproval(strEmailMessage, lblempNo.Text.Trim(), objEN.SapCompany, "", strMailDocEntry, lblempname.Text.Trim())
                                     DBConnectionDA.WriteError("End Approved SendMail_RequestApproval Function")
                                 Else
+                                    DBConnectionDA.WriteError(dbCon.strmsg)
                                     oRecordSet = objEN.SapCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset)
                                     dbCon.strQuery = "Update [@Z_HR_EXPCL] Set U_Z_AppStatus = 'P' Where Code in(" + strMailDocEntry + ")"
                                     oRecordSet.DoQuery(dbCon.strQuery)
+                                    ClientScript.RegisterStartupScript(Me.GetType(), "msg", "<script>alert('" & dbCon.strmsg & "')</script>")
                                 End If
                             End If
                         End If
@@ -643,7 +655,64 @@ Public Class ExpensesClaimApproval
             lbl2.Text = ViewState("LocalCurrency") & Math.Round(grdTotal3, 2)
         End If
     End Sub
+    Protected Sub imgSPrint_Click(ByVal sender As Object, ByVal e As EventArgs)
+        Dim Dir As String
+        Dim Crpt As New ReportDocument()
+        Dim DocNum As String
+        Try
+            Dir = Server.MapPath("Reports\ExpenseClaim.rpt")
+            If System.IO.File.Exists(Dir) Then
+                Dim strServer As String = ConfigurationManager.AppSettings("SAPServer")
+                Dim strDB As String = ConfigurationManager.AppSettings("CompanyDB")
+                Dim strUser As String = ConfigurationManager.AppSettings("DbUserName")
+                Dim strPwd As String = ConfigurationManager.AppSettings("DbPassword")
 
+                Dim crtableLogoninfos As New TableLogOnInfos
+                Dim crtableLogoninfo As New TableLogOnInfo
+                Dim crConnectionInfo As New ConnectionInfo
+                Dim CrTables As Tables
+                Dim CrTable As Table
+
+                Crpt.Load(Dir)
+
+                With crConnectionInfo
+                    .ServerName = strServer
+                    .DatabaseName = strDB
+                    .UserID = strUser
+                    .Password = strPwd
+                End With
+                CrTables = Crpt.Database.Tables
+                For Each CrTable In CrTables
+                    crtableLogoninfo = CrTable.LogOnInfo
+                    crtableLogoninfo.ConnectionInfo = crConnectionInfo
+                    CrTable.ApplyLogOnInfo(crtableLogoninfo)
+                Next
+                Dim btndetails As ImageButton = TryCast(sender, ImageButton)
+                Dim gvrow As GridViewRow = DirectCast(btndetails.NamingContainer, GridViewRow)
+                Dim lbldocno As LinkButton = CType(gvrow.FindControl("lblSCode"), LinkButton)
+                DocNum = lbldocno.Text.Trim()
+                If DocNum <> 0 Then
+                    Crpt.SetParameterValue("DocEntry", DocNum)
+                End If
+                Dim fname As String = Session("UserCode").ToString() + "_" + DocNum ' DateTime.Now.ToString("yyyyMMddHHmmss").ToString()
+                Response.Buffer = False
+                Response.ClearContent()
+                Response.ClearHeaders()
+                Crpt.SetDatabaseLogon(strUser, strPwd, strServer, strDB)
+                Crpt.ExportToHttpResponse(ExportFormatType.PortableDocFormat, Response, False, fname)
+                Response.Flush()
+                Response.End()
+            Else
+                DBConnectionDA.WriteError("Report file does not exists")
+                mess("Report file does not exists")
+            End If
+        Catch ex As Exception
+            Response.Flush()
+            Response.Close()
+            DBConnectionDA.WriteError(ex.Message)
+            mess(ex.Message)
+        End Try
+    End Sub
     'Private Sub ddlfildocStatus_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles ddlfildocStatus.SelectedIndexChanged
     '    Try
     '        objEN.EmpId = Session("UserCode").ToString()
