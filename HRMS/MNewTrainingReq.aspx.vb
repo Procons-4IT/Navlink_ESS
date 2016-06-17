@@ -266,7 +266,7 @@ Public Class MNewTrainingReq
         If filename <> "" Then
             Dim path As String = System.IO.Path.Combine(Server.MapPath("~\Document\"), filename)
             If File.Exists(path) = True Then
-                ScriptManager.RegisterStartupScript(Page, [GetType](), "MyScript", "window.open('../Download.aspx?ifile=" + HttpUtility.UrlEncode(path) + "');", True)
+                ScriptManager.RegisterStartupScript(Page, [GetType](), "MyScript", "window.open('Download.aspx?ifile=" + HttpUtility.UrlEncode(path) + "');", True)
             Else
                 dbcon.strmsg = "File is not available"
                 ClientScript.RegisterStartupScript(Me.GetType(), "msg", "<script>alert('" & dbcon.strmsg & "')</script>")

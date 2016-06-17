@@ -878,3 +878,13 @@ E:\Projects\Web Developments\HRMS\Delivery\20160609_ESS Delivery_NavLink\2016060
 E:\Projects\Web Developments\HRMS\Delivery\20160609_ESS Delivery_NavLink\20160609_HRMS Web _Navlink\EN\obj\Debug\EN.dll
 E:\Projects\Web Developments\HRMS\Delivery\20160609_ESS Delivery_NavLink\20160609_HRMS Web _Navlink\EN\obj\Debug\EN.xml
 E:\Projects\Web Developments\HRMS\Delivery\20160609_ESS Delivery_NavLink\20160609_HRMS Web _Navlink\EN\obj\Debug\EN.pdb
+E:\Projects\Web Developments\HRMS\Delivery\20160617_ESS Delivery_NavLink\20160617_HRMS Web _Navlink\EN\bin\Debug\EN.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160617_ESS Delivery_NavLink\20160617_HRMS Web _Navlink\EN\bin\Debug\EN.pdb
+E:\Projects\Web Developments\HRMS\Delivery\20160617_ESS Delivery_NavLink\20160617_HRMS Web _Navlink\EN\bin\Debug\EN.xml
+E:\Projects\Web Developments\HRMS\Delivery\20160617_ESS Delivery_NavLink\20160617_HRMS Web _Navlink\EN\obj\Debug\Interop.SAPbobsCOM.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160617_ESS Delivery_NavLink\20160617_HRMS Web _Navlink\EN\obj\Debug\EN.vbproj.ResolveComReference.cache
+E:\Projects\Web Developments\HRMS\Delivery\20160617_ESS Delivery_NavLink\20160617_HRMS Web _Navlink\EN\obj\Debug\EN.Resources.resources
+E:\Projects\Web Developments\HRMS\Delivery\20160617_ESS Delivery_NavLink\20160617_HRMS Web _Navlink\EN\obj\Debug\EN.vbproj.GenerateResource.Cache
+E:\Projects\Web Developments\HRMS\Delivery\20160617_ESS Delivery_NavLink\20160617_HRMS Web _Navlink\EN\obj\Debug\EN.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160617_ESS Delivery_NavLink\20160617_HRMS Web _Navlink\EN\obj\Debug\EN.xml
+E:\Projects\Web Developments\HRMS\Delivery\20160617_ESS Delivery_NavLink\20160617_HRMS Web _Navlink\EN\obj\Debug\EN.pdb

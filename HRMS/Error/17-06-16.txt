@@ -1,0 +1,1089 @@
+
+Log Entry : 
+06/17/2016 11:58:28
+Error in: http://localhost:48860/favicon.ico. Error Message:Error in: http://localhost:48860/favicon.ico. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 11:58:37
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 11:58:58
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 11:58:59
+Error in: http://localhost:48860/Images/GressenHover.png. Error Message:Error in: http://localhost:48860/Images/GressenHover.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 11:59:02
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 11:59:03
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 11:59:03
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 11:59:07
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 11:59:10
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 11:59:15
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 11:59:27
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 11:59:27
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 11:59:30
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 11:59:38
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Lines transaction started...
+__________________________
+
+Log Entry : 
+06/17/2016 11:59:38
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date started...17/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 11:59:38
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date End...17/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 11:59:38
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...17/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 11:59:38
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...17/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 11:59:39
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Query Ececution started...Insert INTO [@Z_HR_EXPCL] (Code,Name,U_Z_EmpID,U_Z_EmpName,U_Z_TraCode,U_Z_TraDesc,U_Z_TripType,U_Z_Subdt,U_Z_Claimdt,U_Z_Reimburse,U_Z_PayMethod, U_Z_ExpType, U_Z_ExpCode, U_Z_Currency, U_Z_Client, U_Z_AlloCode,U_Z_Project,U_Z_City,U_Z_CurAmt,U_Z_ExcRate,U_Z_UsdAmt, U_Z_ReimAmt,U_Z_Notes,U_Z_Attachment,U_Z_Year,U_Z_Month,U_Z_AppStatus,U_Z_DocRefNo,U_Z_CardCode,U_Z_DebitCode,U_Z_CreditCode,U_Z_Posting,U_Z_Dimension) Values ( '00000108','00000108','1','Mohamad  Anbar','','', 'N','2016-06-17','2016-06-17','Y',  '','Internet fees','00000003','USD',  '','','','', 12,1,'USD12','USD12', '','E:\Projects\Web Developments\HRMS\Delivery\20160617_ESS Delivery_NavLink\20160617_HRMS Web _Navlink\HRMS\Document\Mohamad  Anbar_EC_31_108_20160617115926_Comments UAT ESS Expense Claims 14-06-2016.docx','2016','6', 'P','00000031','','812020100', '712010300','G','ACC&FIN;ACC-D;;mb01;')
+__________________________
+
+Log Entry : 
+06/17/2016 11:59:39
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:1). [Microsoft][SQL Server Native Client 11.0][SQL Server]String or binary data would be truncated.
+2). [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated.
+
+__________________________
+
+Log Entry : 
+06/17/2016 11:59:39
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 11:59:39
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 11:59:47
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Lines transaction started...
+__________________________
+
+Log Entry : 
+06/17/2016 11:59:47
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date started...17/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 11:59:47
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date End...17/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 11:59:47
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...17/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 11:59:47
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...17/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 11:59:47
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Could not find file 'E:\Projects\Web Developments\HRMS\Delivery\20160617_ESS Delivery_NavLink\20160617_HRMS Web _Navlink\HRMS\Document\20160617115926_Comments UAT ESS Expense Claims 14-06-2016.docx'.
+__________________________
+
+Log Entry : 
+06/17/2016 11:59:48
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 11:59:48
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 11:59:48
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:00:32
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Lines transaction started...
+__________________________
+
+Log Entry : 
+06/17/2016 12:00:35
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date started...17/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 12:00:37
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date End...17/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 12:00:38
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...17/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 12:00:40
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...17/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 12:01:18
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Could not find file 'E:\Projects\Web Developments\HRMS\Delivery\20160617_ESS Delivery_NavLink\20160617_HRMS Web _Navlink\HRMS\Document\20160617115926_Comments UAT ESS Expense Claims 14-06-2016.docx'.
+__________________________
+
+Log Entry : 
+06/17/2016 12:01:46
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:01:46
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:01:52
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:01:52
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:01:56
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:02:00
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:02:11
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:02:11
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:02:25
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Lines transaction started...
+__________________________
+
+Log Entry : 
+06/17/2016 12:02:25
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date started...17/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 12:02:25
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date End...17/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 12:02:25
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...16/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 12:02:25
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...16/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 12:03:01
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Query Ececution started...Insert INTO [@Z_HR_EXPCL] (Code,Name,U_Z_EmpID,U_Z_EmpName,U_Z_TraCode,U_Z_TraDesc,U_Z_TripType,U_Z_Subdt,U_Z_Claimdt,U_Z_Reimburse,U_Z_PayMethod, U_Z_ExpType, U_Z_ExpCode, U_Z_Currency, U_Z_Client, U_Z_AlloCode,U_Z_Project,U_Z_City,U_Z_CurAmt,U_Z_ExcRate,U_Z_UsdAmt, U_Z_ReimAmt,U_Z_Notes,U_Z_Attachment,U_Z_Year,U_Z_Month,U_Z_AppStatus,U_Z_DocRefNo,U_Z_CardCode,U_Z_DebitCode,U_Z_CreditCode,U_Z_Posting,U_Z_Dimension) Values ( '00000108','00000108','1','Mohamad  Anbar','','', 'N','2016-06-17','2016-06-16','Y',  '','Travel Expenses','00000004','USD',  '','','','', 11,1,'USD11','USD11', '','E:\Projects\Web Developments\HRMS\Delivery\20160617_ESS Delivery_NavLink\20160617_HRMS Web _Navlink\HRMS\Document\Mohamad  Anbar_EC_31_108_20160617120210_20160311_ESS Publish_NavLink_HANA.xlsx','2016','6', 'P','00000031','','812020100', '712010300','G','ACC&FIN;ACC-D;;mb01;')
+__________________________
+
+Log Entry : 
+06/17/2016 12:03:02
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:query excecution ended...
+__________________________
+
+Log Entry : 
+06/17/2016 12:03:08
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...15/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 12:03:09
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...15/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 12:03:22
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:03:22
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:03:22
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:03:23
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:03:27
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:03:30
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:03:34
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:03:43
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:03:43
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:03:50
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Lines transaction started...
+__________________________
+
+Log Entry : 
+06/17/2016 12:03:50
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date started...17/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 12:03:50
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date End...17/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 12:03:50
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...17/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 12:03:50
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...17/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 12:03:59
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Query Ececution started...Insert INTO [@Z_HR_EXPCL] (Code,Name,U_Z_EmpID,U_Z_EmpName,U_Z_TraCode,U_Z_TraDesc,U_Z_TripType,U_Z_Subdt,U_Z_Claimdt,U_Z_Reimburse,U_Z_PayMethod, U_Z_ExpType, U_Z_ExpCode, U_Z_Currency, U_Z_Client, U_Z_AlloCode,U_Z_Project,U_Z_City,U_Z_CurAmt,U_Z_ExcRate,U_Z_UsdAmt, U_Z_ReimAmt,U_Z_Notes,U_Z_Attachment,U_Z_Year,U_Z_Month,U_Z_AppStatus,U_Z_DocRefNo,U_Z_CardCode,U_Z_DebitCode,U_Z_CreditCode,U_Z_Posting,U_Z_Dimension) Values ( '00000109','00000109','1','Mohamad  Anbar','','', 'N','2016-06-17','2016-06-17','Y',  '','Other addition UT','00000001','USD',  '','','','', 21,1,'USD21','USD21', '','E:\Projects\Web Developments\HRMS\Delivery\20160617_ESS Delivery_NavLink\20160617_HRMS Web _Navlink\HRMS\Document\Mohamad  Anbar_EC_31_109_20160617120342_Comments UAT ESS Expense Claims 14-06-2016.docx','2016','6', 'P','00000031','','812020100', '712010300','G','ACC&FIN;ACC-D;;mb01;')
+__________________________
+
+Log Entry : 
+06/17/2016 12:04:50
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:1). [Microsoft][SQL Server Native Client 11.0][SQL Server]String or binary data would be truncated.
+2). [Microsoft][SQL Server Native Client 11.0][SQL Server]The statement has been terminated.
+
+__________________________
+
+Log Entry : 
+06/17/2016 12:04:50
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:04:51
+Error in: http://localhost:48860/images/h_bg.png. Error Message:The process cannot access the file 'E:\Projects\Web Developments\HRMS\Delivery\20160617_ESS Delivery_NavLink\20160617_HRMS Web _Navlink\HRMS\Error\17-06-16.txt' because it is being used by another process.
+__________________________
+
+Log Entry : 
+06/17/2016 12:07:57
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Lines transaction started...
+__________________________
+
+Log Entry : 
+06/17/2016 12:07:57
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date started...17/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 12:07:57
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date End...17/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 12:07:57
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...17/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 12:07:57
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...17/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 12:07:57
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Could not find file 'E:\Projects\Web Developments\HRMS\Delivery\20160617_ESS Delivery_NavLink\20160617_HRMS Web _Navlink\HRMS\Document\20160617120342_Comments UAT ESS Expense Claims 14-06-2016.docx'.
+__________________________
+
+Log Entry : 
+06/17/2016 12:07:58
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:07:58
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:08:00
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:08:02
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:08:06
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:08:06
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:08:06
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:08:08
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:08:12
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:08:18
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:08:22
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:08:42
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:08:42
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:08:49
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Lines transaction started...
+__________________________
+
+Log Entry : 
+06/17/2016 12:08:49
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date started...15/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 12:08:49
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date End...15/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 12:08:49
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...15/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 12:08:49
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...15/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 12:08:49
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...16/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 12:08:49
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...16/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 12:08:49
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...17/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 12:08:49
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...17/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 12:08:49
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...18/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 12:08:49
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...18/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 12:08:50
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Query Ececution started...Insert INTO [@Z_HR_EXPCL] (Code,Name,U_Z_EmpID,U_Z_EmpName,U_Z_TraCode,U_Z_TraDesc,U_Z_TripType,U_Z_Subdt,U_Z_Claimdt,U_Z_Reimburse,U_Z_PayMethod, U_Z_ExpType, U_Z_ExpCode, U_Z_Currency, U_Z_Client, U_Z_AlloCode,U_Z_Project,U_Z_City,U_Z_CurAmt,U_Z_ExcRate,U_Z_UsdAmt, U_Z_ReimAmt,U_Z_Notes,U_Z_Attachment,U_Z_Year,U_Z_Month,U_Z_AppStatus,U_Z_DocRefNo,U_Z_CardCode,U_Z_DebitCode,U_Z_CreditCode,U_Z_Posting,U_Z_Dimension) Values ( '00000110','00000110','1','Mohamad  Anbar','','', 'N','2016-06-15','2016-06-18','Y',  '','Travel Expenses','00000004','USD',  '','','','', 11,1,'USD11','USD11', 'fwwf','E:\Projects\Web Developments\HRMS\Delivery\20160617_ESS Delivery_NavLink\20160617_HRMS Web _Navlink\HRMS\Document\Mohamad  Anbar_EC_31_110_20160617120842_Comments UAT ESS Expense Claims 14-06-2016.docx','2016','6', 'P','00000031','','812020100', '712010300','G','ACC&FIN;ACC-D;;mb01;')
+__________________________
+
+Log Entry : 
+06/17/2016 12:08:50
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:query excecution ended...
+__________________________
+
+Log Entry : 
+06/17/2016 12:08:51
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:08:51
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:The process cannot access the file 'E:\Projects\Web Developments\HRMS\Delivery\20160617_ESS Delivery_NavLink\20160617_HRMS Web _Navlink\HRMS\Error\17-06-16.txt' because it is being used by another process.
+__________________________
+
+Log Entry : 
+06/17/2016 12:08:51
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:08:52
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:08:53
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:08:55
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:09:05
+Error in: http://localhost:48860/Images/GressenHover.png. Error Message:Error in: http://localhost:48860/Images/GressenHover.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:09:08
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:09:09
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:09:09
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:The process cannot access the file 'E:\Projects\Web Developments\HRMS\Delivery\20160617_ESS Delivery_NavLink\20160617_HRMS Web _Navlink\HRMS\Error\17-06-16.txt' because it is being used by another process.
+__________________________
+
+Log Entry : 
+06/17/2016 12:09:12
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:09:13
+Error in: http://localhost:48860/Images/GressenHover.png. Error Message:Error in: http://localhost:48860/Images/GressenHover.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:09:25
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:09:25
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:09:28
+Error in: http://localhost:48860/Images/GressenHover.png. Error Message:Error in: http://localhost:48860/Images/GressenHover.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:09:31
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:09:31
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:09:31
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:09:34
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:09:39
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:09:41
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:09:41
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:09:59
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:10:00
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:10:44
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:11:12
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:11:12
+Error in: http://localhost:48860/Images/GressenHover.png. Error Message:Error in: http://localhost:48860/Images/GressenHover.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:11:21
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:11:22
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:11:23
+Error in: http://localhost:48860/Images/GressenHover.png. Error Message:Error in: http://localhost:48860/Images/GressenHover.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:11:26
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:11:26
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:11:26
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:11:31
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:11:47
+Error in: http://localhost:48860/MNewTrainingReq.aspx. Error Message:The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.5.1 Authentication Required. Learn more at
+__________________________
+
+Log Entry : 
+06/17/2016 12:11:47
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:11:47
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:11:47
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:11:52
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:12:00
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:12:00
+Error in: http://localhost:48860/Images/GressenHover.png. Error Message:Error in: http://localhost:48860/Images/GressenHover.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:12:14
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:12:14
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:12:16
+Error in: http://localhost:48860/Images/GressenHover.png. Error Message:Error in: http://localhost:48860/Images/GressenHover.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:12:20
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:12:20
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:12:20
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:12:29
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:12:32
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:12:37
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:12:41
+Error in: http://localhost:48860/Images/GressenHover.png. Error Message:Error in: http://localhost:48860/Images/GressenHover.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:12:44
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:12:44
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:12:44
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:12:56
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:12:57
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:12:58
+Error in: http://localhost:48860/Images/GressenHover.png. Error Message:Error in: http://localhost:48860/Images/GressenHover.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:13:06
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:13:36
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:13:37
+Error in: http://localhost:48860/Images/GressenHover.png. Error Message:Error in: http://localhost:48860/Images/GressenHover.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:13:40
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:13:40
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:13:40
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:13:42
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:13:45
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:13:51
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Lines transaction started...
+__________________________
+
+Log Entry : 
+06/17/2016 12:13:51
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date started...15/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 12:13:51
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Submitted date End...15/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 12:13:51
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...15/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 12:13:51
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...15/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 12:13:51
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Payroll transaction ended...
+__________________________
+
+Log Entry : 
+06/17/2016 12:13:51
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...16/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 12:13:51
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...16/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 12:13:51
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Payroll transaction ended...
+__________________________
+
+Log Entry : 
+06/17/2016 12:13:51
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...17/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 12:13:51
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...17/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 12:13:52
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Payroll transaction ended...
+__________________________
+
+Log Entry : 
+06/17/2016 12:13:52
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...18/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 12:13:52
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Claim date started...18/06/2016
+__________________________
+
+Log Entry : 
+06/17/2016 12:13:52
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Payroll transaction ended...
+__________________________
+
+Log Entry : 
+06/17/2016 12:13:52
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Initial message started...
+__________________________
+
+Log Entry : 
+06/17/2016 12:13:53
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:13:54
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.5.1 Authentication Required. Learn more at
+__________________________
+
+Log Entry : 
+06/17/2016 12:13:54
+Error in: http://localhost:48860/ExpensesClaimReq.aspx. Error Message:Initial message ended...
+__________________________
+
+Log Entry : 
+06/17/2016 12:13:54
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:13:54
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:13:54
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:13:56
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:13:56
+Error in: http://localhost:48860/Images/GressenHover.png. Error Message:Error in: http://localhost:48860/Images/GressenHover.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:14:08
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:14:09
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:14:11
+Error in: http://localhost:48860/Images/GressenHover.png. Error Message:Error in: http://localhost:48860/Images/GressenHover.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:14:14
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:14:14
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:14:14
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:14:15
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:14:30
+Error in: http://localhost:48860/ExpensesClaimApproval.aspx. Error Message:Error in: http://localhost:48860/ExpensesClaimApproval.aspx. Error Message:Illegal characters in path.
+__________________________
+
+Log Entry : 
+06/17/2016 12:14:34
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:14:46
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:14:46
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:14:46
+Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:Error in: http://localhost:48860/Styles/grd_alt.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:14:50
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:14:51
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 12:14:57
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 17:58:15
+Error in: http://localhost:48860/favicon.ico. Error Message:Error in: http://localhost:48860/favicon.ico. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 18:01:15
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 18:01:17
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 18:01:20
+Error in: http://localhost:48860/Images/GressenHover.png. Error Message:Error in: http://localhost:48860/Images/GressenHover.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 18:01:24
+Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:Error in: http://localhost:48860/Styles/images/Bottom_texture.jpg. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 18:01:25
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 18:01:27
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 18:01:31
+Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:Error in: http://localhost:48860/Images/GreenssHovesr.png. Error Message:File does not exist.
+__________________________
+
+Log Entry : 
+06/17/2016 18:01:37
+Error in: http://localhost:48860/images/h_bg.png. Error Message:Error in: http://localhost:48860/images/h_bg.png. Error Message:File does not exist.
+__________________________

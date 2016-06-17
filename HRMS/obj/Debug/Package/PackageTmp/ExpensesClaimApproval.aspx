@@ -123,6 +123,13 @@
                                                                                             </div>
                                                                                         </ItemTemplate>
                                                                                     </asp:TemplateField>
+                                                                                     <asp:TemplateField>
+                                                                                        <ItemTemplate>
+                                                                                            <asp:ImageButton ID="imgRPrint" runat="server" Height="20" 
+                                                                                                ImageUrl="~/Images/Print.png" OnClick="imgRPrint_Click" 
+                                                                                                ToolTip="Print" Width="20" />
+                                                                                        </ItemTemplate>
+                                                                                    </asp:TemplateField>
                                                                                 </Columns>
                                                                                 <HeaderStyle HorizontalAlign="Center" Height="25px" BackColor="#CCCCCC" />
                                                                             </asp:GridView>
@@ -133,21 +140,7 @@
                                                         </ajx:TabPanel>
                                                         <ajx:TabPanel ID="TabPanel4" runat="server" HeaderText="Expenses Claim Summary">
                                                             <ContentTemplate>
-                                                                <table width="100%" border="0" cellspacing="0" cellpadding="3" class="main_content">
-                                                                  <%--  <tr>
-                                                                        <td valign="top" align="right">
-                                                                            <div style="width:auto;">
-                                                                                <div style="border:solid 0px red; height:30px;">
-                                                                                   <a style="margin-right:50px; margin-top:20px;">Document Status     </a> 
-                                                                                     <asp:DropDownList ID="ddlfildocStatus" runat="server" style="float:right;" CssClass="txtbox1" AutoPostBack="true">
-                                                                                        <asp:ListItem Value="O">Open</asp:ListItem>
-                                                                                        <asp:ListItem Value="C">Closed</asp:ListItem>                                                                                        
-                                                                                    </asp:DropDownList>                                                                              
-                                                                                </div>
-                                                                              
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>--%>
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="3" class="main_content">                                                                 
                                                                     <tr>
                                                                         <td>
                                                                             <asp:GridView ID="grdSummaryLoad" runat="server" CellPadding="4" AllowPaging="True"
@@ -215,7 +208,7 @@
                                                                                      <asp:TemplateField>
                                                                                         <ItemTemplate>
                                                                                             <asp:ImageButton ID="imgSPrint" runat="server" Height="20" 
-                                                                                                ImageUrl="~/Images/Print.png" OnClick="imgSPrint_Click" Text="Edit" 
+                                                                                                ImageUrl="~/Images/Print.png" OnClick="imgSPrint_Click" 
                                                                                                 ToolTip="Print" Width="20" />
                                                                                         </ItemTemplate>
                                                                                     </asp:TemplateField>
@@ -1070,6 +1063,7 @@
         <Triggers>
             <asp:PostBackTrigger ControlID="TabContainer2$TabPanel3$btnAdd" />
             <asp:PostBackTrigger ControlID="TabContainer2$TabPanel3$btnCancel" />
+           <%-- <asp:PostBackTrigger ControlID="TabContainer1$TabPanel4$grdSummaryLoad$imgSPrint" />--%>
         </Triggers>
     </asp:UpdatePanel>
 </asp:Content>

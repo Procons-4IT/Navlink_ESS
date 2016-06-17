@@ -829,7 +829,7 @@ Public Class DynamicApprovalDA
         End If
     End Sub
 
-    Private Sub SendMailforApproval(ByVal mailServer As String, ByVal mailPort As String, ByVal mailId As String, ByVal mailpwd As String, ByVal mailSSL As String, ByVal toId As String, ByVal ccId As String, ByVal mType As String, ByVal Message As String, ByVal aCompany As SAPbobsCOM.Company, Optional ByVal strESSLink As String = "", Optional ByVal SerialNo As String = "", Optional ByVal aUser As String = "", Optional ByVal aEmpId As String = "")
+    Private Sub SendMailforApproval(ByVal mailServer As String, ByVal mailPort As String, ByVal mailId As String, ByVal mailpwd As String, ByVal mailSSL As String, ByVal toId As String, ByVal ccId As String, ByVal mType As String, ByVal Message As String, ByVal aCompany As SAPbobsCOM.Company, Optional ByVal strESSLink As String = "", Optional ByVal SerialNo As String = "", Optional ByVal aUser As String = "", Optional ByVal aEmpId As String = "", Optional ByVal AppName As String = "")
         Try
 
             'Dim strRptPath As String = System.Windows.Forms.Application.StartupPath.Trim() & "\Report.pdf"
@@ -847,6 +847,9 @@ Public Class DynamicApprovalDA
             ' mail.Body = Message & "  <a href=" & strESSLink & " >Click Here to Login to ESS</a>"
             If SerialNo <> "" Then
                 mail.Body = objDA.BuildHtmBody(SerialNo, aUser, "ExpClaim", mType, aCompany, Message, aEmpId)
+            ElseIf AppName <> "" Then
+                Message = "<!DOCTYPE html><html><head><title></title></head><body>  <a> Dear " & AppName & "<a> <br><br>   <a>" & Message & "<a> <br><br> <a href=" & strESSLink & " >Please login to ESS</a> <br><br><br> Best Regards</body></html>"
+                mail.Body = Message
             Else
                 mail.Body = Message
             End If
@@ -860,6 +863,7 @@ Public Class DynamicApprovalDA
     End Sub
     Public Sub SendMail_RequestApprovalApp(ByVal aMessage As String, ByVal Empid As String, ByVal aCompany As SAPbobsCOM.Company, Optional ByVal aMail As String = "", Optional ByVal SerialNo As String = "", Optional ByVal ReqNo As String = "")
         Dim oRecordset As SAPbobsCOM.Recordset
+        Dim AppName As String = ""
         oRecordset = aCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset)
         oRecordset.DoQuery("Select U_Z_SMTPSERV,U_Z_SMTPPORT,U_Z_SMTPUSER,U_Z_SMTPPWD,U_Z_SSL From [@Z_HR_OMAIL]")
         If Not oRecordset.EoF Then
@@ -871,6 +875,7 @@ Public Class DynamicApprovalDA
             If mailServer <> "" And mailId <> "" And mailPwd <> "" Then
                 oRecordset.DoQuery("Select * from [@Z_HR_OCRAPP] where DocEntry='" & Empid & "'")
                 aMail = oRecordset.Fields.Item("U_Z_EmailId").Value
+                AppName = oRecordset.Fields.Item("U_Z_FirstName").Value + " " + oRecordset.Fields.Item("U_Z_LastName").Value
                 If aMail <> "" Then
                     Dim oTest As SAPbobsCOM.Recordset
                     oTest = aCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset)
@@ -879,7 +884,7 @@ Public Class DynamicApprovalDA
                     If oTest.RecordCount > 0 Then
                         strESSLink = oTest.Fields.Item("U_Z_WebPath").Value
                     End If
-                    SendMailforApproval(mailServer, mailPort, mailId, mailPwd, mailSSL, aMail, aMail, "Approval", aMessage, aCompany, strESSLink, SerialNo, ReqNo, "HR")
+                    SendMailforApproval(mailServer, mailPort, mailId, mailPwd, mailSSL, aMail, aMail, "Approval", aMessage, aCompany, strESSLink, SerialNo, ReqNo, "HR", AppName)
                 End If
             Else
                 ' oApplication.Utilities.Message("Mail Server Details Not Configured...", SAPbouiCOM.BoStatusBarMessageType.smt_Warning)
@@ -1018,7 +1023,7 @@ Public Class DynamicApprovalDA
                         Case "Rec"
                             objDA.strQuery = "Update [@Z_HR_ORMPREQ] Set U_Z_AppStatus = 'A',U_Z_HODRemarks='" & objEN.Remarks & "' Where DocEntry = '" + objEN.DocEntry + "'"
                             oRecordSet.DoQuery(objDA.strQuery)
-                            StrMailMessage = "Recruitment request has been approved for the request number: " & CInt(objEN.DocEntry)
+                            StrMailMessage = "Recruitment Requisition " & CInt(objEN.DocEntry) & " have been approved."
                             SendMail_RequestApproval(StrMailMessage, objEN.ReqEmpId, objEN.SapCompany)
                             objDA.strmsg = "Success"
                         Case "AppShort"
@@ -1032,7 +1037,7 @@ Public Class DynamicApprovalDA
                             End If
                             objDA.strQuery = "Select U_Z_PosName from [@Z_HR_ORMPREQ] where DocEntry = '" + oRecordSet.Fields.Item("U_Z_ReqNo").Value + "'"
                             oRecordSet.DoQuery(objDA.strQuery)
-                            StrMailMessage = "You has been Shorlisted for the position : " & oRecordSet.Fields.Item("U_Z_PosName").Value
+                            StrMailMessage = "You have been Shortlisted for the position of  " & oRecordSet.Fields.Item("U_Z_PosName").Value
                             SendMail_RequestApprovalApp(StrMailMessage, objEN.ReqEmpId, objEN.SapCompany)
                             objDA.strmsg = "Success"
                         Case "EmpPro"
@@ -1164,7 +1169,7 @@ Public Class DynamicApprovalDA
                             End If
                             objDA.strQuery = "Select U_Z_PosName from [@Z_HR_ORMPREQ] where DocEntry = '" + oRecordSet.Fields.Item("U_Z_ReqNo").Value + "'"
                             oRecordSet.DoQuery(objDA.strQuery)
-                            StrMailMessage = "You has been Rejected for the position " & oRecordSet.Fields.Item("U_Z_PosName").Value & "."
+                            StrMailMessage = "You have been Rejected for the position of " & oRecordSet.Fields.Item("U_Z_PosName").Value & "."
                             SendMail_RequestApprovalApp(StrMailMessage, objEN.ReqEmpId, objEN.SapCompany)
                             objDA.strmsg = "Success"
                         Case "EmpPro"

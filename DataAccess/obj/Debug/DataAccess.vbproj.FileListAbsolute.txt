@@ -1362,3 +1362,17 @@ E:\Projects\Web Developments\HRMS\Delivery\20160609_ESS Delivery_NavLink\2016060
 E:\Projects\Web Developments\HRMS\Delivery\20160609_ESS Delivery_NavLink\20160609_HRMS Web _Navlink\DataAccess\obj\Debug\DataAccess.dll
 E:\Projects\Web Developments\HRMS\Delivery\20160609_ESS Delivery_NavLink\20160609_HRMS Web _Navlink\DataAccess\obj\Debug\DataAccess.xml
 E:\Projects\Web Developments\HRMS\Delivery\20160609_ESS Delivery_NavLink\20160609_HRMS Web _Navlink\DataAccess\obj\Debug\DataAccess.pdb
+E:\Projects\Web Developments\HRMS\Delivery\20160617_ESS Delivery_NavLink\20160617_HRMS Web _Navlink\DataAccess\bin\Debug\DataAccess.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160617_ESS Delivery_NavLink\20160617_HRMS Web _Navlink\DataAccess\bin\Debug\DataAccess.pdb
+E:\Projects\Web Developments\HRMS\Delivery\20160617_ESS Delivery_NavLink\20160617_HRMS Web _Navlink\DataAccess\bin\Debug\DataAccess.xml
+E:\Projects\Web Developments\HRMS\Delivery\20160617_ESS Delivery_NavLink\20160617_HRMS Web _Navlink\DataAccess\bin\Debug\EN.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160617_ESS Delivery_NavLink\20160617_HRMS Web _Navlink\DataAccess\bin\Debug\EN.pdb
+E:\Projects\Web Developments\HRMS\Delivery\20160617_ESS Delivery_NavLink\20160617_HRMS Web _Navlink\DataAccess\bin\Debug\EN.xml
+E:\Projects\Web Developments\HRMS\Delivery\20160617_ESS Delivery_NavLink\20160617_HRMS Web _Navlink\DataAccess\obj\Debug\DataAccess.vbprojResolveAssemblyReference.cache
+E:\Projects\Web Developments\HRMS\Delivery\20160617_ESS Delivery_NavLink\20160617_HRMS Web _Navlink\DataAccess\obj\Debug\Interop.SAPbobsCOM.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160617_ESS Delivery_NavLink\20160617_HRMS Web _Navlink\DataAccess\obj\Debug\DataAccess.vbproj.ResolveComReference.cache
+E:\Projects\Web Developments\HRMS\Delivery\20160617_ESS Delivery_NavLink\20160617_HRMS Web _Navlink\DataAccess\obj\Debug\DataAccess.Resources.resources
+E:\Projects\Web Developments\HRMS\Delivery\20160617_ESS Delivery_NavLink\20160617_HRMS Web _Navlink\DataAccess\obj\Debug\DataAccess.vbproj.GenerateResource.Cache
+E:\Projects\Web Developments\HRMS\Delivery\20160617_ESS Delivery_NavLink\20160617_HRMS Web _Navlink\DataAccess\obj\Debug\DataAccess.dll
+E:\Projects\Web Developments\HRMS\Delivery\20160617_ESS Delivery_NavLink\20160617_HRMS Web _Navlink\DataAccess\obj\Debug\DataAccess.xml
+E:\Projects\Web Developments\HRMS\Delivery\20160617_ESS Delivery_NavLink\20160617_HRMS Web _Navlink\DataAccess\obj\Debug\DataAccess.pdb

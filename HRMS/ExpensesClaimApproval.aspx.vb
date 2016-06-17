@@ -52,6 +52,7 @@ Public Class ExpensesClaimApproval
                     panelview.Visible = False
                     ReqApproval(objEN)
                     Me.RegisterPostBackControl()
+                    Me.RegisterPostBackControl1()
                 End If
             End If
 
@@ -60,6 +61,12 @@ Public Class ExpensesClaimApproval
     Private Sub RegisterPostBackControl()
         For Each row As GridViewRow In grdSummaryLoad.Rows
             Dim lnkFull As ImageButton = TryCast(row.FindControl("imgSPrint"), ImageButton)
+            ScriptManager.GetCurrent(Me).RegisterPostBackControl(lnkFull)
+        Next
+    End Sub
+    Private Sub RegisterPostBackControl1()
+        For Each row As GridViewRow In GrdLoadRequest.Rows
+            Dim lnkFull As ImageButton = TryCast(row.FindControl("imgRPrint"), ImageButton)
             ScriptManager.GetCurrent(Me).RegisterPostBackControl(lnkFull)
         Next
     End Sub
@@ -189,6 +196,7 @@ Public Class ExpensesClaimApproval
             Else
                 grdSummary.DataBind()
             End If
+            Me.RegisterPostBackControl()
         Catch ex As Exception
             dbCon.strmsg = "" & ex.Message & ""
             ClientScript.RegisterStartupScript(Me.GetType(), "msg", "<script>alert('" & dbCon.strmsg & "')</script>")
@@ -259,6 +267,8 @@ Public Class ExpensesClaimApproval
         objEN.EmpId = Session("UserCode").ToString()
         objEN.UserCode = objBL.GetUserCode(objEN)
         ReqApproval(objEN)
+        Me.RegisterPostBackControl()
+        Me.RegisterPostBackControl1()
     End Sub
 
     Private Sub grdSummaryLoad_PageIndexChanging(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.GridViewPageEventArgs) Handles grdSummaryLoad.PageIndexChanging
@@ -266,6 +276,8 @@ Public Class ExpensesClaimApproval
         objEN.EmpId = Session("UserCode").ToString()
         objEN.UserCode = objBL.GetUserCode(objEN)
         ReqApproval(objEN)
+        Me.RegisterPostBackControl()
+        Me.RegisterPostBackControl1()
     End Sub
 
     Private Sub grdRequestApproval_RowDataBound(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.GridViewRowEventArgs) Handles grdRequestApproval.RowDataBound
@@ -690,6 +702,64 @@ Public Class ExpensesClaimApproval
                 Dim btndetails As ImageButton = TryCast(sender, ImageButton)
                 Dim gvrow As GridViewRow = DirectCast(btndetails.NamingContainer, GridViewRow)
                 Dim lbldocno As LinkButton = CType(gvrow.FindControl("lblSCode"), LinkButton)
+                DocNum = lbldocno.Text.Trim()
+                If DocNum <> 0 Then
+                    Crpt.SetParameterValue("DocEntry", DocNum)
+                End If
+                Dim fname As String = Session("UserCode").ToString() + "_" + DocNum ' DateTime.Now.ToString("yyyyMMddHHmmss").ToString()
+                Response.Buffer = False
+                Response.ClearContent()
+                Response.ClearHeaders()
+                Crpt.SetDatabaseLogon(strUser, strPwd, strServer, strDB)
+                Crpt.ExportToHttpResponse(ExportFormatType.PortableDocFormat, Response, False, fname)
+                Response.Flush()
+                Response.End()
+            Else
+                DBConnectionDA.WriteError("Report file does not exists")
+                mess("Report file does not exists")
+            End If
+        Catch ex As Exception
+            Response.Flush()
+            Response.Close()
+            DBConnectionDA.WriteError(ex.Message)
+            mess(ex.Message)
+        End Try
+    End Sub
+    Protected Sub imgRPrint_Click(ByVal sender As Object, ByVal e As EventArgs)
+        Dim Dir As String
+        Dim Crpt As New ReportDocument()
+        Dim DocNum As String
+        Try
+            Dir = Server.MapPath("Reports\ExpenseClaim.rpt")
+            If System.IO.File.Exists(Dir) Then
+                Dim strServer As String = ConfigurationManager.AppSettings("SAPServer")
+                Dim strDB As String = ConfigurationManager.AppSettings("CompanyDB")
+                Dim strUser As String = ConfigurationManager.AppSettings("DbUserName")
+                Dim strPwd As String = ConfigurationManager.AppSettings("DbPassword")
+
+                Dim crtableLogoninfos As New TableLogOnInfos
+                Dim crtableLogoninfo As New TableLogOnInfo
+                Dim crConnectionInfo As New ConnectionInfo
+                Dim CrTables As Tables
+                Dim CrTable As Table
+
+                Crpt.Load(Dir)
+
+                With crConnectionInfo
+                    .ServerName = strServer
+                    .DatabaseName = strDB
+                    .UserID = strUser
+                    .Password = strPwd
+                End With
+                CrTables = Crpt.Database.Tables
+                For Each CrTable In CrTables
+                    crtableLogoninfo = CrTable.LogOnInfo
+                    crtableLogoninfo.ConnectionInfo = crConnectionInfo
+                    CrTable.ApplyLogOnInfo(crtableLogoninfo)
+                Next
+                Dim btndetails As ImageButton = TryCast(sender, ImageButton)
+                Dim gvrow As GridViewRow = DirectCast(btndetails.NamingContainer, GridViewRow)
+                Dim lbldocno As LinkButton = CType(gvrow.FindControl("lblRCode"), LinkButton)
                 DocNum = lbldocno.Text.Trim()
                 If DocNum <> 0 Then
                     Crpt.SetParameterValue("DocEntry", DocNum)
