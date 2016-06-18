@@ -578,6 +578,7 @@ Public Class DynamicApprovalDA
     Public Sub SendMessage(ByVal objEN As DynamicApprovalEN)
         Try
             Dim strQuery As String
+            Dim HRName As String = ""
             Dim strMessageUser As String
             Dim intLineID As Integer
             Dim oRecordSet, oTemp As SAPbobsCOM.Recordset
@@ -642,15 +643,21 @@ Public Class DynamicApprovalDA
                         Case "Rec"
                             strQuery = "Select * from [@Z_HR_ORMPREQ]  where DocEntry='" & objEN.DocEntry & "'"
                             oTemp.DoQuery(strQuery)
-                            strMessage = " Recruited by   " & oTemp.Fields.Item("U_Z_EmpName").Value & " for  " & oTemp.Fields.Item("U_Z_PosName").Value & " Position"
+                            strMessage = " Created by   " & oTemp.Fields.Item("U_Z_EmpName").Value & " for the  " & oTemp.Fields.Item("U_Z_PosName").Value & " Position"
+                            HRName = "123"
                         Case "AppShort"
                             strQuery = "Select * from  [@Z_HR_OHEM1]  where DocEntry='" & objEN.DocEntry & "'"
                             oTemp.DoQuery(strQuery)
-                            strMessage = " Candidate Name  " & oTemp.Fields.Item("U_Z_HRAPPName").Value & ": Applied Position  " & oTemp.Fields.Item("U_Z_JobPosi").Value
+                            strQuery = "Select U_Z_PosName from [@Z_HR_ORMPREQ] where DocEntry='" & oTemp.Fields.Item("U_Z_ReqNo").Value & "'"
+                            oRecordSet.DoQuery(strQuery)
+                            strMessage = " ," & oTemp.Fields.Item("U_Z_HRAPPName").Value & " , applying to the Position  " & oRecordSet.Fields.Item("U_Z_PosName").Value
+                            HRName = "123"
                         Case "Final"
                             strQuery = "Select * from  [@Z_HR_OHEM1]  where DocEntry='" & objEN.DocEntry & "'"
                             oTemp.DoQuery(strQuery)
-                            strMessage = " Candidate Name  " & oTemp.Fields.Item("U_Z_HRAPPName").Value & ": Applied Position  " & oTemp.Fields.Item("U_Z_JobPosi").Value
+                            strQuery = "Select U_Z_PosName from [@Z_HR_ORMPREQ] where DocEntry='" & oTemp.Fields.Item("U_Z_ReqNo").Value & "'"
+                            oRecordSet.DoQuery(strQuery)
+                            strMessage = " Candidate Name  " & oTemp.Fields.Item("U_Z_HRAPPName").Value & " applying to the Position  " & oTemp.Fields.Item("U_Z_PosName").Value
                         Case "TraReq"
                             strQuery = "Select * from  [@Z_HR_OTRAREQ]  where DocEntry='" & objEN.DocEntry & "'"
                             oTemp.DoQuery(strQuery)
@@ -707,7 +714,7 @@ Public Class DynamicApprovalDA
                     If objEN.HistoryType = "RetLve" Then
                         oMessage.Text = objEN.DocMessage
                     Else
-                        oMessage.Text = objEN.DocMessage & " " & objEN.DocEntry & strMessage & " is awaiting your approval "
+                        oMessage.Text = objEN.DocMessage & " " & objEN.DocEntry & strMessage & " Needs Your Approval "
                     End If
 
                     oRecipientCollection = oMessage.RecipientCollection
@@ -725,9 +732,9 @@ Public Class DynamicApprovalDA
                     If objEN.HistoryType = "RetLve" Then
                         strEmailMessage = objEN.DocMessage
                     Else
-                        strEmailMessage = objEN.DocMessage + "  " + objEN.DocEntry + " " + strMessage + " is awaiting your approval "
+                        strEmailMessage = objEN.DocMessage + "  " + objEN.DocEntry + " " + strMessage + " Needs Your Approval "
                     End If
-                    SendMail_Approval(strEmailMessage, strMessageUser, strMessageUser, objEN.SapCompany)
+                    SendMail_Approval(strEmailMessage, strMessageUser, strMessageUser, objEN.SapCompany, , objEN.DocEntry, HRName)
                 End If
             End If
             ' End If
@@ -799,7 +806,7 @@ Public Class DynamicApprovalDA
         End Try
         Return objDA.strmsg
     End Function
-    Public Sub SendMail_Approval(ByVal aMessage As String, ByVal aMail As String, ByVal aUser As String, ByVal aCompany As SAPbobsCOM.Company, Optional ByVal SerialNo As String = "", Optional ByVal ReqNo As String = "")
+    Public Sub SendMail_Approval(ByVal aMessage As String, ByVal aMail As String, ByVal aUser As String, ByVal aCompany As SAPbobsCOM.Company, Optional ByVal SerialNo As String = "", Optional ByVal ReqNo As String = "", Optional ByVal HRName As String = "")
         Dim oRecordset As SAPbobsCOM.Recordset
         oRecordset = aCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset)
         oRecordset.DoQuery("Select U_Z_SMTPSERV,U_Z_SMTPPORT,U_Z_SMTPUSER,U_Z_SMTPPWD,U_Z_SSL From [@Z_HR_OMAIL]")
@@ -812,6 +819,9 @@ Public Class DynamicApprovalDA
             If mailServer <> "" And mailId <> "" And mailPwd <> "" Then
                 oRecordset.DoQuery("Select * from OUSR where USER_CODE='" & aUser & "'")
                 aMail = oRecordset.Fields.Item("E_Mail").Value
+                If HRName <> "" Then
+                    HRName = oRecordset.Fields.Item("U_NAME").Value
+                End If
                 If aMail <> "" Then
                     Dim oTest As SAPbobsCOM.Recordset
                     oTest = aCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset)
@@ -820,7 +830,7 @@ Public Class DynamicApprovalDA
                     If oTest.RecordCount > 0 Then
                         strESSLink = oTest.Fields.Item("U_Z_WebPath").Value
                     End If
-                    SendMailforApproval(mailServer, mailPort, mailId, mailPwd, mailSSL, aMail, aMail, "Approval", aMessage, aCompany, strESSLink, SerialNo, aUser)
+                    SendMailforApproval(mailServer, mailPort, mailId, mailPwd, mailSSL, aMail, aMail, "Approval", aMessage, aCompany, strESSLink, SerialNo, aUser, , HRName)
                 End If
             Else
                 ' oApplication.Utilities.Message("Mail Server Details Not Configured...", SAPbouiCOM.BoStatusBarMessageType.smt_Warning)

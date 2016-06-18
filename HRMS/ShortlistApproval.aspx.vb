@@ -192,7 +192,7 @@ Public Class ShortlistApproval
                 objEN.AppStatus = ddlAppStatus.SelectedValue
                 objEN.Remarks = txtcomments.Text.Trim()
                 dbCon.strmsg = objBL.ApprovalValidation(objEN)
-                objEN.DocMessage = "Candiate Shortlisting"
+                objEN.DocMessage = "Shortlisted Applicant,Request "
                 objEN.SapCompany = Session("SAPCompany")
                 If dbCon.strmsg = "Success" Then
                     dbCon.strmsg = objBL.addUpdateDocument(objEN)

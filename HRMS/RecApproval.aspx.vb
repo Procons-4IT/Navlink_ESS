@@ -191,7 +191,7 @@ Public Class RecApproval
                 objEN.AppStatus = ddlAppStatus.SelectedValue
                 objEN.Remarks = txtcomments.Text.Trim()
                 dbCon.strmsg = objBL.ApprovalValidation(objEN)
-                objEN.DocMessage = "Manpower Recruitment  Request"
+                objEN.DocMessage = "The Recruitment Requisition"
                 objEN.SapCompany = Session("SAPCompany")
                 If dbCon.strmsg = "Success" Then
                     dbCon.strmsg = objBL.addUpdateDocument(objEN)

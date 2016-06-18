@@ -692,11 +692,11 @@ Public Class DBConnectionDA
                     Dim IntReqNo1 As String = strExpNo
                     strExpReqNo1 = IntReqNo1.ToString()
                     ' oMessage.Text = strReqType + "  " + strExpReqNo + " with Expenses :  " + strExpNo + " " + strOrginator + " Needs Your Approval "
-                    oMessage.Text = "Expense Claim " & strExpReqNo & " " & strOrginator & " is awaiting your approval"
+                    oMessage.Text = "Expense Claim " & strExpReqNo & " " & strOrginator & " Needs Your Approval"
                 ElseIf enDocType = "RetLve" Then
                     oMessage.Text = strReqType + "  is awaiting your approval "
                 Else
-                    oMessage.Text = strReqType + "  " + strExpReqNo + " " + strOrginator + " is awaiting your approval "
+                    oMessage.Text = strReqType + "  " + strExpReqNo + " " + strOrginator + " Needs Your Approval "
                 End If
                 oRecipientCollection = oMessage.RecipientCollection
                 oRecipientCollection.Add()
